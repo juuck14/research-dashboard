@@ -277,6 +277,10 @@ For epsilon0 and omega(s)=exp(−t s), the K-infinite expected gradient weights 
 
 With the natural policy omega(s)=exp(−s),epsilon=.1, K8 has positive balance curvature .00436686 but negative normal-product curvature −.00145613. At K128 the respective values are .05423005 and −.01724015. In the limit w/v≈2.506<e, so the normal instability is exact. This policy does not exhibit full-space rescue. It was checked and retained before the later analytic log4 example. It refutes a claim that scalar balance stabilization always restores the representation, and does not refute the proved open regime.
 
+### 6.5 Holding the target sampling objective fixed by importance correction
+
+If the update is multiplied by the detached tuple likelihood ratio product_r[p(Y_r)/q_F(Y_r)], exact change of measure restores the uniform-sampler expected gradient at every F when p is uniform. This is an elementary identity, not a new method. An earlier90-setting tied-angle scalar-gradient enumeration agreed with the uniform reference to1.39e−15; it was not90 complete-vector-field checks. The saved [code](../code/importance_control.py) and [raw result](../results/importance_control.json) preserve the control. Thus our uncorrected phenomenon concerns a changing expected update field, rather than optimization failure at an unchanged uniform objective. The identity does not promise low finite-sample variance or cover clipping/self-normalization of weights.
+
 ## 7. Executed validation
 
 ### 7.1 Algebra and independent implementation

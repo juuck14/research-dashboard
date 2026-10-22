@@ -201,8 +201,8 @@
   },
   {
     "path": "manuscript.md",
-    "bytes": 44068,
-    "sha256": "38af1ba24a9c45e6b3e5711bae3eae12c7fd4b94cd6998934c5296416b364aff"
+    "bytes": 44916,
+    "sha256": "a2123c58004c6df24c12432e4c1f0de971700da1e7aa9abee6fa18e09e5d9b12"
   },
   {
     "path": "prior-art/README.md",
@@ -271,8 +271,8 @@
   },
   {
     "path": "progress.md",
-    "bytes": 4950,
-    "sha256": "323a9d1c66579605c80b2797aad88e44fc9e31f5d4683cf31832041460afa609"
+    "bytes": 5447,
+    "sha256": "2e74563109d854db12c2a4ac50887d63e8f669ef0a087837dd34a55cb7225080"
   },
   {
     "path": "quantile/README.md",

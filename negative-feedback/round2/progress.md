@@ -41,3 +41,7 @@
 - 독립 원고 심사에서 toy Z support,K1 curvature 비례상수,Palm sum기호,InfoNCE-only 안정성 범위,검산 집계 단위를 교정했다. 새로운 증명 결함이나 현재 좁은 claim의 미실행 핵심 검증은 발견되지 않았다.
 
 최종 문서: `report_ko.md`,`manuscript.md`,`decisive_questions.md`,`reproduction.md`. 남은 작업의 실패가 무엇을 무너뜨리는지는 불확실성 표에 명시했다. 넓은 neural semantic-erasure 논문은 성립했다고 말하지 않는다.
+
+### 최종 provenance 교정
+
+기존 importance correction90설정의 실제 계산은 전체 vector field가 아니라 tied-angle scalar gradient 검산임을 독립 담당이 재확인했다(max error1.3878e-15). 전체 기대 gradient 복구는 likelihood-ratio의 일반 항등식으로 별도 성립한다. 원고6.5절에 정확한 범위를 추가하고, 동일 uniform 목적의 optimizer 실패라는 해석을 배제했다. 이전 결과를 새로 실행한 것처럼 쓰지 않았다.

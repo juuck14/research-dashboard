@@ -1,7 +1,7 @@
 {
   "scope": "Artifact integrity and saved-result consistency; not a new experimental replication",
   "python": "3.12.14",
-  "markdown_local_links": 77,
+  "markdown_local_links": 79,
   "python_sources": 17,
   "json_files": 27,
   "csv_files": 20,
