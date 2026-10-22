@@ -21,3 +21,9 @@
 
 ## 원문 검증 범위의 한계
 GLOFND/FALCON은 실제 finite-batch algorithm과 auxiliary state를 갖는다. 본 연구는 그 코드 재현이 아니라 exact finite-state counterexample를 연구했다. empirical performance 개선을 주장하지 않는다. Jiang HTML header의 날짜가 arXiv metadata와 다르게 표시되어, 서지는 arXivv3 및 TMLR2025 metadata를 우선하고 header 날짜로 새 version을 추정하지 않았다.
+
+## 추가 확인한 최신 경쟁 선행
+
+Meng, Yang, Li, Guo. **SnaPhArd Contrast Learning**, ICLR2026. [공식 PDF](https://proceedings.iclr.cc/paper_files/paper/2026/file/42a24a7a3e7cf7dd127a76daf487cffd-Paper-Conference.pdf). §2.2와 Theorem2.1을 확인했다. Fixed key vectors와 positive vectors를 두고 단일 query의 sphere optimum 및 positive와 일치하는 해를 논한다. 여기서 말하는 collapse와 본 노트의 factor/dimensional collapse는 같지 않다. easy-negative fixation이라는 동기는 가깝지만 sampler-response Jacobian 또는 모든 representation을 함께 움직이는 matched-frozen 비교는 해당 정리의 진술이 아니다. 이 사실은 신규성 증명이 아니라 직접 비교의 출발점이다.
+
+Farina and Perdomo. **The Stability of Online Algorithms in Performative Prediction**, 2026 preprint. [원문](https://arxiv.org/html/2602.24207v1). §1–3은 mixed performative stability와 online learning의 관계를 다룬다. 본 노트의 pointwise local instability를 반박하거나 그대로 증명하는 결과라고 해석하지 않았다. '분포가 바뀌면 학습 안정성이 바뀐다'는 일반 설명 자체는 이 넓은 분야에서 신규하지 않다.

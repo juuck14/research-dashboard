@@ -1,0 +1,7 @@
+# Positive-channel and finite-minibatch checks
+
+Recorded 2026-10-22 before execution. This is a targeted follow-up to the exact square theorem, not evidence registered before the discovery.
+
+1. Nonidentity positives: each of two bits flips independently with eta in {0,.001,.01,.05,.1}. This positive channel has nonzero eigenvalues for eta<.5, so it preserves distinguishing information but does not preserve every factor perfectly. Keep epsilon=.1,kappa=-2,d=4. Exact population full product-sphere tangent Jacobian, frozen q(square) vs adaptive. Test central steps1e-5 and3e-6; do not tune eta after seeing outcomes. Identity eta0 must match previous calibration. Record equilibrium residual and all eigenvalues. No natural augmentation claim.
+
+2. Actual stochastic training: four-state full lookup d=4, identity positives, normalized retraction SGD, batch64, learning rate.1,6000 steps. Primary seeds1001–1006; confirmation3001–3004. Same seed initial perturbation1e-4 and common anchor/uniform draws across uniform, matched-frozen, adaptive policies. epsilon=.1,kappa=-2. Evaluate unnoised pairwise distances and Bayes-optimal factor accuracy under explicitly fixed isotropic feature noise sigma=.05 (2500 independent evaluation draws per state, eval seed90210). Noiseless small nonzero separations are not information loss. Primary test: adaptive worst-factor noisy accuracy<.65 and frozen>.95 for at least5/6 primary and at least3/4 confirmation seeds. Report failures without retuning. These are toy SGD tests, not image benchmarks or full-data generalization claims.

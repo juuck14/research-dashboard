@@ -1,0 +1,5 @@
+{
+  "settings": 90,
+  "max_abs_error": 1.3877787807814457e-15,
+  "identity": "E_q^K [(product_j p/q) grad ell] = E_p^K grad ell; q/weights detached"
+}

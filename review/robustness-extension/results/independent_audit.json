@@ -1,0 +1,23 @@
+{
+  "audit_type": "post-result independent scalar finite-difference and exact evaluation-rule audit",
+  "root_source_sha256": "14db1afae6021a520293c3758a75f8f88c4b08f18b16b57fbc802ac10307a633",
+  "coordinate_checks": 432,
+  "max_detached_population_gradient_error": 1.2382082165141028e-10,
+  "positive_channel_eigenvalue_error": 2.220446049250313e-16,
+  "expected_sampled_gradient_error": 5.204170427930421e-17,
+  "square_evaluation": {
+    "factor_accuracy": [
+      1.0,
+      1.0
+    ],
+    "min_pair_distance": 1.414213562373095
+  },
+  "onefactor_evaluation": {
+    "factor_accuracy": [
+      1.0,
+      0.5
+    ],
+    "min_pair_distance": 0.0
+  },
+  "scope": "No final training vectors loaded; final SGD runs not independently rerun here. Gradient correctness and noisy Bayes classification rule verified."
+}

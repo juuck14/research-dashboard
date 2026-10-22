@@ -1,12 +1,13 @@
 # Negative 관계와 학습 피드백
 
-상태: 분석 중 → 원래 가설 수정 필요. 기준일 2026-10-22.
+상태: 수정 후 진행. 기준일 2026-10-22.
 
 ## 현재 결론
 1. **직접 증명:** positive-invariant binary factor, unconstrained dot-product encoder의 추가 coordinate, stop-gradient sampler와 q>=epsilon/4 아래 누락 factor boundary는 transverse repelling이다. 작은 비영 perturbation의 탈출 시간 상계도 도출했다. 전체 stationary saddle와 혼동하지 않는다.
 2. **직접 실행:** exact population gradient-flow 1,080 설정/초기값 반복 중 1,080개가 이론적 deadline 안에서 amplitude0.1까지 탈출. seed101·211의 확인 설정540개 포함. 독립 dataset1,080개나 성공확률의 통계추정이 아니다.
 3. **대안 설명:** soft easy-negative 선택은 동일 초기조건에서 탈출을 약99배 늦췄으나 frozen q도 거의 같은 지연이다. time100 관측만으로 영구 실명이라고 결론낼 수 없다.
-4. **설정 수정 후 확인 중:** normalized encoder에서는 누락 factor가 안정할 수 있다. 단 norm budget과 static q의 목적변화를 먼저 분리해야 한다. symmetric all-factor point의 adaptive vs matched frozen-q Jacobian 차이를 추가 분석한다.
+4. **수정된 핵심 결과:** normalized full-capacity d3/d4 sphere의 square는 matched frozen q 아래 stable인데 adaptive q에서는 factor-balance mode가 unstable인 열린 조건을 도출했다. K1 전체 tangent spectrum 증명, K<=16 exact curvature와 독립 critic의 K2/K4 full tangent 검산이 있다.
+5. **목적함수 통제:** importance correction은 uniform field를 정확 복구(max error1.39e-15). 같은 uniform objective의 최적화 실패라고 주장하지 않는다.
 
 ## 실행 근거
 - `theory.md`: Proposition1–3과 완전 증명, 적용 범위
@@ -21,10 +22,20 @@
 OPENBLAS_NUM_THREADS=1 python code/exact_population.py
 OPENBLAS_NUM_THREADS=1 python code/normalized_feedback.py
 ```
-Python3.12.14, NumPy2.3.5, SciPy1.17.0, Matplotlib; solver rtol1e-8,atol1e-11(base). finite-difference checker 포함. sampled minibatch나 neural image learning 결과가 아니다.
+Python3.12.14, NumPy2.3.5, SciPy1.17.0, Matplotlib; solver rtol1e-8,atol1e-11(base). 위 base 결과는 population 계산이다. 후속 actual minibatch lookup 결과는 아래 별도 기록을 참조한다. Neural image learning 결과는 없다.
 
 ## 현재 가장 큰 반론
-충분한 차원만으로 normalization의 에너지 제약이 제거되지 않는다. normalized corner에서의 stable omission이 frozen q에서도 유지되면 피드백 고유성의 증거가 아니다. full d3 sphere tangent 및 가장 가까운 geometry 선행을 critic이 독립 검토 중이다.
+충분한 차원만으로 normalization의 에너지 제약이 제거되지 않는다. normalized corner에서의 stable omission이 frozen q에서도 유지되면 피드백 고유성의 증거가 아니다. full d3/d4 sphere tangent와 K2/K4 검산은 critic이 완료했다. Generic performative Jacobian 이상의 독립적 학술성과 실제 filtering 정책에서의 예측력은 남은 문턱이다.
+
+## 독립 후속 실행
+
+[세 요인·충분 차원 검증](../review/three-factor-extension/README.md), [비동일 positive 및 실제 minibatch30회](../review/robustness-extension/README.md), [후속 코드 독립 감사](../review/robustness-extension/independent-review.md)를 추가했다. Nonidentity positive는 population 검산이고 SGD는 identity positives다. SGD의 worst-factor noisy Bayes accuracy는 uniform/frozen 관측1.000,adaptive.4934–.4984였다. Noiseless 정보 소실을 주장하지 않는다. [최종 종합판정](../coordination/final_report.md).
 
 ## 기록
 `literature.md`, `progress.md`, `verdict.md`와 모든 코드·결과를 연결한다. 실패한 base 가설은 N1 성공으로 덮어쓰지 않는다.
+
+## 최종 문서
+- [verdict.md](verdict.md): 수정 후 진행 판정 및 남은 문턱
+- [paper_draft.md](paper_draft.md): 실제 결과를 중심으로 한 논문 뼈대
+- [results/multi_negative_summary.json](results/multi_negative_summary.json): K1–16 exact control
+- [results/importance_control.json](results/importance_control.json): 동일 목적함수 보정 통제

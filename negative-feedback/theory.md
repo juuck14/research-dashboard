@@ -44,3 +44,51 @@ D_i=h(x)^T h(y_i)-h(x)^T h(x+). 각 negative logit contrast는 D_i+t²[b(x)b(y_i
 
 ## 무엇을 반박하고 무엇을 반박하지 않는가
 원래 '현재 유사도 기반 soft filtering만으로 두 번째 요인이 영구적으로 배제되는 attracting state'라는 가설은 이 family에서 반박된다. 전체 (w1,0)은 w1 방향 drift가 있어 stationary saddle라고 부르지 않는다. 정확히는 invariant boundary의 transverse repulsion이다. 시간 지연은 가능하지만 floor에 따른 finite bound가 있다. 일반 nonlinear SSL에서 feature suppression이 없다는 결론은 아니다. 특히 augmentation이 두 factor를 다르게 바꾸거나 norm·regularizer의 competition이 있으면 다른 objective와 feasible directions를 분석해야 한다.
+
+## Proposition 4. importance correction은 uniform population update를 정확히 복구한다
+고정 marginal p(y)=1/4와 full support q_w에 대해 negatives iidK개이면, sampler와 importance weight를 모두 detached로 두고
+
+E_(y1:K~q_w^K) [(product_j p(yj)/q_w(yj|x)) ∇ell_w(x,y1:K)] = E_(y1:K~p^K) ∇ell_w(x,y1:K).
+
+증명: 각 tuple의 q product와 denominator가 취소되어 p product만 남는다. QED. 따라서 아래 normalized 현상은 동일 uniform population objective의 sampling-only optimizer failure가 아니다. q로 실제 reweighting한 decoupled field의 현상이다. p/q 미분까지 포함하면 다른 알고리즘이다. code/importance_control.py는90 설정을 exact enumeration하여 최대오차1.39e-15를 얻었다.
+
+## Proposition 5. normalized square의 matched-frozen 안정성과 adaptive 불안정성
+
+이 명제는 critic /root/negative_feedback_critic의 독립 유도·검산과 일치한다. 4-state lookup representation F=(f_i)에서 f_i in S^(d-1), d>=3를 허용한다. 이는 additive2차원 제한보다 넓고, 네 state를 모두구별하는 simplex도 표현가능하다. Positive는 identity. K1 InfoNCE, q_ij=epsilon/4+c softmax_j(kappa f_i^T f_j), c=1-epsilon. 점 f_i*=(a_i,b_i,0,...)/sqrt2(square)를 고려한다. q*를 고정한 update와 매step q(F)를 갱신한 detached update를 비교한다. Sphere projected gradient flow 사용.
+
+기호: Z=2+2cosh(kappa), alpha=1/Z, v=epsilon/4+c alpha(adjacent q), w=epsilon/4+c exp(-kappa)/Z(opposite q), r=sigmoid(-1), r'=r(1-r), s=sigmoid(-2).
+
+Square는 두 vector field의 stationary point이다. 다음은 loss/gradient-field linearization DG의 eigenvalues이며 실제 flow Jacobian은 부호를 뒤집는다. Rotation zero modes를 제외한다.
+
+| tangent mode | frozen q* DG | adaptive DG |
+|---|---|---|
+| in-plane ab (factor balance), multiplicity1 | 2v r' | 2[v r'+c kappa alpha r] |
+| in-plane a,b, multiplicity2 | v r'+w s | v r'+w s+c kappa alpha r(1-alpha) |
+| normal 1, 각 extra ambient coordinate | v r+w s | 같음 |
+| normal ab, 각 extra ambient coordinate | w s-v r | 같음 |
+| global rotations | 0 | 0 |
+
+따라서 frozen square는 w s>v r이면 rotation을 제외하고 strict stable이다. 동시에 v r'+c kappa alpha r<0이면 adaptive는 factor-balance 방향 unstable이다. epsilon=.1,kappa=-2에서 두 부등식이 동시에 성립하며 충분 표현 차원에서도 matched-frozen stable point가 adaptive 갱신 때문에 불안정해지는 exact counterexample를 제공한다. 이는 '모든 negative 확률이 양수'만으로 feedback safety를 보장할 수 없다는 수정된 명제다.
+
+### 유도와 증명
+1. square에서 scores는 self1, adjacent0, opposite-1, 그리고모든 anchor의 softmax normalizer는 Z로같다. 양옆 vector가대칭이라 sphere-projected frozen/adaptive gradient가0이다.
+2. 각 point의 in-plane unit tangent e_i=(-b_i,a_i,0)/sqrt2를 잡고 변위 t_i e_i를 쓴다. 네 scalar t_i는 group Fourier basis1,a,b,ab로분해된다. Neighbor pair score의 1차 변화는 h_ij(t_i-t_j), h_ij=sin(phi_j-phi_i)=±1; opposite pair의1차변화는0,2차는(t_i-t_j)^2/2. Frozen Hessian은 neighbor weight v r'/2, opposite weight w s/2의 graph Laplacian. Fourier characters를 적용하면 ab는2v r', a,b는v r'+w s, 1은rotation0이 된다.
+3. Adaptive feedback은 delta q_ij=c kappa softq_ij [delta s_ij-m_i], m_i=sum_j softq_ij delta s_ij. Per-point gradient에 q_ij+q_ji가 들어가므로 추가 linear term은 (c kappa/4)sum_neighbor alpha[2delta s_ij-m_i-m_j]r h_ij. ab mode는 m_i=0여서2c kappa alpha r를 추가. a,b mode는 행 normalizer 변화까지 합쳐c kappa alpha r(1-alpha)를 추가한다. 이것이 목적함수를 고정했을 때의 curvature와 구별되는 sampler response이다.
+4. 각 normal coordinate에서 perturbation n_i는 basis1,a,b,ab로분해된다. Score의1차변화가0이라 delta q=0. 2차변화는 n_i n_j-s_ij(n_i²+n_j²)/2이다. 직접합하면 eigenvalues v r+w s,0,0,w s-v r. 중간0 둘은 평면을 회전하는 global rotations이다. d-2개의 normal coordinate마다 반복된다. 전역 in-plane rotation 하나를 더하면총2d-3 rotation modes. 다른 mode는 위표로소진된다.
+5. 두 부등식에서 frozen의 nonzero eigenvalues는양수이고 adaptive factor-balance eigenvalue는음수다. flow Jacobian=-DG이므로 stability 진술이따른다. QED.
+
+Scalar tied theta의 f_theta=(cos theta*a,sin theta*b)에서 구한 curvature는 위 eigenvalue의4배다. 네 point를 하나의 theta로 묶었을 때 parameter metric norm²가4이기 때문이며 수치불일치가아니다.
+
+### K>1
+네 negative category count n~Multinomial(K;q*)를 exact enumerate한다. theta*=pi/4에서 D=1+n_self+exp(-1)(n_adj1+n_adj2)+exp(-2)n_opp, d=n_adj2-n_adj1라 두면
+
+H_frozen=E[4exp(-1)(n_adj1+n_adj2)/D-4exp(-2)d²/D²],
+H_adaptive=H_frozen+4c kappa alpha exp(-1)/v * E[d²/D].
+
+증명은 log denominator를 theta미분한 frozen 항과 multinomial logprob derivative=2c kappa alpha*d/v를 곱한 feedback 항을 더한것이다. code/multiple_negatives.py가 finite enumeration과 별도 FD로확인한다. K1,2,4,8,16에서epsilon.1,kappa-2의 H_adaptive는전부음수이고 frozen전부양수다. K2/4 full sphere의 나머지 tangent 안정성은 critic이 독립수치검산했고, 모든K full-spectrum analytic theorem은아직없다.
+
+## 주장 범위
+- full sphere K1의 stationary-point stability와 existence region은직접증명.
+- K2/4 full tangent와 K<=16 scalar mode는 exact expectation의 수치확인 및 analytic moment formula로지지.
+- finite time에 amplitude가작아졌다고 MI=0은아님. 수치run은 noisy readout 접근성 저하를측정하며 exact factor loss는 attracting boundary의극한에대한말이다.
+- generic DG=H_frozen+feedback의분해는 performative prediction chain rule로새롭지않다. 기여후보는 SSL의 full-capacity sphere와 floor 아래 explicit factor-selective spectrum/phase boundary다. 실질적중요성및문헌상의독창성은별도검증대상.

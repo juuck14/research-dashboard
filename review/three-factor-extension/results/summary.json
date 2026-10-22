@@ -1,0 +1,171 @@
+{
+  "grid_conditions": 54,
+  "three_factor_candidates": 18,
+  "confirmations": 54,
+  "confirmation_pass": true,
+  "max_equilibrium_residual": 1.3877787807814457e-17,
+  "candidates": [
+    {
+      "m": 3,
+      "d": 4,
+      "epsilon": 0.01,
+      "kappa": -10.0,
+      "frozen_max_nonzero": -9.79907864564581e-05,
+      "adaptive_max_nonzero": 0.0012863721924119425,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 4,
+      "epsilon": 0.01,
+      "kappa": -6.0,
+      "frozen_max_nonzero": -0.0022612878832598453,
+      "adaptive_max_nonzero": 0.012494036293924803,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 4,
+      "epsilon": 0.01,
+      "kappa": -4.0,
+      "frozen_max_nonzero": -0.007097358662424978,
+      "adaptive_max_nonzero": 0.02771941748639094,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 4,
+      "epsilon": 0.01,
+      "kappa": -2.0,
+      "frozen_max_nonzero": -0.015252686083047211,
+      "adaptive_max_nonzero": 0.03174338972304962,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 4,
+      "epsilon": 0.01,
+      "kappa": -1.0,
+      "frozen_max_nonzero": -0.004114964983938275,
+      "adaptive_max_nonzero": 0.0097057406022529,
+      "adaptive_positive": 10
+    },
+    {
+      "m": 3,
+      "d": 4,
+      "epsilon": 0.1,
+      "kappa": -6.0,
+      "frozen_max_nonzero": -0.0015265531765310477,
+      "adaptive_max_nonzero": 0.00840936330081778,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 4,
+      "epsilon": 0.1,
+      "kappa": -4.0,
+      "frozen_max_nonzero": -0.007826373851931565,
+      "adaptive_max_nonzero": 0.022250618930301516,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 4,
+      "epsilon": 0.1,
+      "kappa": -2.0,
+      "frozen_max_nonzero": -0.012381588440327293,
+      "adaptive_max_nonzero": 0.025908775509749925,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 4,
+      "epsilon": 0.1,
+      "kappa": -1.0,
+      "frozen_max_nonzero": -0.0024906459558996148,
+      "adaptive_max_nonzero": 0.00587454903597168,
+      "adaptive_positive": 10
+    },
+    {
+      "m": 3,
+      "d": 8,
+      "epsilon": 0.01,
+      "kappa": -10.0,
+      "frozen_max_nonzero": -9.799078645646544e-05,
+      "adaptive_max_nonzero": 0.001286372192411934,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 8,
+      "epsilon": 0.01,
+      "kappa": -6.0,
+      "frozen_max_nonzero": -0.002261287883259851,
+      "adaptive_max_nonzero": 0.012494036293924805,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 8,
+      "epsilon": 0.01,
+      "kappa": -4.0,
+      "frozen_max_nonzero": -0.00709735866242497,
+      "adaptive_max_nonzero": 0.027719417486390927,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 8,
+      "epsilon": 0.01,
+      "kappa": -2.0,
+      "frozen_max_nonzero": -0.015252686083047213,
+      "adaptive_max_nonzero": 0.03174338972304959,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 8,
+      "epsilon": 0.01,
+      "kappa": -1.0,
+      "frozen_max_nonzero": -0.004114964983938268,
+      "adaptive_max_nonzero": 0.009705740602252905,
+      "adaptive_positive": 10
+    },
+    {
+      "m": 3,
+      "d": 8,
+      "epsilon": 0.1,
+      "kappa": -6.0,
+      "frozen_max_nonzero": -0.0015265531765310334,
+      "adaptive_max_nonzero": 0.00840936330081776,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 8,
+      "epsilon": 0.1,
+      "kappa": -4.0,
+      "frozen_max_nonzero": -0.00782637385193154,
+      "adaptive_max_nonzero": 0.022250618930301495,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 8,
+      "epsilon": 0.1,
+      "kappa": -2.0,
+      "frozen_max_nonzero": -0.012381588440327275,
+      "adaptive_max_nonzero": 0.025908775509749977,
+      "adaptive_positive": 5
+    },
+    {
+      "m": 3,
+      "d": 8,
+      "epsilon": 0.1,
+      "kappa": -1.0,
+      "frozen_max_nonzero": -0.002490645955899614,
+      "adaptive_max_nonzero": 0.005874549035971694,
+      "adaptive_positive": 10
+    }
+  ]
+}

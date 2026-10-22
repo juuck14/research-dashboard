@@ -30,3 +30,11 @@
 - 그림 QA에서 발견: frozen 대조는 t1500에서 .0314034로 asymptotic .0310029에 아직 완전히 도달하지 않았음. 이는 작은 positive k의 logistic relaxation. finite-time 값을 equilibrium 관측으로 쓰지 않는다. 원래 결과·설정을 보존한다.
 - 추가 확인 계획: 기존 frozen trajectory를 exact finite-time logistic 식과 비교한다. 새로운 simulation을 늘리지 않고 이미 저장한 CSV와 이론식을 검산할 것.
 - 독립 reviewer가 Tian2021의 직접 동등성, Jacobian 및 finite-state rank!=MI 반례를 재확인. 우리는 diagonal finite-time invertibility만 주장하며 일반 rank 저하를 정보 소실이라고 부르지 않는다.
+
+## P4 최종 판정
+
+- 실행: frozen exact finite-time 검산 최대오차1.78e−11. 그림을 직접 열어 축·legend·finite-time 해석 QA 완료. 결과·환경·실행명령·설계 및 실패한 신규성 가설을 보존.
+- 현재 판정: **기각**. 입력/초기 teacher full rank인데도 feedback으로 collapse가 생기는 예시는 확보했으나 Tian2021의 직접 특수화. 새 논문 명제로 제시하지 않는다.
+- 남은 불확실성: 비선형/계층적 context에서 기존 spectrum/conditioning/dynamics로 구분되지 않는 교정 사례가 있는가. 이 핵심을 입증하지 못했으므로 수정 후 진행으로 포장하지 않음.
+- 산출물: verdict.md, theory.md 명제1–5, literature.md, results/RESULTS.md와 CSV9개·JSON4개·controls.png, code3개, requirements.txt. 최신 현황 README 업데이트.
+- 다음 실행: root의 외부 checkpoint commit/push 및 종합보고 반영. 이 담당 주제의 추가 대규모 실험은 현재 증거로 정당화되지 않음.
