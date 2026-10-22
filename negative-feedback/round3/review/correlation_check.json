@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "partition": [
+        5,
+        3,
+        2,
+        2
+      ],
+      "balance_fd": 0.0010627216088035518,
+      "expected_balance": 0.0010627216195267287,
+      "difference": 1.0723176903718046e-11,
+      "same_source_pair": 0.22727272727272727,
+      "max_logweight_derivative_exact": -1.1900343548645576
+    },
+    {
+      "partition": [
+        4,
+        4,
+        3,
+        1
+      ],
+      "balance_fd": -0.0010641721416397576,
+      "expected_balance": -0.0010641721305205863,
+      "difference": 1.111917133887752e-11,
+      "same_source_pair": 0.22727272727272727,
+      "max_logweight_derivative_exact": -1.1900343548645576
+    }
+  ],
+  "source_draws": 4,
+  "K": 12,
+  "interpretation": "Scalar signs independently verified; significance is assessed separately from this numerical agreement."
+}

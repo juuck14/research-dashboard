@@ -1,0 +1,193 @@
+{
+  "runs": 21,
+  "passed": 21,
+  "checks": [
+    {
+      "seed": 4101,
+      "K": 4,
+      "policy": "frozen",
+      "predicted_growth": false,
+      "final_ratio": 2.435841038437327e-09,
+      "passed": true
+    },
+    {
+      "seed": 4101,
+      "K": 4,
+      "policy": "adaptive",
+      "predicted_growth": true,
+      "final_ratio": 20.14265788537528,
+      "passed": true
+    },
+    {
+      "seed": 4101,
+      "K": 4,
+      "policy": "adaptive_half",
+      "predicted_growth": true,
+      "final_ratio": 20.112408674655967,
+      "passed": true
+    },
+    {
+      "seed": 4101,
+      "K": 8,
+      "policy": "frozen",
+      "predicted_growth": false,
+      "final_ratio": 0.049936421513343224,
+      "passed": true
+    },
+    {
+      "seed": 4101,
+      "K": 8,
+      "policy": "adaptive",
+      "predicted_growth": false,
+      "final_ratio": 0.04993644767095655,
+      "passed": true
+    },
+    {
+      "seed": 4101,
+      "K": 8,
+      "policy": "adaptive_half",
+      "predicted_growth": false,
+      "final_ratio": 0.04986174946185468,
+      "passed": true
+    },
+    {
+      "seed": 4101,
+      "K": 16,
+      "policy": "frozen",
+      "predicted_growth": true,
+      "final_ratio": 20.145949363370857,
+      "passed": true
+    },
+    {
+      "seed": 4101,
+      "K": 16,
+      "policy": "adaptive",
+      "predicted_growth": true,
+      "final_ratio": 20.145979701306068,
+      "passed": true
+    },
+    {
+      "seed": 4101,
+      "K": 16,
+      "policy": "adaptive_half",
+      "predicted_growth": true,
+      "final_ratio": 20.115722984776454,
+      "passed": true
+    },
+    {
+      "seed": 4102,
+      "K": 4,
+      "policy": "frozen",
+      "predicted_growth": false,
+      "final_ratio": 3.8122804768670436e-09,
+      "passed": true
+    },
+    {
+      "seed": 4102,
+      "K": 4,
+      "policy": "adaptive",
+      "predicted_growth": true,
+      "final_ratio": 20.14188351475855,
+      "passed": true
+    },
+    {
+      "seed": 4102,
+      "K": 8,
+      "policy": "frozen",
+      "predicted_growth": false,
+      "final_ratio": 0.04993656989675743,
+      "passed": true
+    },
+    {
+      "seed": 4102,
+      "K": 8,
+      "policy": "adaptive",
+      "predicted_growth": false,
+      "final_ratio": 0.04993650541131301,
+      "passed": true
+    },
+    {
+      "seed": 4102,
+      "K": 16,
+      "policy": "frozen",
+      "predicted_growth": true,
+      "final_ratio": 20.145939622642747,
+      "passed": true
+    },
+    {
+      "seed": 4102,
+      "K": 16,
+      "policy": "adaptive",
+      "predicted_growth": true,
+      "final_ratio": 20.14596342315207,
+      "passed": true
+    },
+    {
+      "seed": 4301,
+      "K": 4,
+      "policy": "frozen",
+      "predicted_growth": false,
+      "final_ratio": 3.834931345131669e-09,
+      "passed": true
+    },
+    {
+      "seed": 4301,
+      "K": 4,
+      "policy": "adaptive",
+      "predicted_growth": true,
+      "final_ratio": 20.14371410520261,
+      "passed": true
+    },
+    {
+      "seed": 4301,
+      "K": 8,
+      "policy": "frozen",
+      "predicted_growth": false,
+      "final_ratio": 0.04993633612748977,
+      "passed": true
+    },
+    {
+      "seed": 4301,
+      "K": 8,
+      "policy": "adaptive",
+      "predicted_growth": false,
+      "final_ratio": 0.04993633651593668,
+      "passed": true
+    },
+    {
+      "seed": 4301,
+      "K": 16,
+      "policy": "frozen",
+      "predicted_growth": true,
+      "final_ratio": 20.14594541509981,
+      "passed": true
+    },
+    {
+      "seed": 4301,
+      "K": 16,
+      "policy": "adaptive",
+      "predicted_growth": true,
+      "final_ratio": 20.145967102222688,
+      "passed": true
+    }
+  ],
+  "step_refinement": [
+    {
+      "K": 4,
+      "relative_difference": 0.0015040073622523131,
+      "passed": true
+    },
+    {
+      "K": 8,
+      "relative_difference": 0.0014981064625301244,
+      "passed": true
+    },
+    {
+      "K": 16,
+      "relative_difference": 0.0015041326902598406,
+      "passed": true
+    }
+  ],
+  "max_direction_error": 1.6236682869784284e-09,
+  "elapsed_seconds": 26.55237054824829
+}

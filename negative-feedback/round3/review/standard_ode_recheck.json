@@ -1,0 +1,26 @@
+{
+  "seed": 4101,
+  "K": 16,
+  "rho": 0.05,
+  "method": "standard unpreconditioned DOP853",
+  "runs": [
+    {
+      "policy": "frozen",
+      "success": true,
+      "rhs_calls": 2300,
+      "final_ratio": 20.085522897112217,
+      "continuous_linear_prediction": 20.085536923187668,
+      "relative_error_to_linear": 6.983171774166408e-07,
+      "elapsed_seconds": 1.0349736213684082
+    },
+    {
+      "policy": "adaptive",
+      "success": true,
+      "rhs_calls": 1100,
+      "final_ratio": 20.085552411064914,
+      "continuous_linear_prediction": 20.085536923187668,
+      "relative_error_to_linear": 7.710960032714098e-07,
+      "elapsed_seconds": 0.4956374168395996
+    }
+  ]
+}

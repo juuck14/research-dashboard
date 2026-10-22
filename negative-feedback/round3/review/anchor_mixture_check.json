@@ -1,0 +1,10 @@
+{
+  "seed": 44107,
+  "population_count": 512,
+  "K_max": 24,
+  "positive_laws": 26,
+  "negative_laws": 98,
+  "search": "all opposite-sign anchor pairs and ordered K pairs",
+  "largest_feasible_ratio_drop": -0.000157189192746976,
+  "found": false
+}

@@ -1,0 +1,73 @@
+{
+  "moment_matched": [
+    {
+      "partition": [
+        5,
+        3,
+        2,
+        2
+      ],
+      "K": 12,
+      "L": 4,
+      "sum_squares": 42,
+      "same_source_pair_probability": 0.22727272727272727,
+      "eta": 0.7127478489028367,
+      "alpha": -0.19626000625533302,
+      "threshold": 0.7157246127467709,
+      "balance_analytic": 0.0010627216195267287,
+      "balance_fd": 0.0010627216403680756,
+      "eigenvalues": [
+        -5.075776733991607e-13,
+        -5.075573741906969e-13,
+        -5.075086707199544e-13,
+        -5.074563005100744e-13,
+        1.4821781520053784e-12,
+        0.0010627215826651394,
+        0.04706395697645202,
+        0.047063956976452034,
+        0.2323196654826375,
+        0.23231966551640432,
+        0.4040696434330114,
+        0.40406964343301166
+      ],
+      "max_imag": 0.0
+    },
+    {
+      "partition": [
+        4,
+        4,
+        3,
+        1
+      ],
+      "K": 12,
+      "L": 4,
+      "sum_squares": 42,
+      "same_source_pair_probability": 0.22727272727272727,
+      "eta": 0.7127478489028367,
+      "alpha": -0.19626000625533302,
+      "threshold": 0.7097710850589025,
+      "balance_analytic": -0.0010641721305205863,
+      "balance_fd": -0.001064172124082789,
+      "eigenvalues": [
+        -0.001064172174783707,
+        -4.191012809265424e-12,
+        -5.092565354920255e-13,
+        -5.092565354920255e-13,
+        -5.092308503422954e-13,
+        -5.092308503422954e-13,
+        0.04757839545231323,
+        0.04757839545231332,
+        0.23220848553896395,
+        0.23220848553896395,
+        0.4050713597279756,
+        0.4050713597279756
+      ],
+      "max_imag": 4.781376629431035e-12
+    }
+  ],
+  "monotone_weight_max_log_derivative": -1.1900343548645576,
+  "threshold_difference": 0.005953527687868387,
+  "opposite_balance_signs": true,
+  "max_balance_fd_error": 2.084134687746486e-11,
+  "interpretation": "The fixed partitions are moment matched; selecting eta between computed thresholds is an explicit counterexample construction,not independent confirmation."
+}

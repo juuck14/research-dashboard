@@ -1,0 +1,59 @@
+{
+  "implementation": "ordered tuples, scalar score derivative, independent of author code",
+  "checks": [
+    {
+      "K": 1,
+      "square_residual": 1.5307624992844094e-18,
+      "corner_residual": 0.0
+    },
+    {
+      "K": 2,
+      "root": 0.3358665714937975,
+      "root_difference": 5.551115123125783e-17,
+      "residual": 6.938893903907228e-18,
+      "flow_derivative": -0.006686462704266065,
+      "derivative_difference": 8.526304662304085e-13,
+      "bayes_sigma2": 0.9503172233823781
+    },
+    {
+      "K": 2,
+      "square_residual": 3.469446951953614e-18,
+      "corner_residual": 0.0
+    },
+    {
+      "K": 3,
+      "root": 0.5147369089524435,
+      "root_difference": 9.992007221626409e-16,
+      "residual": 1.9081958235744878e-17,
+      "flow_derivative": -0.007581393267862279,
+      "derivative_difference": 8.072448959284273e-14,
+      "bayes_sigma2": 0.9930826956981829
+    },
+    {
+      "K": 3,
+      "square_residual": 0.0,
+      "corner_residual": 0.0
+    },
+    {
+      "K": 4,
+      "root": 0.7545192717973954,
+      "root_difference": 7.482903185973555e-14,
+      "residual": 0.0,
+      "flow_derivative": -0.00018220146502656573,
+      "derivative_difference": 2.992649612279172e-12,
+      "bayes_sigma2": 0.9996922521207314
+    },
+    {
+      "K": 4,
+      "square_residual": 1.734723475976807e-18,
+      "corner_residual": 0.0
+    },
+    {
+      "K": 5,
+      "square_residual": 1.734723475976807e-18,
+      "corner_residual": 0.0
+    }
+  ],
+  "sigma2_balanced_bayes": 0.9997965239912775,
+  "conclusion": "K4 stable-branch geometry is mildly imbalanced and remains injective; it is not an erasure boundary."
+}

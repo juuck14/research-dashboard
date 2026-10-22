@@ -1,0 +1,270 @@
+{
+  "runs": 24,
+  "passed": 24,
+  "final": [
+    {
+      "K": 1,
+      "seed": 9301,
+      "split": "primary",
+      "time": 48432.435077076174,
+      "weak_factor_energy": 8.318853481454666e-20,
+      "strong_factor_energy": 1.0,
+      "distance_to_candidate": 5.768484543327863e-10,
+      "criterion_passed": true,
+      "nfev": 3506
+    },
+    {
+      "K": 1,
+      "seed": 9302,
+      "split": "primary",
+      "time": 48432.435077076174,
+      "weak_factor_energy": 8.383134020072703e-20,
+      "strong_factor_energy": 1.0,
+      "distance_to_candidate": 5.790728458568834e-10,
+      "criterion_passed": true,
+      "nfev": 3559
+    },
+    {
+      "K": 1,
+      "seed": 9303,
+      "split": "primary",
+      "time": 48432.435077076174,
+      "weak_factor_energy": 8.316522409649204e-20,
+      "strong_factor_energy": 0.9999999999999998,
+      "distance_to_candidate": 5.767676277258832e-10,
+      "criterion_passed": true,
+      "nfev": 3601
+    },
+    {
+      "K": 1,
+      "seed": 9501,
+      "split": "confirmation",
+      "time": 48432.435077076174,
+      "weak_factor_energy": 8.309584548979641e-20,
+      "strong_factor_energy": 1.0,
+      "distance_to_candidate": 5.76527000206985e-10,
+      "criterion_passed": true,
+      "nfev": 3563
+    },
+    {
+      "K": 1,
+      "seed": 9502,
+      "split": "confirmation",
+      "time": 48432.435077076174,
+      "weak_factor_energy": 8.332369050335415e-20,
+      "strong_factor_energy": 1.0000000000000002,
+      "distance_to_candidate": 5.773168644861287e-10,
+      "criterion_passed": true,
+      "nfev": 3448
+    },
+    {
+      "K": 1,
+      "seed": 9503,
+      "split": "confirmation",
+      "time": 48432.435077076174,
+      "weak_factor_energy": 8.335923546061484e-20,
+      "strong_factor_energy": 1.0000000000000002,
+      "distance_to_candidate": 5.774399898260485e-10,
+      "criterion_passed": true,
+      "nfev": 3643
+    },
+    {
+      "K": 4,
+      "seed": 9301,
+      "split": "primary",
+      "time": 109768.60949872898,
+      "weak_factor_energy": 0.4691407337387423,
+      "strong_factor_energy": 0.5308592662612578,
+      "distance_to_candidate": 5.555781481543576e-10,
+      "criterion_passed": true,
+      "nfev": 1551
+    },
+    {
+      "K": 4,
+      "seed": 9302,
+      "split": "primary",
+      "time": 109768.60949872898,
+      "weak_factor_energy": 0.4691407338061625,
+      "strong_factor_energy": 0.5308592661938376,
+      "distance_to_candidate": 6.906757772996743e-10,
+      "criterion_passed": true,
+      "nfev": 1509
+    },
+    {
+      "K": 4,
+      "seed": 9303,
+      "split": "primary",
+      "time": 109768.60949872898,
+      "weak_factor_energy": 0.46914073373653276,
+      "strong_factor_energy": 0.5308592662634672,
+      "distance_to_candidate": 5.51150688531147e-10,
+      "criterion_passed": true,
+      "nfev": 1663
+    },
+    {
+      "K": 4,
+      "seed": 9501,
+      "split": "confirmation",
+      "time": 109768.60949872898,
+      "weak_factor_energy": 0.469140733728932,
+      "strong_factor_energy": 0.5308592662710683,
+      "distance_to_candidate": 5.359199102253465e-10,
+      "criterion_passed": true,
+      "nfev": 1565
+    },
+    {
+      "K": 4,
+      "seed": 9502,
+      "split": "confirmation",
+      "time": 109768.60949872898,
+      "weak_factor_energy": 0.4691407337583688,
+      "strong_factor_energy": 0.5308592662416314,
+      "distance_to_candidate": 5.949056464124702e-10,
+      "criterion_passed": true,
+      "nfev": 1496
+    },
+    {
+      "K": 4,
+      "seed": 9503,
+      "split": "confirmation",
+      "time": 109768.60949872898,
+      "weak_factor_energy": 0.469140733750565,
+      "strong_factor_energy": 0.5308592662494348,
+      "distance_to_candidate": 5.792686541235825e-10,
+      "criterion_passed": true,
+      "nfev": 1660
+    },
+    {
+      "K": 5,
+      "seed": 9301,
+      "split": "primary",
+      "time": 3825.1098621978263,
+      "weak_factor_energy": 0.4999999999749508,
+      "strong_factor_energy": 0.5000000000250492,
+      "distance_to_candidate": 5.009830256497871e-11,
+      "criterion_passed": true,
+      "nfev": 1251
+    },
+    {
+      "K": 5,
+      "seed": 9302,
+      "split": "primary",
+      "time": 3825.1098621978263,
+      "weak_factor_energy": 0.4999999999590837,
+      "strong_factor_energy": 0.5000000000409164,
+      "distance_to_candidate": 8.183251796977594e-11,
+      "criterion_passed": true,
+      "nfev": 1209
+    },
+    {
+      "K": 5,
+      "seed": 9303,
+      "split": "primary",
+      "time": 3825.1098621978263,
+      "weak_factor_energy": 0.49999999996982347,
+      "strong_factor_energy": 0.5000000000301766,
+      "distance_to_candidate": 6.035289196193776e-11,
+      "criterion_passed": true,
+      "nfev": 1370
+    },
+    {
+      "K": 5,
+      "seed": 9501,
+      "split": "confirmation",
+      "time": 3825.1098621978263,
+      "weak_factor_energy": 0.4999999999727284,
+      "strong_factor_energy": 0.5000000000272716,
+      "distance_to_candidate": 5.454262181665579e-11,
+      "criterion_passed": true,
+      "nfev": 1265
+    },
+    {
+      "K": 5,
+      "seed": 9502,
+      "split": "confirmation",
+      "time": 3825.1098621978263,
+      "weak_factor_energy": 0.4999999999674105,
+      "strong_factor_energy": 0.5000000000325897,
+      "distance_to_candidate": 6.517904515355542e-11,
+      "criterion_passed": true,
+      "nfev": 1205
+    },
+    {
+      "K": 5,
+      "seed": 9503,
+      "split": "confirmation",
+      "time": 3825.1098621978263,
+      "weak_factor_energy": 0.4999999999745986,
+      "strong_factor_energy": 0.5000000000254016,
+      "distance_to_candidate": 5.080260438522432e-11,
+      "criterion_passed": true,
+      "nfev": 1342
+    },
+    {
+      "K": 8,
+      "seed": 9301,
+      "split": "primary",
+      "time": 1166.189317812453,
+      "weak_factor_energy": 0.49999999999706063,
+      "strong_factor_energy": 0.5000000000029394,
+      "distance_to_candidate": 6.7392642264405465e-12,
+      "criterion_passed": true,
+      "nfev": 1171
+    },
+    {
+      "K": 8,
+      "seed": 9302,
+      "split": "primary",
+      "time": 1166.189317812453,
+      "weak_factor_energy": 0.49999999999720884,
+      "strong_factor_energy": 0.5000000000027911,
+      "distance_to_candidate": 6.482784057597028e-12,
+      "criterion_passed": true,
+      "nfev": 1129
+    },
+    {
+      "K": 8,
+      "seed": 9303,
+      "split": "primary",
+      "time": 1166.189317812453,
+      "weak_factor_energy": 0.4999999999969325,
+      "strong_factor_energy": 0.5000000000030675,
+      "distance_to_candidate": 6.866544395746143e-12,
+      "criterion_passed": true,
+      "nfev": 1300
+    },
+    {
+      "K": 8,
+      "seed": 9501,
+      "split": "confirmation",
+      "time": 1166.189317812453,
+      "weak_factor_energy": 0.4999999999970101,
+      "strong_factor_energy": 0.50000000000299,
+      "distance_to_candidate": 6.883970464260992e-12,
+      "criterion_passed": true,
+      "nfev": 1185
+    },
+    {
+      "K": 8,
+      "seed": 9502,
+      "split": "confirmation",
+      "time": 1166.189317812453,
+      "weak_factor_energy": 0.4999999999971296,
+      "strong_factor_energy": 0.5000000000028705,
+      "distance_to_candidate": 6.53772991809302e-12,
+      "criterion_passed": true,
+      "nfev": 1125
+    },
+    {
+      "K": 8,
+      "seed": 9503,
+      "split": "confirmation",
+      "time": 1166.189317812453,
+      "weak_factor_energy": 0.49999999999708294,
+      "strong_factor_energy": 0.500000000002917,
+      "distance_to_candidate": 6.7649113442215134e-12,
+      "criterion_passed": true,
+      "nfev": 1262
+    }
+  ]
+}

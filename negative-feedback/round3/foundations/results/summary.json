@@ -1,0 +1,12 @@
+{
+  "population_count": 16,
+  "random_settings": 18432,
+  "tuple_checks": 64,
+  "hypercube_checks": 26,
+  "max_direct_tuple_error": 1.3916423569071412e-10,
+  "max_cube_error": 4.1762891755947606e-11,
+  "max_reported_quadrature_error": 1.0820987610297713e-11,
+  "stable_to_unstable_or_subcritical_violations": [],
+  "critical_boundary_max_positive": 0,
+  "elapsed_seconds": 5.372205018997192
+}
