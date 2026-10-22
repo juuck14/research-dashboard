@@ -1,0 +1,834 @@
+{
+  "algorithm": "SHA256 raw delivered bytes; Git blob SHA1 for remote verification",
+  "self_excluded": true,
+  "files": [
+    {
+      "path": "negative-feedback/round3/README.md",
+      "bytes": 3193,
+      "sha256": "b319deab7e2472253bdf1c50f2ed43b159440f9ae6daf4f620566f5337d22e03",
+      "git_blob": "2d23d74b7deba73868abc5640b5c56d9701de1a9"
+    },
+    {
+      "path": "negative-feedback/round3/audit_snapshot.json",
+      "bytes": 3914,
+      "sha256": "f687313facf5444d5aa4d6a92b1f4d8e4b0aad6c396bcd55d25751f381325c68",
+      "git_blob": "8a14365c0fa8ddf3370376ca60f786c929bb3b86"
+    },
+    {
+      "path": "negative-feedback/round3/audit_snapshot.py",
+      "bytes": 3957,
+      "sha256": "4a7ecb01737e6894278863d755dfa3b15841fcbab71cbd789295362b44c74155",
+      "git_blob": "d8904c5915fe9633ffbb565c31abc4bc479fe840"
+    },
+    {
+      "path": "negative-feedback/round3/correlation/README.md",
+      "bytes": 2659,
+      "sha256": "14365172ff0f726111377e393c2c92ddf5687b08120053b49a1d3ecc6685e9a1",
+      "git_blob": "15e8b021b8b1041a0b6a070bb907d571643e3783"
+    },
+    {
+      "path": "negative-feedback/round3/correlation/certify.py",
+      "bytes": 2703,
+      "sha256": "fc44abe429ebf99cc451bbd18c3032391d4ee7977296660bff151f18d6573c4c",
+      "git_blob": "45313724bb02e6ab9bd6032ef6ec6bc01396fcae"
+    },
+    {
+      "path": "negative-feedback/round3/correlation/protocol.md",
+      "bytes": 2121,
+      "sha256": "3c2992f88469b6704ee3a8eb544cf67d54cdd810be9b569131f1a3c5d058165e",
+      "git_blob": "56ed083c154ce98e251412d8a3c3546f2f35537e"
+    },
+    {
+      "path": "negative-feedback/round3/correlation/results/rational_certificate.json",
+      "bytes": 886,
+      "sha256": "cb215c8a31929b774b29b41e3e24fff03296d66a16fd1558fede8c46a1f40510",
+      "git_blob": "90e4e0459c695f15ffafe1875b8758c759bb6a5b"
+    },
+    {
+      "path": "negative-feedback/round3/correlation/results/summary.json",
+      "bytes": 2052,
+      "sha256": "94053d38ee5a8eb4d8edf469d2d2057fcc5a5187b69d58a4b361e696299fc18e",
+      "git_blob": "a9fd0e451b0fb9d1f8c1f8c3c116a19031abf704"
+    },
+    {
+      "path": "negative-feedback/round3/correlation/results/uniform_blocks.csv",
+      "bytes": 1189,
+      "sha256": "512269533491f9707dcc0fb80c41b40e4283c100f59379e83bd35a4011a5e481",
+      "git_blob": "820ec3742ca9277ffd2021c7f83f3295d4000287"
+    },
+    {
+      "path": "negative-feedback/round3/correlation/run.py",
+      "bytes": 3473,
+      "sha256": "f7bde8ccbeb8be9515484c9ec55f3a7e05fc088fef2708aa760cbd15f474c757",
+      "git_blob": "6a1c8844d3b90ec5bc1c7bbbf5d033fac3593e47"
+    },
+    {
+      "path": "negative-feedback/round3/endpoints/README.md",
+      "bytes": 1671,
+      "sha256": "454c9e4d1f1cb7379d66ef42ab032969234372212f35177d8668f28d61728aea",
+      "git_blob": "28721e0cc95f34c6cf93dfa6eb9364cfad08fc9a"
+    },
+    {
+      "path": "negative-feedback/round3/endpoints/coarse_cluster_lemma.md",
+      "bytes": 3811,
+      "sha256": "b3d1225830c36e01ccfb7b454dd7f8ba535fad009a09c2b53f389aeb74a99cc5",
+      "git_blob": "500b7b99d99513835c5f73ea915d6d7d808cf0ba"
+    },
+    {
+      "path": "negative-feedback/round3/endpoints/flow.py",
+      "bytes": 2096,
+      "sha256": "6b2b2d2d0fc2587aea19b31f066a39bf5f7dc920dd844aa1c16bf29f776ff3f1",
+      "git_blob": "b16e6eb5a4b492fafd02c60f54a9b8c87abce014"
+    },
+    {
+      "path": "negative-feedback/round3/endpoints/protocol.md",
+      "bytes": 3250,
+      "sha256": "37bb38c9478affdba0ea89261c41b12a81cc7ef040feeadee6cb77f8e223b800",
+      "git_blob": "d5618003662c678a3947262cd3e8d5dd245b02c1"
+    },
+    {
+      "path": "negative-feedback/round3/endpoints/results/angular_fields.csv",
+      "bytes": 141976,
+      "sha256": "018fbed39a840b1067da13ff69270dbb1dab96b42aeb4bd28fbf8e8097257b9b",
+      "git_blob": "be616eb5778dfd506b2c2a9a4ae544e75917006d"
+    },
+    {
+      "path": "negative-feedback/round3/endpoints/results/branches.csv",
+      "bytes": 3266,
+      "sha256": "0fe35003eb592a9ea106e90da088e4207dfbd12ef4c72954bb13988a031306ff",
+      "git_blob": "5302e69093918775bedd4bedd6844dbfcba61e4a"
+    },
+    {
+      "path": "negative-feedback/round3/endpoints/results/endpoint_flows.csv",
+      "bytes": 11321,
+      "sha256": "8ad286a92083b50a9f96a7b682696f9a1cc680136c7f8f3a0a8b9f275c5ff28e",
+      "git_blob": "03ca179ef444dd3c3b874c57f51530c7321f0ad5"
+    },
+    {
+      "path": "negative-feedback/round3/endpoints/results/flow_summary.json",
+      "bytes": 7516,
+      "sha256": "2deff4c793cd648dc686f1d5dd898a442e15b0654508184c291f056de3592e0b",
+      "git_blob": "7f8c2120d412f8cc212a64ef218da12d13bca82c"
+    },
+    {
+      "path": "negative-feedback/round3/endpoints/results/summary.json",
+      "bytes": 10588,
+      "sha256": "e4c686e95f8c8b3dd80e477a02a9cd70f5c718c9e4a1332f479487984e5bf15b",
+      "git_blob": "e0572f033d895f56ac9d2691cf3ae545980303da"
+    },
+    {
+      "path": "negative-feedback/round3/endpoints/run.py",
+      "bytes": 2998,
+      "sha256": "a43e9c537147df14f7466e24006df14856631b36ffdce5ac0d0bed74d33a5622",
+      "git_blob": "36138c0ad6c449d315419e062a73e6c082055030"
+    },
+    {
+      "path": "negative-feedback/round3/environment.json",
+      "bytes": 232,
+      "sha256": "d9156a3dde72bf53e9ec3c1ddf5713b796234b45a9c0bee7ce911103be4c3bb1",
+      "git_blob": "7c35ea5743e240535405bf8eaad67ded92a9809a"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/README.md",
+      "bytes": 5944,
+      "sha256": "d903caf7afa360fca08634be5874d16ce56e58235a7e8a5a24b63637c9c94fe5",
+      "git_blob": "3a8032d0598a165287793ae4432965ff3df4d50f"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/continuous_check.py",
+      "bytes": 3999,
+      "sha256": "dded0ad9ee471e541f82a8bd85208f57965abb7a2928e639362118b06341b5d4",
+      "git_blob": "9c632b804c9527e9b9c911cca6b01f81c6238193"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/continuous_population.md",
+      "bytes": 5980,
+      "sha256": "b66cd4b22f413a2a04fb888e6c996f825981be9f4e4241d77713cf7e5e05cb58",
+      "git_blob": "b74622718885ea04c1eb79607e549050a6cf80f1"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/general_normal_graph.md",
+      "bytes": 6303,
+      "sha256": "be212a31a62aecc7910d31acb8e4d5167aed681d021080f9e9eb130b8ff19373",
+      "git_blob": "043c28bd385c0c88b81e8d77965e782a159b9da4"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/hypercube_prediction.py",
+      "bytes": 1919,
+      "sha256": "c4ca10c2ba462dee8ad3ed93a5530556bffdb497536ed22e669509d239195aac",
+      "git_blob": "16b067b3908da2c838816fe7e048a3f402101723"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/multilevel_theorem.md",
+      "bytes": 14937,
+      "sha256": "bd7250f1036cebaece3832d286498ad93b3be4334d70e74a835e119ed1c62dd2",
+      "git_blob": "a899367b1fc072f3f45d9bde117a5ba325d7f128"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/progress.md",
+      "bytes": 4555,
+      "sha256": "bd02036b228499ea39d27f51cb78eb06b3aae3dcac3f3131b00bd19ab4591e5e",
+      "git_blob": "fd46e2f3635fe06b0c522503857921019b75f4b8"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/protocol.md",
+      "bytes": 6121,
+      "sha256": "0c7004ce812ec19526c1f2bdb4084d46cb0a0fec0a519a8ef9e46eef9406e942",
+      "git_blob": "d0fea29bca575810addcf27d1a32b9a83ebccbc3"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/requirements.txt",
+      "bytes": 27,
+      "sha256": "1668a3152e33680d94637b13421c15e68bd97cd8701f7f555c691f5bc5c0b9f3",
+      "git_blob": "871c966c09f89af68c058514f0f7ecce9f1578d3"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/results/continuous_curvatures.csv",
+      "bytes": 24543,
+      "sha256": "f55ff679026b0a71c5f53b00b63fb07e41e5234e36091ddbb26e1686fa1e405a",
+      "git_blob": "8b8d5146a9c7ce1794002efdb758285f0a93dc71"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/results/continuous_floors.csv",
+      "bytes": 829,
+      "sha256": "725f99fa683f28cd8c73a781cff3ebda8e7f7dde9f8e6c0fda7c8043ccc10f1b",
+      "git_blob": "86108ec68bc90a158513ac199ed86a2e27c50af9"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/results/continuous_joint_tuple_checks.csv",
+      "bytes": 2043,
+      "sha256": "3de73a05bdb5ba6bbdb89316bb4940b41570e91594bb93b0a4ae1dc3d1515935",
+      "git_blob": "0fd273bc7e901b6bd67dbecfc943eb15f769beb7"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/results/continuous_summary.json",
+      "bytes": 3530,
+      "sha256": "72759b7d78f7572298612487d6aafc75aee536d2e48a23737b5a0c5f1089fb37",
+      "git_blob": "5edfb142d569521f667217a760111cdf9b8cad01"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/results/fixed_floor_predictions.csv",
+      "bytes": 2705,
+      "sha256": "2404b6e4482ae9752342103b7419b539a4d001153414a2bc9d888dd3cce05f98",
+      "git_blob": "a5e965d755cff4eb2ff26f2a2e67e98fa2180979"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/results/fixed_floor_summary.json",
+      "bytes": 6764,
+      "sha256": "481e5f76fdaff8d3b3958887475b0e09f1ef0ff368fcf54bae2c3574ee768142",
+      "git_blob": "631855cc09b485883e4ab84ce707ed10a6621abb"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/results/hypercube_checks.csv",
+      "bytes": 1470,
+      "sha256": "9d41066a2e30ba56ab57bcfb5ef1ea6b2e4ca87b66e54f633020c80a5165440d",
+      "git_blob": "5ac13703c82d5aea11bc2f9252fd2ee71f524283"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/results/hypercube_floors.csv",
+      "bytes": 7491,
+      "sha256": "04f78d3cd547661518e77838dd28f44eb1719f6460ed3e35a4b8efbb71ad3389",
+      "git_blob": "fd58b977a379e6fe91e3658da2da7cd7aaf06fbc"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/results/ordered_tuple_checks.csv",
+      "bytes": 4958,
+      "sha256": "f00232df87ad281b0377bbe27e3d730f38eae27a98046f668b4933d9f5a29b8e",
+      "git_blob": "3ec400cd0d1d1f713822b51222ba2bb4d29c87c5"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/results/random_curvatures.csv",
+      "bytes": 2203436,
+      "sha256": "adffd95f56064683761ccd4c6495ff94543239640579de53ab602c7125869562",
+      "git_blob": "cf8ad4db237510bb55a98ded1fad97abc2e739c0"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/results/summary.json",
+      "bytes": 393,
+      "sha256": "007be2b7313b4d0607e4175b31b7ba510cdc3b6e564718b0409e5710d65c50d5",
+      "git_blob": "e11b2ee93b69133d8c4117d69f71da1e9ae8f692"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/source_audit.md",
+      "bytes": 3678,
+      "sha256": "bc3600085fdbc1fec3bbd9bd89e1f19f2873aa52eddefb3ed01cca122bc4ff93",
+      "git_blob": "7ad65e99d0e9a5ca7525dc986f9e976e96498d71"
+    },
+    {
+      "path": "negative-feedback/round3/foundations/verify_multilevel.py",
+      "bytes": 6525,
+      "sha256": "f3ac1acd8e4fc71e309f2ce6bd379a7e4ad08542849c1ad2031336723f7fe81b",
+      "git_blob": "8fe0a550eed3c717092bab400665ff82b269eaa4"
+    },
+    {
+      "path": "negative-feedback/round3/initial_scope.md",
+      "bytes": 2584,
+      "sha256": "e2f140c20dd15ce1b29da4098d64a74626c40ac4461a466ddabe33d00bb6c131",
+      "git_blob": "69c107a5ce75bf67ee6bc17b862675f51c788d9e"
+    },
+    {
+      "path": "negative-feedback/round3/journal/README.md",
+      "bytes": 1663,
+      "sha256": "b7b371ea1bf8645c68834fe8c2508adf4a3ae32e5354958202400a43d6e38b97",
+      "git_blob": "c9743d0a2712aa702907991c3e25136d46bce35e"
+    },
+    {
+      "path": "negative-feedback/round3/journal/final_reassessment.md",
+      "bytes": 17028,
+      "sha256": "2eba3899f3245c1c8242ab6b43e8e3f5c64ce0ebd7b68f66eae2a9f62b31d1cd",
+      "git_blob": "a201e171a658be9e79c5c65dc83e39acb53a3d05"
+    },
+    {
+      "path": "negative-feedback/round3/journal/fixed_rubric.md",
+      "bytes": 4404,
+      "sha256": "0ccf60750c876b200a602107b1cd7e191d1db1bc9b771e975622f491b1659207",
+      "git_blob": "1e49c24685f55a4c277a8de3d2e63d8b0fa0178f"
+    },
+    {
+      "path": "negative-feedback/round3/journal/graph_extension_audit.md",
+      "bytes": 9521,
+      "sha256": "8881bba5adcb115169268d9f64e5ac77003ae49789028e4065193bfc184a6c00",
+      "git_blob": "0aa1819f6d30c1de55aa02c59e8c8b3c1e12b1dd"
+    },
+    {
+      "path": "negative-feedback/round3/journal/manuscript_audit.md",
+      "bytes": 4864,
+      "sha256": "50a7ab63023b70fa8f61d6fe466143efff976335aa74a8ee27dbb560463ad4cd",
+      "git_blob": "ce5c02ba5b7397b6a3ef0ee3824861bca4da057b"
+    },
+    {
+      "path": "negative-feedback/round3/journal/protocol.md",
+      "bytes": 3783,
+      "sha256": "788eccbfcb345e1a446d9592ba7f7709a35fbe2c26dbc2679edb0ab44b0dc6cb",
+      "git_blob": "03a2094f847929ee13b9560b0091ff7ee7e6b474"
+    },
+    {
+      "path": "negative-feedback/round3/journal/source_audit.md",
+      "bytes": 11019,
+      "sha256": "e62fe3fbfc45d9dc7cd423f025017b1cb9c75839f3eaef18a0e4ffae91e7581d",
+      "git_blob": "63361968994c9e0691365fe142f66cb92b625a13"
+    },
+    {
+      "path": "negative-feedback/round3/journal/zero_self_cycle_certificate.json",
+      "bytes": 576,
+      "sha256": "1d975e434041bcaffda3b681c402a80312e28ebcb7f61434f9102a8c860815a2",
+      "git_blob": "dbda515cd3ee10237f752a7660f3ba18e28d52d0"
+    },
+    {
+      "path": "negative-feedback/round3/journal/zero_self_cycle_certificate.py",
+      "bytes": 1494,
+      "sha256": "1932ef20bee156b270d2b0f0f0d4b425f13f26a08e2882b48928ebaa6ccfa4aa",
+      "git_blob": "43b8a3dea693e1b7cfb9270dda5f6b8171dad5ce"
+    },
+    {
+      "path": "negative-feedback/round3/manuscript.md",
+      "bytes": 29041,
+      "sha256": "49847958c9fa9720dff63f891fc4d3a7ee54a5d93ddd02460436366c312452b1",
+      "git_blob": "0039feb8a277273d2cccdffe622f3de716fb43ee"
+    },
+    {
+      "path": "negative-feedback/round3/neural/README.md",
+      "bytes": 3927,
+      "sha256": "6234fc9834ea57923ec3f9a397a21c6277832cd483b4410ebabaf8f05afca832",
+      "git_blob": "c9e2ca0cf47350c6a3312953059100866c28ee4c"
+    },
+    {
+      "path": "negative-feedback/round3/neural/certify_mixing.py",
+      "bytes": 1504,
+      "sha256": "78e7ad52f2d78221728bd11c7aed06269693e7627542ba1f92ed1e74157365a4",
+      "git_blob": "2c68f43c059a5fb62ba5451da313fb8f8b87124c"
+    },
+    {
+      "path": "negative-feedback/round3/neural/check_parameter_gradient.py",
+      "bytes": 1747,
+      "sha256": "3a07b9d335731c13b7b46faa9b082b029a309949561ac63e273db1bafa65794a",
+      "git_blob": "9f0bb760541738dc1ef0d059d84684c517213557"
+    },
+    {
+      "path": "negative-feedback/round3/neural/cycle_no_self.py",
+      "bytes": 3064,
+      "sha256": "ba627e3ebe46b422f78e14d76589cbcd5a37e838b61b41f1a8dce34cf7cbe6b2",
+      "git_blob": "4a77c2777dd756d802a49c00ef320215843e0647"
+    },
+    {
+      "path": "negative-feedback/round3/neural/figures/count_graph_window.pdf",
+      "bytes": 24794,
+      "sha256": "f2c94ba9becd4778012953642daec97b3df865ed11fbd786db73b6147c55e16b",
+      "git_blob": "5848b489ee721c99d90b9b6de1a9ca8eb45f3054"
+    },
+    {
+      "path": "negative-feedback/round3/neural/figures/count_graph_window.png",
+      "bytes": 140498,
+      "sha256": "84b67d960cf0dc95faa1b9939e66d0fa0e05a6ac68107bd33dc5255d092c6bc2",
+      "git_blob": "97395bb5546c145ed37727c1dc541a8ce6264a5d"
+    },
+    {
+      "path": "negative-feedback/round3/neural/figures/neural_window_modes.pdf",
+      "bytes": 22595,
+      "sha256": "768b1e99e30a448373b3ae2a3919611ac42c174bd3dcf68f5908ec8fc5028333",
+      "git_blob": "de7d5eb9ddba993c84bda923bbe7518a98d7e123"
+    },
+    {
+      "path": "negative-feedback/round3/neural/figures/neural_window_modes.png",
+      "bytes": 87601,
+      "sha256": "67e8bf49b0413b5ab7749a74381ff291f210ae01c5df7fa855d376fe8d394c5b",
+      "git_blob": "935afbc2b762bb61148e05796a7c8bd57b09b527"
+    },
+    {
+      "path": "negative-feedback/round3/neural/figures/ordinary_scope_limit.pdf",
+      "bytes": 21094,
+      "sha256": "600f55692c4430cbeafcce7e75e0938120b84a5e43747d20d601a3849c6a34ac",
+      "git_blob": "f4b220c4ccd1520a895be938e79b61b6db93c174"
+    },
+    {
+      "path": "negative-feedback/round3/neural/figures/ordinary_scope_limit.png",
+      "bytes": 107233,
+      "sha256": "8a0f99b7c33d9b88d9c7ae843a45a168c8643e434ab6e34e2b4d981bee00f10d",
+      "git_blob": "642cf8feecff19cd09811c921d45a9484fb87b1b"
+    },
+    {
+      "path": "negative-feedback/round3/neural/graph_check.py",
+      "bytes": 1830,
+      "sha256": "790db796b5856e6876139f719d4149706b005c24dee277bf6feaf45dfee98ae4",
+      "git_blob": "6e8e2c0d9912ba4d51f4cc1665cecac1d1101724"
+    },
+    {
+      "path": "negative-feedback/round3/neural/mixing.py",
+      "bytes": 2705,
+      "sha256": "e882ca5fbcddfd8e5548a6b552583962d7f90fcc8de5b83112443a522f541800",
+      "git_blob": "e7a848eec0eb7e375d5a46b2129fc1d6ebc5561e"
+    },
+    {
+      "path": "negative-feedback/round3/neural/model.py",
+      "bytes": 2744,
+      "sha256": "40eb19129048c6a576a32518d3aed1148d1f7b0d288d1fb17561afe55a158b63",
+      "git_blob": "b5670f9e40c30b0fcb705b752db8214cccceaf9d"
+    },
+    {
+      "path": "negative-feedback/round3/neural/oracle.py",
+      "bytes": 2265,
+      "sha256": "2bef3a0453bda2e9964734b1549a6a4c887a28542ffc52b3e7bb44106607b5e2",
+      "git_blob": "b447a2a191f8dff8cc5e449b94bc4cf6b5507138"
+    },
+    {
+      "path": "negative-feedback/round3/neural/ordinary_warmup.py",
+      "bytes": 2690,
+      "sha256": "79868afc6b6248c7e9c6c25fe788b9a3568e6e4df2ab056b80ecc23d6cdc5384",
+      "git_blob": "d4af7189dd73598be34b7be06f529293c49a94e6"
+    },
+    {
+      "path": "negative-feedback/round3/neural/ordinary_weak_positive.py",
+      "bytes": 2932,
+      "sha256": "f572aec18438de3e78101167894d59319c476914fc19bc9f831e51c4e5c5119c",
+      "git_blob": "375d8efc0c49e6d1c958c97e75de2d59fef1e2e0"
+    },
+    {
+      "path": "negative-feedback/round3/neural/plot_results.py",
+      "bytes": 4472,
+      "sha256": "dca87a267ad6b63b1f6af37022f430ffaf1b2bc0033dbe0783b49f47739e361d",
+      "git_blob": "9e658ad124968b1792f3995e5e2a86f2c0778d3b"
+    },
+    {
+      "path": "negative-feedback/round3/neural/progress.md",
+      "bytes": 5544,
+      "sha256": "f5c4537aa828a9af2c8cc132673aaa0cd709648c54ef43aec8e27ccb1f4c43f0",
+      "git_blob": "2fa136c680f2ffaad5d77675077d4335ba2dfe1f"
+    },
+    {
+      "path": "negative-feedback/round3/neural/protocol.md",
+      "bytes": 13807,
+      "sha256": "76ba3e98869da379afa39064b3eb2e11c99577c9064e74b32e7adcd2825d9527",
+      "git_blob": "8a43c90fe73cce5f33b3965cce9b8c7f5a3b75b9"
+    },
+    {
+      "path": "negative-feedback/round3/neural/reproduction.md",
+      "bytes": 4969,
+      "sha256": "5ab80c1a052a4e4fd1010396aed219064344ff0ec4c7dd36603d59ab02b13a5e",
+      "git_blob": "1e58afc41f482d7ffe2b3e042ee8b339b7f90d96"
+    },
+    {
+      "path": "negative-feedback/round3/neural/requirements.txt",
+      "bytes": 46,
+      "sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197",
+      "git_blob": "471f776f67541bcaadd042782a1c0a438d0009f3"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/cycle_no_self.json",
+      "bytes": 7335,
+      "sha256": "9f80adc9ac6898dea6ad74a8ab6b3156e865d2730b7aad1fead8704776a61fe8",
+      "git_blob": "d7a478e0bcc6a2de9378a56088704a661427bb84"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/environment.json",
+      "bytes": 384,
+      "sha256": "296618c8a00de30f6d57c07c228f3ad60800ff6dbd3280c21fda2e11a434b9a2",
+      "git_blob": "6a9e24d4d7d9a31f48610d1eef842e188a07a3a7"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/graph_fd.csv",
+      "bytes": 815,
+      "sha256": "2cd83a03f2939ce834a0c921b51e51e9d17f97f63c932089dbffdbdbf3ed9084",
+      "git_blob": "859dae29abbcda86ff097d57b4930ccd5b30c30a"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/graph_summary.json",
+      "bytes": 2819,
+      "sha256": "415fdf56761712cd8f8a1834d50486090c0fc390050cda612123ff2596070553",
+      "git_blob": "db8b11ed7aebb275307c34854932485a499eb84a"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/mixing_curve.csv",
+      "bytes": 119157,
+      "sha256": "b5e2ba7b68a4b154c1ff2bb0c24e5b849066255469ba69c93a3cfb8ed82ee93d",
+      "git_blob": "5db3c887b6bc36d94614e8b953ba43b8fba0c113"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/mixing_fd.csv",
+      "bytes": 1195,
+      "sha256": "d3be731d07a6127d493ea4764bde6f1f87f40279f14ea722c57c68395afcc918",
+      "git_blob": "3f4a25a1ad9fb64f94f44b36d6d648fbf0c79a5f"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/mixing_interval_certificate.json",
+      "bytes": 2053,
+      "sha256": "0e5c283ba3c97bbbe172860845ef0b03218e5349f5df8afeb1b931256a7e4855",
+      "git_blob": "b749f3877be469575123bb7681fcd4ac9983ef3c"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/mixing_summary.json",
+      "bytes": 8132,
+      "sha256": "17e83139d68697a3e70e16f6326844e54d041a9662ddc2ac7dc130106fbb7e34",
+      "git_blob": "f95f5e8276f4351385acb2403498eb42f94de160"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/oracle_validation.json",
+      "bytes": 3219,
+      "sha256": "ad21a6f8dee978a773bd6e0e1034f0c6332064664cea45384a5ce0ba5d409db0",
+      "git_blob": "43d63eb08ce757608073b30b6489a83f221d6d43"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/ordinary_final_embeddings.json",
+      "bytes": 74344,
+      "sha256": "5e0d1f8a5600451370948eab4e85c1d525615a285934c411d03a9d7438e538eb",
+      "git_blob": "463ba34bef46fdb59ded8c2f8f9fe6584b151cb3"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/ordinary_runs.csv",
+      "bytes": 5331,
+      "sha256": "ff6e80d44f538e949344c7fd74dcef5fdb55b2f88eba5a50e4fb71700d827f34",
+      "git_blob": "db128b8dfb90109aca168e2950e008e2d89362a8"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/ordinary_summary.json",
+      "bytes": 17843,
+      "sha256": "a63ea182a5d9b9ba79d629400386c6155fe829b5eee011f1c09097ea53c3255c",
+      "git_blob": "26183d72f16d6da2e382505f7f695199074584b1"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/ordinary_traces.csv",
+      "bytes": 22010,
+      "sha256": "5f35e639c26f28ecad03fa94173514ca0a1a0c72bf81d4431c541642e33545c0",
+      "git_blob": "cbe73c030843b6af5518d3a952a20964e907b531"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/parameter_final_embeddings.json",
+      "bytes": 42037,
+      "sha256": "cc275ec71f810bb2e3c6d783dff22eb878957d97952f8b57777519e2d7d42d61",
+      "git_blob": "b557414639e886651fb1a84861e0e7e1a027964a"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/parameter_gradient_check.json",
+      "bytes": 6392,
+      "sha256": "7d5b018655904852135bbfeddb487ff7c50e80a0179aec9aaa3051651a01aba5",
+      "git_blob": "18ded60d8ade198191278788a2d8fbb8c69391f4"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/parameter_spectrum.csv",
+      "bytes": 1116,
+      "sha256": "1b8836a176eb173fb71dfb0615a9e5d7aec8d6a856b78f9460ef7b55e8cad59d",
+      "git_blob": "1798230e0b88d97b7549e607342606e708719b9f"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/parameter_summary.json",
+      "bytes": 6149,
+      "sha256": "bd38ba08e9411d769bae56bacc93bd9ef2005935a11422fa55979b971bd862b7",
+      "git_blob": "3b121be84a6e5c1387390598d9899c19ea505d6d"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/parameter_trajectories.csv",
+      "bytes": 10954,
+      "sha256": "40e3adc7eb5f2bed72864c74137dd9d388ea3906684ec28663142e422fba24e3",
+      "git_blob": "bcc17aece6193df69d3ac9138625c46808ec810e"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/standard_ode_check.json",
+      "bytes": 684,
+      "sha256": "925eb6b2c24cbe18d7d4fe62304954e52bf356f525f441ac5206ae7ec444cb83",
+      "git_blob": "b7dbd3cd9b4fd0ffff01b90e86ab39f2b5cc8e7b"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/view_spectrum.csv",
+      "bytes": 4972,
+      "sha256": "61c78bccf42c03bf50a341404138976cc578df93c932e90cbfa897fed82158fe",
+      "git_blob": "495586a2df95bcb57eddc24173e33e55fdf6a72d"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/view_spectrum.json",
+      "bytes": 12762,
+      "sha256": "7b321d99c408f4ac5defeca5fea9666b316efcb8b7f139c242e4f3397e66850a",
+      "git_blob": "dbaaa264ce05d17d4874b330d9a1fafd47f25c5d"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/weak_ordinary_final_embeddings.json",
+      "bytes": 57813,
+      "sha256": "8267e5a0f42ba1cad2120ad7c397abccc202b86d82b2433fda872bcc81d97a2a",
+      "git_blob": "b046cae2d8d128365f2319721dcccfa857f6f65a"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/weak_ordinary_runs.csv",
+      "bytes": 3980,
+      "sha256": "9c90277a7fca54a67072ac08db944940bb38cc49dac2bc593cf2c89881da3b59",
+      "git_blob": "ba84febc6b7f3d8cfe2dfe8e633ee487eb2a00ce"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/weak_ordinary_summary.json",
+      "bytes": 14496,
+      "sha256": "c36bb53394117f1c1a7ee466e52ca873aa6e4d5114742685fa7508a9beb4c74f",
+      "git_blob": "9889de6851c9379af540c453d25977fd1a766565"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/weak_ordinary_traces.csv",
+      "bytes": 16894,
+      "sha256": "68de68abad6460933e5db15cd7f1a0a5ce5fc2984b92611e9243bc72e20837f1",
+      "git_blob": "00841ab3cc65bc8c85e58a6185a8dfe5e5d52b71"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/window_parameter_embeddings.json",
+      "bytes": 63013,
+      "sha256": "1c14c65a62d713cb7edf6eb196b9a7a721f99539ea64afc3d4e8ad613726bcb3",
+      "git_blob": "a44dc0006d405c7af36df0698182e17e46ce2153"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/window_parameter_spectrum.csv",
+      "bytes": 1721,
+      "sha256": "40c073eb93acff2cb108c80c2cb318e47bb7f737cd33ab780e0a8faee6abb042",
+      "git_blob": "c13ffde144d9b032c973e5d490becc395fed7548"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/window_parameter_summary.json",
+      "bytes": 4044,
+      "sha256": "e0e0aa8543a6cd20084f3598281381b0f12171784712b53cc873fb76dbb362d6",
+      "git_blob": "a2f53db9d627b58f5d2cc12735d4ccffed06b58f"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results/window_parameter_trajectories.csv",
+      "bytes": 13057,
+      "sha256": "ad45ae339c5f093638465154a3508cb6974135ff4af78233d085e96a4ce76c07",
+      "git_blob": "867fcaa823a59d9a80579ff8f06ea4fa8b211c62"
+    },
+    {
+      "path": "negative-feedback/round3/neural/results.md",
+      "bytes": 16476,
+      "sha256": "7d6f5e24badac6f9df3b4bff7894416bf471ca2fb0772edfc28bfb51af3cb3c1",
+      "git_blob": "181b98595e8cff590b4d29c1b0cf6c060de8fac3"
+    },
+    {
+      "path": "negative-feedback/round3/neural/shared_parameter.py",
+      "bytes": 4768,
+      "sha256": "bd8ef27a47b44ae25fde8bcd93760ab1aedbaaf69f49d7f9ff51955e30ad13c8",
+      "git_blob": "c7d9dfa4d7e019d206a7d3a9bfefbb39209463b1"
+    },
+    {
+      "path": "negative-feedback/round3/neural/standard_ode_check.py",
+      "bytes": 1879,
+      "sha256": "c7fadcb0c52ee1a140de6f08e10119b3f602c7c9b8ce5844def700adf3bf8364",
+      "git_blob": "fe04ed779d1367a8b63956ba302859df72225bc2"
+    },
+    {
+      "path": "negative-feedback/round3/neural/validate_oracle.py",
+      "bytes": 1384,
+      "sha256": "e599320f934ffd005f80fee92d89d0af2833861e8acdb372cec35e3fdbb53356",
+      "git_blob": "6959b82da709533ea796ffbc1f5239f30ddc4e9e"
+    },
+    {
+      "path": "negative-feedback/round3/neural/view_spectrum.py",
+      "bytes": 3144,
+      "sha256": "cfd3b95f0594581bad73585e10472b338c519984e0ce6ef5447816ad50d96525",
+      "git_blob": "d4b5b46a86e5c30551563fa279de4f7ceead73cb"
+    },
+    {
+      "path": "negative-feedback/round3/neural/view_theorem.md",
+      "bytes": 12635,
+      "sha256": "7e87efa7c37c1adf486ae5765b5c944d65ec9aa06fbe9d16124d94e9943ae9a0",
+      "git_blob": "d40d18a86ec2d07f13b4676c96568eea660983db"
+    },
+    {
+      "path": "negative-feedback/round3/neural/window_parameter.py",
+      "bytes": 4340,
+      "sha256": "89201b29f4ab9a4da00fb889efec250160cdb3cfea5fd5ddb6540cf5aabc1cdc",
+      "git_blob": "3a87cc28973da00f9a77d0ef7dad6708e837ef0c"
+    },
+    {
+      "path": "negative-feedback/round3/progress.md",
+      "bytes": 5481,
+      "sha256": "920db29202157325b73d57b6413b43e0cc586b68a4de07f8ba7939ab64b48c09",
+      "git_blob": "e45ca573ac099ec8ea702d5562ada8044ba1af7f"
+    },
+    {
+      "path": "negative-feedback/round3/qa.json",
+      "bytes": 205,
+      "sha256": "b060a7418216d60e98b30788d1944b96e1ef46bd1720b013e2af7b22fc8f22d1",
+      "git_blob": "0d446915ba281992d457d866f39d0c5c3a12b47c"
+    },
+    {
+      "path": "negative-feedback/round3/references.md",
+      "bytes": 5966,
+      "sha256": "f2f2b660804c532323e7d3bed843e845bd8074dd68b14a457c475136d98cc972",
+      "git_blob": "d82c1386cd33654c7b25b751a729ed93987be32a"
+    },
+    {
+      "path": "negative-feedback/round3/report_ko.md",
+      "bytes": 19037,
+      "sha256": "c96226225fd738a4272bb631ef97f5336ab32cba8721344975a9fdd376ac6442",
+      "git_blob": "abc442ee1b9c4c948b0f379aff99233f81e01c34"
+    },
+    {
+      "path": "negative-feedback/round3/reproduction.md",
+      "bytes": 6012,
+      "sha256": "f5908cce9ba8354edc23172af254de846c686e86b04f85b44411497e42e516c4",
+      "git_blob": "0b50e517fd0bb60628e65d6f9d6543fd7b612758"
+    },
+    {
+      "path": "negative-feedback/round3/requirements.txt",
+      "bytes": 46,
+      "sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197",
+      "git_blob": "471f776f67541bcaadd042782a1c0a438d0009f3"
+    },
+    {
+      "path": "negative-feedback/round3/review/README.md",
+      "bytes": 2796,
+      "sha256": "a73290c05418f2121d7005b4208647e3b8b98e32e22502d2458a01b168082323",
+      "git_blob": "b242a8c734c9b46606e0f9342473527b4e4629d7"
+    },
+    {
+      "path": "negative-feedback/round3/review/anchor_mixture_check.json",
+      "bytes": 248,
+      "sha256": "4e871263a0f1570f95ef474b8f5dbb9bdf2faff93ff268945cac64f273a543d7",
+      "git_blob": "ab18189b505e065b8c777bdccb3d44d92958aa4c"
+    },
+    {
+      "path": "negative-feedback/round3/review/anchor_mixture_check.py",
+      "bytes": 4945,
+      "sha256": "e278c36e9a12eb658a6c9dfa01b3b056b9556d3c4260fd6a5b3330c4286a0cec",
+      "git_blob": "730f5e812e343179a16305bfec31b030e5b35c83"
+    },
+    {
+      "path": "negative-feedback/round3/review/coarse_endpoint_audit.md",
+      "bytes": 2612,
+      "sha256": "5a2d9fee4611c61c58a3ee12555475b29b7eafb35abf5a5c33d0292d51e8ecd8",
+      "git_blob": "839aa75586f61398becee44d49537d1a8d34037a"
+    },
+    {
+      "path": "negative-feedback/round3/review/correlation_check.json",
+      "bytes": 839,
+      "sha256": "be33b561d5b64de6b42532216844a9c1bbf9f0a04ef60b2bba6fdc293f06f5c3",
+      "git_blob": "3779abd938863c35cea20ec1a075f4ae096e3654"
+    },
+    {
+      "path": "negative-feedback/round3/review/correlation_check.py",
+      "bytes": 1712,
+      "sha256": "bd86f4d67dc37ccbfc4f6c8b59bd70fe17206fa13e46f550eff2581dda9f7340",
+      "git_blob": "d1af8baf9300a54766007d948dfa72f673b0f9a6"
+    },
+    {
+      "path": "negative-feedback/round3/review/cycle20_certificate_check.json",
+      "bytes": 1595,
+      "sha256": "ce9a54f6cf56932ca89845ce6cf59bbe4477fef646d5d732a105e7ff03c94f5c",
+      "git_blob": "29bda36a727106f2f0b13941cf2f9ab8abfe696c"
+    },
+    {
+      "path": "negative-feedback/round3/review/cycle20_certificate_check.py",
+      "bytes": 1998,
+      "sha256": "38b67adeb137035a25e531e923ed1fddbc57d7bebfea681c165a5a8cbd4c83cd",
+      "git_blob": "39bd0bf497255a18d61ecac549ed40b2547669bd"
+    },
+    {
+      "path": "negative-feedback/round3/review/endpoint_check.json",
+      "bytes": 1646,
+      "sha256": "089d7418ef7ddfaf52f118a91fd08ba15190ac88d45e012eb47fc32284283916",
+      "git_blob": "e7d990c307704faef0fdd4fbb9f5c32942870c46"
+    },
+    {
+      "path": "negative-feedback/round3/review/endpoint_check.py",
+      "bytes": 2149,
+      "sha256": "eaed9735139815dbc9ae6f7f8539c36a767fe709fb80c3fca9f34ccf6e0cdd91",
+      "git_blob": "ec352c98b8fcf966bf31e02e031495ce54776070"
+    },
+    {
+      "path": "negative-feedback/round3/review/final_review.md",
+      "bytes": 17683,
+      "sha256": "ca934d1ca6d6d62dea171adc9efffa80e3b75178e7d6a73fc6460be923f65911",
+      "git_blob": "a333602348a0e6870e5b4bdd8741e7e0aed3db3e"
+    },
+    {
+      "path": "negative-feedback/round3/review/initial_critique.md",
+      "bytes": 3240,
+      "sha256": "5986cc38651fcb06c0b442a42b017bfc7a68ecb6bfb13bc79b3ccf3fb7191dd3",
+      "git_blob": "831d97fb7741a3b33df83b4f7d25102fb5ae1bd7"
+    },
+    {
+      "path": "negative-feedback/round3/review/multilevel_proof_audit.md",
+      "bytes": 7515,
+      "sha256": "516c003af2fb4047e57d8a39fd2fba2b122bc848e6d6c6e3ce34116400054e37",
+      "git_blob": "70af4191ce8a4b1223f54ff262cd1d12ae5739d8"
+    },
+    {
+      "path": "negative-feedback/round3/review/pre_manuscript_verdict.md",
+      "bytes": 6853,
+      "sha256": "9793812fdea9bb458bf17f3102f0e3328090a946d178bc8ca76a969d88a741b1",
+      "git_blob": "8ea8ab9f4e039f5eb61f416f38e49b78a0b70f4f"
+    },
+    {
+      "path": "negative-feedback/round3/review/protocol.md",
+      "bytes": 6706,
+      "sha256": "75aa21de23c6004e57064b3da6b7bcab27bf5451331495bfa560859459ab94e5",
+      "git_blob": "214a46c14d2d90b801954fbcd08229f66fbdc3e3"
+    },
+    {
+      "path": "negative-feedback/round3/review/source_audit.md",
+      "bytes": 13456,
+      "sha256": "740eef0faaaec6a44d05cd881531604bcfbb3876dcb9226b47f8618b52dcabcc",
+      "git_blob": "008910652317a1c3c544901d7ae59f97613f7f71"
+    },
+    {
+      "path": "negative-feedback/round3/review/standard_ode_recheck.json",
+      "bytes": 685,
+      "sha256": "72c35b142f917f37e5607a17f78f5b79ffcc3e65f18c9441a51e258b896707e3",
+      "git_blob": "3f1cb73b33339694183a013184ff3eed01ef615c"
+    },
+    {
+      "path": "negative-feedback/round3/review/standard_ode_recheck.py",
+      "bytes": 601,
+      "sha256": "090a1899777b3536bac30e4881a62604853245ffd9993fdb2385f9ffae30f0cb",
+      "git_blob": "235e0f56cd0b2b865741757af0305d4e8c99b341"
+    },
+    {
+      "path": "negative-feedback/round3/review/window_certificate_check.json",
+      "bytes": 3534,
+      "sha256": "ab78c7a91ea18257215b982188118cdcd8317b4aa0b1d4c0322eef4b0e23693c",
+      "git_blob": "bc35965811ce6d38a33db404b42996fc1e508a05"
+    },
+    {
+      "path": "negative-feedback/round3/review/window_certificate_check.py",
+      "bytes": 3669,
+      "sha256": "b268b67dac576f83b64a0a9c75e0f347000054aa233f54dc02e0baa451d1558c",
+      "git_blob": "f50018669452b376dfeb3e26a9c071b8f717bea7"
+    },
+    {
+      "path": "negative-feedback/round3/review/window_proof_audit.md",
+      "bytes": 8508,
+      "sha256": "d675a93c4d3728104ddef1bc01266b28df770d9e9c27da8abd6861eec77758d4",
+      "git_blob": "1cf824a379cea95471d4536fe3163b80f101a278"
+    }
+  ]
+}

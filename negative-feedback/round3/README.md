@@ -1,26 +1,31 @@
-# 최상위 학술지 기준의 비판적 재검증
+# Negative count와 학습 피드백 — 최상위 기준 재검증
 
-시작:2026-10-22(KST). 상태: 조사·분석·실험 중. 이전 round2의 ‘진행’ 판정과 ‘핵심 결과 확보’는 최상위 학술지급 기여의50%를 입증한 판정으로 받아들이지 않는다. 수학적으로 참인 제한 모형의 결과와 중요한 논문 기여를 별도로 심사한다.
+**최종 판정: 목표 도달 — 검증된 수정 방향의 국소 population 이론 논문으로 진행.** 2026-10-22. 이는 JMLR를 비교 대상으로 고정한 핵심 기여 확보 판정이며, 채택 보장·일반 학습 성능·정보 소실 논문에 대한 판정이 아니다.
 
-## 작업 전에 고정한 목표
+[한국어 최종보고](report_ko.md) · [실제 결과 기반 논문 원고](manuscript.md) · [재현 안내](reproduction.md) · [연구 기록](progress.md)
 
-Primary target은 JMLR의 일반 머신러닝·학습 이론 독자다. TPAMI는 실제 visual representation/SSL로의 연결이 확보되는 경우에만 secondary 후보이며, 결과가 약하다고 TMLR나 학회 논문으로 준거를 낮추지 않는다. Journal 담당이 최근 실제 게재 원문4편의 기여 크기와 증거를 비교하고 고정 rubric을 보완한다. 그 과정은 현재 개선 결과를 보기 전에 수행한다.
+## 새로 확보한 중심 기여
 
-핵심 문턱은 다음이다. 신규성과 중요성은 정확성이나 검산 횟수로 상쇄하지 않는다.
+1. Bounded finite/continuous exchange-balanced score direction에서, **어떤 유한 negative 수라도 안정화할 수 있는지**의 필요충분조건과 count에 따른 no-reentry를 증명했다.
+2. 일반 stationary score-regular geometry의 normal-view 유지에 필요한 positive graph gap은 count와 함께 엄격히 증가함을 증명했다. 이 상한 기전은 frozen에도 존재한다.
+3. 전체 square/view spectrum에서 두 조건이 합쳐지는 정확한 안정 구간을 도출·독립 인증했다. 자연 정책의 사례는 **K5..11**이며, 자기 positive가 전혀 없는20-cycle에서도 성립한다.
+4. 동일 joint-K shared MLP의 국소 flow를 실제 실행해 같은 모드 예측을 검사했다. 구성된 평형점 검증이며 일반 학습 방문 증거는 아니다.
 
-1. 기존 PP/robust weighting/finite-negative curvature를 아는 독자가 독립적이고 비자명한 구조를 새로 배운다.
-2. 그 구조가 어떤 연구 판단을 바꾸는지 명시한다. 네 상태의 새 식이 존재한다는 것만으로 통과하지 않는다.
-3. 실제 중심 명제가 증명 또는 실험으로 존재하고, 이론과 실험이 같은 정량적 질문을 검사한다.
-4. 식별한 치명적 반론과 가정 의존성을 이번에 직접 검사한다.
-5. 적용 범위를 좁힌 뒤에도 JMLR급 독자에게 중요한 기여가 남는다.
-6. 남은 일에 중심 가설의 미검증이 숨어 있지 않다.
+## 반박된 해석과 보존한 실패
 
-## 분리된 연구와 심사
+원래 K4/5 경계는 의미 정보 소실 경계가 아니다. K4의 안정 endpoint는 injective하며 약한 요인 에너지는.46914다. 원래 ordinary warmup과 새 weak-positive scope arm은 모두 적용성0/3이었다. 이 실패를 exact-window 확인으로 세지 않는다. Generic geometry/global learning/실전 filtering cutoff는 현재 주장 밖이다.
 
-- `journal/`: 실제 최상위 게재 논문·고정 기준·기여 크기 비교.
-- `foundations/`: square 밖 일반화, 알려진 이론으로의 환원, 반례와 새 구조 분석.
-- `neural/`: joint-K 목적에서 shared encoder가 이론과 같은 예측을 따르는지 실제 실행.
-- `endpoints/`: root의 nonlinear stationary branch·endpoint·task consequence 분석.
-- `review/`: 별도 검토자가 중요성·신규성·연결성을 공격하고 개선 후6항목을 재심.
+## 근거를 직접 확인할 경로
 
-처음부터 검증할 치명적 질문은 balanced square 불안정성이 실제로 해로운가, 다른 injective geometry로 이동할 뿐인가, joint-K neural 실험은 같은 중심 예측을 지지하는가, exact symmetry/identity positives/four states가 결과를 만드는가다. 반박된 가설과 실패한 기준은 보존한다. 최종 판정은 목표 도달/추가 핵심 연구 필요/중단 권고 중 하나다.
+| 자료 | 내용 |
+|---|---|
+| [foundations](foundations/README.md) | 일반·연속 정리, analytic floor, arbitrary stationary geometry normal block |
+| [neural](neural/README.md) | 전체 view spectrum, 실제 joint-K MLP, exact certificates, ordinary 실패 |
+| [endpoints](endpoints/README.md) | 원래 의미 소실 해석의 반박과 coarse attractor의 별도 국소 결과 |
+| [correlation](correlation/README.md) | Pair law/unique-set law만으로 iid law를 확장할 수 없는 반례 |
+| [journal](journal/README.md) | 작업 전 고정한 JMLR bar, 실제 게재5편 원문 비교, 최근2026 원문 대조 |
+| [review](review/README.md) | 독립 증명·코드·유리수 인증·최종6gate 재심 |
+
+작성 담당과 검토 담당을 분리했다. [최초 비판](review/initial_critique.md), [원고 전 반대판정](review/pre_manuscript_verdict.md), [최종 재심](review/final_review.md)을 모두 보존했다. 판정 변경의 근거는 더 많은 문서/seed나 담당자의 동의가 아니라, 네 상태 계산을 넘어선 sharp all-count 분류와 반대 spectral 제약의 실제 증명이다.
+
+[초기 작업 규약](initial_scope.md)과 [고정 평가 기준](journal/fixed_rubric.md)은 결과에 맞춰 목표를 낮추지 않았는지 확인하는 자료다. 이전 단계 결과는 [round2](../round2/README.md)에 보존한다.

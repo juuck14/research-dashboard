@@ -1,0 +1,39 @@
+{
+  "positive_graph": "simple cycle on20 views per class, neighbor weights1/2",
+  "positive_self_probability": 0,
+  "gap": {
+    "lower_display": "0.04894348370484642788356066662061785659430136587424977755",
+    "upper_display": "0.04894348370484642788356066662061785659430136587424977755",
+    "exact_width_float": 2.5e-81
+  },
+  "rows": [
+    {
+      "K": 11,
+      "xi": {
+        "lower_display": "0.04853516089345359375203941506949777883494491204327306262",
+        "upper_display": "0.04853516089345359375203941506949777883494491204327306262",
+        "exact_width_float": 4.151527796690244e-103
+      },
+      "cycle_gap_minus_xi": {
+        "lower_display": "0.0004083228113928341315212515511200777593564538309767149360",
+        "upper_display": "0.0004083228113928341315212515511200777593564538309767149360",
+        "exact_width_float": 2.5e-81
+      }
+    },
+    {
+      "K": 12,
+      "xi": {
+        "lower_display": "0.05201103415789361044240317339185714756427247572432955549",
+        "upper_display": "0.05201103415789361044240317339185714756427247572432955549",
+        "exact_width_float": 4.2059297919822165e-103
+      },
+      "cycle_gap_minus_xi": {
+        "lower_display": "-0.003067550453047182558842506771239290969971109850079777934",
+        "upper_display": "-0.003067550453047182558842506771239290969971109850079777934",
+        "exact_width_float": 2.5e-81
+      }
+    }
+  ],
+  "passed": true,
+  "scope": "With previously certified lower boundary and the two monotonicity proofs, the exact full window remains K5..11. This is not a new graph spectral principle."
+}

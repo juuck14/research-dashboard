@@ -118,6 +118,16 @@ Consequently the full square is stable **exactly for K5,...,11**. K≥12 is unst
 
 This window combines two mechanisms: low-K factor imbalance caused by the adaptive response, and high-K failure of view invariance shared by its matched-frozen objective. It is not a claim that one feedback instability changes sign twice. Nor is it a theorem about lost semantic information: an unstable view mode can encode more nuisance information, while a mild factor imbalance can remain fully injective.
 
+### Zero-self-loop positive-graph corollary
+
+The window does not require a channel that returns the identical observation with probability.95. Let each class have20views and let P be the simple undirected20-cycle: each view selects either distinct neighbor with probability1/2 and P_rr=0. This symmetric connected channel has algebraic gap
+
+`gamma=1−cos(pi/10)=1−sqrt(10+2sqrt5)/4=.04894348370484647...`.
+
+The journal task's independent [exact radical certificate](../journal/zero_self_cycle_certificate.json),[certificate code](../journal/zero_self_cycle_certificate.py) bounds this gap in(.0489,.0490), strictly between the outward xi11 and xi12 intervals. Consequently the same theorem gives **adaptive full stability exactly K5–11**, while the matched frozen square is stable K1–11 and has the same upper instability. Periodicity of the even cycle is immaterial because the condition uses the algebraic Dirichlet gap, not an absolute-value mixing rate.
+
+This is an analytically selected corollary, not a newly sampled held-out graph. A separate N80,d8 joint-oracle directional finite-difference check was declared before execution. At K11 the selected normal eigenvalue is+7.815652247e-6; at K12 it is−5.992421405e-5. Frozen/adaptive actual derivatives agree with the predicted eigenvector, maximum residual8.40e-12 and Rayleigh relative error1.03e-6. The full 560-dimensional **analytic** spectrum has0negative modes at K11 and 48at K12 for both policies, plus 13 rotation zeros. No full numeric560D Jacobian was computed. [Raw results](results/cycle_no_self.json),[code](cycle_no_self.py).
+
 ## 6. Executed tests and present scope
 
 - Direct multinomial4-state loss/gradient versus Laplace quadrature: value discrepancy≤2.49e-14,gradient≤5.97e-15; fixed-q finite-difference value gradient≤3.01e-10.

@@ -1,4 +1,4 @@
-# 実行 기록 / research progress
+# 실행 기록 / research progress
 
 2026-10-22. 모든 단계의 구분은 외부 원문 / 직접 증명 / 직접 실행 / 미검증 해석이다. 최상위 기여의 판정은 정리의 정확성과 별도다.
 
@@ -31,3 +31,17 @@
 **해석:** pairwise ESS나 unique-set 분포만으로 iid count law를 확장할 수 없다. slope는 두 threshold 사이에 놓도록 구성한 반례이며, 별도 무작위 확인 결과라고 표현하지 않는다. nonlinear denominator에서 higher-order dependence가 중요할 수 있다는 일반 원리는 기존 지식이므로 보조 결과로 둔다.
 
 **다음 판단:** 통합 원고에 중심 결과와 실패 범위를 연결하고, 작성 담당과 분리된 두 검토가 고정 6gate를 재적용한다. 핵심 gate가 미충족이면 50% 도달을 선언하지 않는다.
+
+## R3-4 — 강한 가정 공격과 최종 재심
+
+**실행:** 자기 positive가 전혀 없는20-cycle, 각class20views에서 exact gap과 K11/12의 관계를 유리수로 인증했다. 별도 reviewer가 프로젝트 과학코드 없이 인증을 재구현했고, N80 direct normal gradient도 실행했다. 완성된 arbitrary symmetric-P spectrum의 따름정리이며, 새로운80-node network학습으로 부풀리지 않는다.
+
+**추가 실패:** 동일 weak positive P로 ordinary scope18회도 실행했지만 applicability0/3이었다. K8→16의 viewvariance 증가는 탐색 연관으로만 보존한다.
+
+**재심:** 초기의 중요성부분충족 반대판정은 삭제하지 않았다. 최종 원고의 일반finite/continuous sharp classification, square밖 normal ordering, 모든mode의 완결된 witness를 고정pure-theory bar로 재평가해 수정이론의6gate를 통과로 판정했다. 실제학습의 대표성 문제는 여전히 미확보이며 그 응용 claim에 대한 통과가 아니다.
+
+**최종 상태:** 유망·진행 권고(수정된 국소 이론). 대표 결과의 증명·계산·동일목적 검증은 완료. 일반 학습 cutoff와 semantic erasure 주장은 미확보/기각으로 각각 분리했다. 모든 실행은 종료하며 백그라운드 연구를 약속하지 않는다.
+
+## R3-5 — 전달 snapshot 재현
+
+별도 임시 복사본에서 핵심14개 script를 실제 재실행해 모두 exit0을 확인했다. 원래 전달 파일은 덮어쓰지 않았고, 저장된 주요 numerical/certificate5개 묶음이 일치했다. `audit_snapshot.py/json`에 명령·시간·환경·출력hash·수치대조가 있다. 이 QA의 수를 연구 기여로 계산하지 않는다. 최종 코드·문서·원시 결과·그림을 byte manifest로 연결해 GitHub에 게시한다.

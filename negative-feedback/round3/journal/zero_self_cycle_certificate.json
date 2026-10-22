@@ -1,0 +1,13 @@
+{
+  "positive_graph": "unweighted undirected cycle with 20 vertices; P(i,i+-1)=1/2",
+  "self_positive_probability": 0,
+  "gap_exact": "1-sqrt(10+2*sqrt(5))/4",
+  "gap_strict_rational_bounds": [
+    "489/10000",
+    "49/1000"
+  ],
+  "comparisons": "xi11 < .0486 < gap < .0490 < .0520 < xi12, using separate xi certificates",
+  "result": "Theorem V1 plus the prior K4/5 and K11/12 certificates gives full local attraction exactly K5..11",
+  "scope": "This is a derived corollary, not an executed 80-node network experiment or a new independent contribution",
+  "passed": true
+}

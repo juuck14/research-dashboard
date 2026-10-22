@@ -2,6 +2,10 @@
 
 각 연구주제별로 디렉토리를 만들고 안에 README.md파일 만들어서 거기에 현황을 보고하라.
 
+## 최신: negative feedback의 최상위 기준 재검증
+
+2026-10-22 [round3 최종보고](negative-feedback/round3/report_ko.md) · [논문 원고](negative-feedback/round3/manuscript.md) · [재현](negative-feedback/round3/reproduction.md) · [독립 재심](negative-feedback/round3/review/final_review.md). **수정된 국소 이론 논문의 핵심50% 확보로 판정.** 일반·연속 score law의 all-finite-count rescue 조건, 반대 방향의 positive-gap 조건, exact full-stability window를 증명했다. 원래 정보 소실 해석은 기각하고 ordinary applicability 실패를 보존했다. 실전 SSL 성능이나 cutoff 확보 판정이 아니다. 아래 다른 회차 기록은 그대로 보존한다.
+
 ## 이번 사전 연구
 
 후속 심화 단계(2026-10-22): [negative feedback의 핵심 결과 확보](negative-feedback/round2/README.md)를 마쳤다. [한국어 최종보고](negative-feedback/round2/report_ko.md),[논문 원고](negative-feedback/round2/manuscript.md),[핵심 반론 대조표](negative-feedback/round2/decisive_questions.md),[재현 안내](negative-feedback/round2/reproduction.md). 판정은 **검증된 수정 방향으로 진행**이며, 모든 negative 수의 정확한 국소 안정성 법칙과 자연 정책의 열린 성립 영역을 증명·독립 검산했다. 강한 neural clean-loss endpoint 실패와 정보 소실 비주장도 기록했다.

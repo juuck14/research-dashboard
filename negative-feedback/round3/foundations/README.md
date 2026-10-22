@@ -31,6 +31,7 @@ For continuous product S2, t=log4, the exact floor is .24283216 at two factors a
 From the repository root, using Python3.11+ with NumPy and SciPy:
 
 ```bash
+python -m pip install -r negative-feedback/round3/foundations/requirements.txt
 python negative-feedback/round3/foundations/verify_multilevel.py
 python negative-feedback/round3/foundations/hypercube_prediction.py
 python negative-feedback/round3/foundations/continuous_check.py

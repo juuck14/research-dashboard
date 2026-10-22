@@ -29,6 +29,8 @@ s=m^{-1}\sum_k z_k,\qquad h=z_1-z_2,\qquad s''=0.
 
 Exchanging the first two z values preserves s and reverses h, giving E[h|s]=0, while E h²=2/r>0. Reference score rows have the same law at every anchor. The product of orthogonal-factor symmetries and factor permutations makes the expected base force radial at each anchor, so delta0 is a projected equilibrium of the free-function field. The scalar result therefore describes a genuine local factor-energy direction.
 
+More explicitly, orthogonal transformations fixing the anchor's factor u_k force each expected gradient block to lie in span(u_k). A permutation of any two factors, accompanied by orthogonal transformations taking the permuted anchor factors back to their original values, fixes the complete reference anchor and interchanges the two scalar block coefficients. All coefficients must therefore be equal. The complete expected force, including anchor and candidate roles, is parallel to F0(x). Projection removes it. Transitivity without this stabilizer argument would not suffice; `general_normal_graph.md` gives a counterexample to that shortcut.
+
 The function-space model permits all measurable unit embeddings, so the result does not depend on imposing an insufficient finite output capacity. It remains a local energy-direction result: it does not prove global information loss, a global attractor, or parameter-space convergence.
 
 Let M_r(a)=E exp(a z) for one relative factor. Symmetry makes M_r even. Write

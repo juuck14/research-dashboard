@@ -1,5 +1,9 @@
 # Negative 관계와 학습 피드백
 
+**최신 상태(2026-10-22): 수정된 국소 population 이론으로 진행 — 핵심50% 확보 판정.** [round3 최종보고](round3/report_ko.md), [새 원고](round3/manuscript.md), [독립 재심](round3/review/final_review.md), [재현](round3/reproduction.md). 일반·연속 분포의 all-count rescue 법칙과 positive-gap 상충 조건을 증명했다. 원래 정보 소실 해석은 기각, 일반 학습 applicability 실패는 보존했다. 실전 성능·일반 cutoff를 확보했다는 뜻은 아니다.
+
+## 이전 round2와 첫 단계의 보존 기록
+
 상태: **검증된 수정 방향으로 진행 — 후속 핵심 결과 확보.** 기준일 2026-10-22.
 
 **최신 결과:** [round2/README.md](round2/README.md),[한국어 최종보고](round2/report_ko.md),[논문 원고](round2/manuscript.md). 후속 단계에서 arbitrary-K 전체 spectrum·단조 임계값·자연 exponential 정책의 열린 영역을 증명하고 독립 검산했다. 일반 정보 삭제 주장은 배제했다. 아래는 첫 단계의 보존된 결과이며 최신 판정과 구분한다.

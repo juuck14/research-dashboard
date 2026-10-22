@@ -1,0 +1,120 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "scripts": [
+    {
+      "script": "foundations/verify_multilevel.py",
+      "exit_code": 0,
+      "elapsed_seconds": 8.16512733799982,
+      "stdout_sha256": "5a36c7ef74d7091ca8701ad8cb06edc30d7e6e52748f8da3381cd23024f39f60"
+    },
+    {
+      "script": "foundations/hypercube_prediction.py",
+      "exit_code": 0,
+      "elapsed_seconds": 3.387772175000009,
+      "stdout_sha256": "481e5f76fdaff8d3b3958887475b0e09f1ef0ff368fcf54bae2c3574ee768142"
+    },
+    {
+      "script": "foundations/continuous_check.py",
+      "exit_code": 0,
+      "elapsed_seconds": 3.178630038999927,
+      "stdout_sha256": "72759b7d78f7572298612487d6aafc75aee536d2e48a23737b5a0c5f1089fb37"
+    },
+    {
+      "script": "neural/validate_oracle.py",
+      "exit_code": 0,
+      "elapsed_seconds": 1.111314669999956,
+      "stdout_sha256": "ad21a6f8dee978a773bd6e0e1034f0c6332064664cea45384a5ce0ba5d409db0"
+    },
+    {
+      "script": "neural/check_parameter_gradient.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.7864985199998955,
+      "stdout_sha256": "dc997890478cbf3bce1e019999524491d57c7ed11dbf47b672db9c5e1184c240"
+    },
+    {
+      "script": "neural/certify_mixing.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.17482638699993913,
+      "stdout_sha256": "0e5c283ba3c97bbbe172860845ef0b03218e5349f5df8afeb1b931256a7e4855"
+    },
+    {
+      "script": "review/window_certificate_check.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.294884167999953,
+      "stdout_sha256": "ab78c7a91ea18257215b982188118cdcd8317b4aa0b1d4c0322eef4b0e23693c"
+    },
+    {
+      "script": "correlation/certify.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.0851116250000814,
+      "stdout_sha256": "cb215c8a31929b774b29b41e3e24fff03296d66a16fd1558fede8c46a1f40510"
+    },
+    {
+      "script": "review/correlation_check.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.1584253479995823,
+      "stdout_sha256": "be33b561d5b64de6b42532216844a9c1bbf9f0a04ef60b2bba6fdc293f06f5c3"
+    },
+    {
+      "script": "review/endpoint_check.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.7625850520003041,
+      "stdout_sha256": "089d7418ef7ddfaf52f118a91fd08ba15190ac88d45e012eb47fc32284283916"
+    },
+    {
+      "script": "journal/zero_self_cycle_certificate.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.04269327100018927,
+      "stdout_sha256": "1d975e434041bcaffda3b681c402a80312e28ebcb7f61434f9102a8c860815a2"
+    },
+    {
+      "script": "review/cycle20_certificate_check.py",
+      "exit_code": 0,
+      "elapsed_seconds": 1.158824069000275,
+      "stdout_sha256": "ce9a54f6cf56932ca89845ce6cf59bbe4477fef646d5d732a105e7ff03c94f5c"
+    },
+    {
+      "script": "neural/cycle_no_self.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.6849721100002171,
+      "stdout_sha256": "05396aa3efef9ffb6d0b4ff1eaf106eb58eb7e3e500a9ca29ece63d04c95388c"
+    },
+    {
+      "script": "review/standard_ode_recheck.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.782202727999902,
+      "stdout_sha256": "692ad8a7629a4dd3023882c47c6235d72918a1dff71b02c624c0df57e97e9f59"
+    }
+  ],
+  "delivered_quantity_checks": [
+    {
+      "path": "foundations/results/continuous_summary.json",
+      "key": "max_resolution_curvature_difference",
+      "matches": true
+    },
+    {
+      "path": "neural/results/oracle_validation.json",
+      "key": null,
+      "matches": true
+    },
+    {
+      "path": "correlation/results/rational_certificate.json",
+      "key": null,
+      "matches": true
+    },
+    {
+      "path": "review/window_certificate_check.json",
+      "key": null,
+      "matches": true
+    },
+    {
+      "path": "review/cycle20_certificate_check.json",
+      "key": null,
+      "matches": true
+    }
+  ],
+  "passed": true,
+  "scope": "isolated-copy source reproducibility, not a new scientific effect or independent mathematical proof"
+}
