@@ -1,0 +1,13 @@
+{
+  "n": 48,
+  "all_l0_exact": true,
+  "max_identity_error": 4.440892098500626e-16,
+  "max_nonlinear_identity_error": 6.661338147750939e-16,
+  "max_ratio_formula_error": 2.220446049250313e-16,
+  "min_sigma_min": 1.0347868714246493,
+  "max_condition": 1.4470822658186333,
+  "max_nonlinear_C0_over_kappa": 1.059348955954392,
+  "max_nonlinear_C1_over_kappa": 1.0708354972074214,
+  "python": "3.12.14",
+  "numpy": "2.3.5"
+}

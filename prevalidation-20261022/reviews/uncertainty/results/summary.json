@@ -1,0 +1,65 @@
+{
+  "categorical": {
+    "primary_count": 1001,
+    "confirmation_count": 200,
+    "confirmation_seed": 7319,
+    "max_pair_error": 8.326672684688674e-17,
+    "max_triple_marginal_error": 5.551115123125783e-17,
+    "max_formula_error": 3.3306690738754696e-16,
+    "max_stochastic_error": 2.220446049250313e-16,
+    "min_entry": 0.06666666666666654,
+    "sharp_interval": [
+      0.46262626262626266,
+      0.5272727272727273
+    ],
+    "scope": "uniform3, square doubly-stochastic emissions, fixed isotropic Gram; not arbitrary priors or emission families"
+  },
+  "bessel": {
+    "count": 42,
+    "note": "finite-order diagnostic only; proof is in exact_identification.md",
+    "n320_residual_times_n4": [
+      {
+        "a": 0.5,
+        "b": 0.5,
+        "residual_times_n4": -0.16367475836887024,
+        "limiting_residual_times_n4": -0.1640625
+      },
+      {
+        "a": 1.0,
+        "b": 2.0,
+        "residual_times_n4": 0.7375729455816327,
+        "limiting_residual_times_n4": 0.75
+      },
+      {
+        "a": 2.0,
+        "b": 1.0,
+        "residual_times_n4": 1.850916660259827,
+        "limiting_residual_times_n4": 1.875
+      },
+      {
+        "a": 2.0,
+        "b": 2.0,
+        "residual_times_n4": 2.9642603658430744,
+        "limiting_residual_times_n4": 3.0
+      },
+      {
+        "a": 4.0,
+        "b": 8.0,
+        "residual_times_n4": 555.7420547120273,
+        "limiting_residual_times_n4": 552.0
+      },
+      {
+        "a": 8.0,
+        "b": 4.0,
+        "residual_times_n4": 1027.875548315933,
+        "limiting_residual_times_n4": 1020.0
+      }
+    ]
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  }
+}

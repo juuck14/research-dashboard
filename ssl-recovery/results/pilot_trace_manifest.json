@@ -1,0 +1,10 @@
+{
+  "raw_path": "/workspace/scratch/7655b5d2f6fb/research/ssl-recovery-raw/pilot_traces.json",
+  "raw_bytes": 1570256,
+  "raw_sha256": "3c331729c57271fbcd6b0003b3634feb3c5336eb11e0f7bbeda2514697fde59d",
+  "raw_rows": 2196,
+  "compact_path": "pilot_curves.csv",
+  "compact_rows": 252,
+  "selection": "Every run: step divisible by 500, plus its final step. No outcome-based selection.",
+  "reason": "Complete metrics are deterministic and regenerable; large repetitive traces remain outside git. All final values and recovery metrics stay in per-run summaries."
+}

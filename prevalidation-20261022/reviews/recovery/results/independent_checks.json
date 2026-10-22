@@ -1,0 +1,36 @@
+{
+  "symmetry": {
+    "equilibrium_residual": 1.429016302971415e-16,
+    "neighbor_equilibrium_residual": 1.3230899073867765e-16,
+    "neighbor_distance": 0.010475124398602093,
+    "equivariance_residual": 3.8672243013756265e-15,
+    "tangent_norm": 1.047517636248727,
+    "jacobian_tangent": [
+      {
+        "h": 0.0001,
+        "action_norm": 1.0547795896875652e-16,
+        "small_eigenvalue_count_at_1e-7": 3,
+        "max_real_eigenvalue": 1.214306433183765e-16
+      },
+      {
+        "h": 1e-05,
+        "action_norm": 9.376713715624023e-17,
+        "small_eigenvalue_count_at_1e-7": 3,
+        "max_real_eigenvalue": 2.66858208425002e-16
+      },
+      {
+        "h": 1e-06,
+        "action_norm": 1.0852404076644669e-16,
+        "small_eigenvalue_count_at_1e-7": 3,
+        "max_real_eigenvalue": 1.249000902703301e-16
+      }
+    ]
+  },
+  "delay_max_relative_error": 7.25945739069804e-11,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "seed": 2718
+}

@@ -1,0 +1,11 @@
+{
+  "cases": 10,
+  "all_theorem_conditions": true,
+  "max_inverse_error": 1.1102230246251565e-16,
+  "max_same_law_error": 2.220446049250313e-16,
+  "max_leakage_fraction": 0.4716732524754801,
+  "max_offblock_bound_fraction": 0.10172147550543828,
+  "max_block_C0_bound_fraction": 0.09572710921130771,
+  "confirmation_seed": 20261024,
+  "evidence": "Nonlinear exact same-law construction; not trained autoencoder; all-candidate assertion is proven separately"
+}

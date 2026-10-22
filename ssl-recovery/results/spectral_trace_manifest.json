@@ -1,0 +1,10 @@
+{
+  "raw_path": "/workspace/scratch/7655b5d2f6fb/research/ssl-recovery-raw/spectral_traces.json",
+  "raw_bytes": 3863282,
+  "raw_sha256": "125d81cc4366121b167b30eaca6a7dc7f0c6535c98e950d0dd661c91f2d74dd4",
+  "raw_rows": 5304,
+  "compact_path": "spectral_curves.csv",
+  "compact_rows": 552,
+  "selection": "Every run: step divisible by 500, plus its final step. No outcome-based selection.",
+  "reason": "Complete metrics are deterministic and regenerable; large repetitive traces remain outside git. All final values and recovery metrics stay in per-run summaries."
+}

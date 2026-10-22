@@ -1,0 +1,331 @@
+{
+  "flat_family": [
+    {
+      "a": 0.0,
+      "loss": 0.20000000000000062,
+      "max_finite_gradient": 5.551115123125782e-11
+    },
+    {
+      "a": 0.001,
+      "loss": 0.1999999999999995,
+      "max_finite_gradient": 7.771561172376096e-11
+    },
+    {
+      "a": 0.1,
+      "loss": 0.20000000000000218,
+      "max_finite_gradient": 9.992007221626408e-11
+    },
+    {
+      "a": 0.5,
+      "loss": 0.19999999999999885,
+      "max_finite_gradient": 5.551115123125782e-11
+    },
+    {
+      "a": 0.9,
+      "loss": 0.20000000000000084,
+      "max_finite_gradient": 7.771561172376096e-11
+    }
+  ],
+  "tangent_checks": [
+    {
+      "rho3": 0.8,
+      "predictor_unused_scale": 0.8,
+      "h": 0.001,
+      "max_jacobian_error": 1.1980810226130956e-06,
+      "lambda_max": 0.0011004953620183631
+    },
+    {
+      "rho3": 0.8,
+      "predictor_unused_scale": 0.8,
+      "h": 0.0001,
+      "max_jacobian_error": 1.1980800795896585e-08,
+      "lambda_max": 0.0011005066713196416
+    },
+    {
+      "rho3": 0.8,
+      "predictor_unused_scale": 0.8,
+      "h": 1e-05,
+      "max_jacobian_error": 1.1980882952400407e-10,
+      "lambda_max": 0.0011005067844126627
+    },
+    {
+      "rho3": 0.8,
+      "predictor_unused_scale": 1.0,
+      "h": 0.001,
+      "max_jacobian_error": 9.00000673542678e-07,
+      "lambda_max": -0.0011056521943059675
+    },
+    {
+      "rho3": 0.8,
+      "predictor_unused_scale": 1.0,
+      "h": 0.0001,
+      "max_jacobian_error": 9.000001188752549e-09,
+      "lambda_max": -0.0011056478105691686
+    },
+    {
+      "rho3": 0.8,
+      "predictor_unused_scale": 1.0,
+      "h": 1e-05,
+      "max_jacobian_error": 9.000089562505309e-11,
+      "lambda_max": -0.0011056477667318113
+    },
+    {
+      "rho3": 0.8,
+      "predictor_unused_scale": 1.2,
+      "h": 0.001,
+      "max_jacobian_error": 4.1471894229871964e-07,
+      "lambda_max": -0.002585196065964584
+    },
+    {
+      "rho3": 0.8,
+      "predictor_unused_scale": 1.2,
+      "h": 0.0001,
+      "max_jacobian_error": 4.147200804993645e-09,
+      "lambda_max": -0.002585197238282144
+    },
+    {
+      "rho3": 0.8,
+      "predictor_unused_scale": 1.2,
+      "h": 1e-05,
+      "max_jacobian_error": 4.147349130789735e-11,
+      "lambda_max": -0.002585197250005354
+    },
+    {
+      "rho3": 0.9,
+      "predictor_unused_scale": 0.8,
+      "h": 0.001,
+      "max_jacobian_error": 1.1980810221690064e-06,
+      "lambda_max": 0.0024732085161113786
+    },
+    {
+      "rho3": 0.9,
+      "predictor_unused_scale": 0.8,
+      "h": 0.0001,
+      "max_jacobian_error": 1.198080012976277e-08,
+      "lambda_max": 0.0024732211940500202
+    },
+    {
+      "rho3": 0.9,
+      "predictor_unused_scale": 0.8,
+      "h": 1e-05,
+      "max_jacobian_error": 1.1980749725637452e-10,
+      "lambda_max": 0.0024732213208294353
+    },
+    {
+      "rho3": 0.9,
+      "predictor_unused_scale": 1.0,
+      "h": 0.001,
+      "max_jacobian_error": 9.000006742088118e-07,
+      "lambda_max": -4.972376959830327e-09
+    },
+    {
+      "rho3": 0.9,
+      "predictor_unused_scale": 1.0,
+      "h": 0.0001,
+      "max_jacobian_error": 8.999999634440314e-09,
+      "lambda_max": -4.9723758097086623e-11
+    },
+    {
+      "rho3": 0.9,
+      "predictor_unused_scale": 1.0,
+      "h": 1e-05,
+      "max_jacobian_error": 8.999978540202846e-11,
+      "lambda_max": -4.97241137153992e-13
+    },
+    {
+      "rho3": 0.9,
+      "predictor_unused_scale": 1.2,
+      "h": 0.001,
+      "max_jacobian_error": 4.1471894274280885e-07,
+      "lambda_max": -0.0016613207257284747
+    },
+    {
+      "rho3": 0.9,
+      "predictor_unused_scale": 1.2,
+      "h": 0.0001,
+      "max_jacobian_error": 4.147203025439694e-09,
+      "lambda_max": -0.001661322043177928
+    },
+    {
+      "rho3": 0.9,
+      "predictor_unused_scale": 1.2,
+      "h": 1e-05,
+      "max_jacobian_error": 4.14730472186875e-11,
+      "lambda_max": -0.001661322056352459
+    },
+    {
+      "rho3": 1.0,
+      "predictor_unused_scale": 0.8,
+      "h": 0.001,
+      "max_jacobian_error": 1.1980810226130956e-06,
+      "lambda_max": 0.003842699719611922
+    },
+    {
+      "rho3": 1.0,
+      "predictor_unused_scale": 0.8,
+      "h": 0.0001,
+      "max_jacobian_error": 1.198079968567356e-08,
+      "lambda_max": 0.003842713756573371
+    },
+    {
+      "rho3": 1.0,
+      "predictor_unused_scale": 0.8,
+      "h": 1e-05,
+      "max_jacobian_error": 1.198081633901893e-10,
+      "lambda_max": 0.0038427138969430053
+    },
+    {
+      "rho3": 1.0,
+      "predictor_unused_scale": 1.0,
+      "h": 0.001,
+      "max_jacobian_error": 9.000006748749456e-07,
+      "lambda_max": 0.0011042931175906795
+    },
+    {
+      "rho3": 1.0,
+      "predictor_unused_scale": 1.0,
+      "h": 0.0001,
+      "max_jacobian_error": 9.000000078529524e-09,
+      "lambda_max": 0.0011042985771899036
+    },
+    {
+      "rho3": 1.0,
+      "predictor_unused_scale": 1.0,
+      "h": 1e-05,
+      "max_jacobian_error": 9.000022949123831e-11,
+      "lambda_max": 0.0011042986317858824
+    },
+    {
+      "rho3": 1.0,
+      "predictor_unused_scale": 1.2,
+      "h": 0.001,
+      "max_jacobian_error": 4.1471894318689806e-07,
+      "lambda_max": -0.000738101826757126
+    },
+    {
+      "rho3": 1.0,
+      "predictor_unused_scale": 1.2,
+      "h": 0.0001,
+      "max_jacobian_error": 4.147200804993645e-09,
+      "lambda_max": -0.000738103289029339
+    },
+    {
+      "rho3": 1.0,
+      "predictor_unused_scale": 1.2,
+      "h": 1e-05,
+      "max_jacobian_error": 4.14739353971072e-11,
+      "lambda_max": -0.0007381033036520865
+    }
+  ],
+  "independent_backprop_checks": [
+    {
+      "seed": 901,
+      "rho": [
+        0.9,
+        0.9,
+        0
+      ],
+      "loss_difference": 0.0,
+      "max_absolute_gradient_error": 2.2121315890188953e-10,
+      "marginal_max_error": 2.7755575615628914e-17,
+      "cross_moment_max_error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 901,
+      "rho": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "loss_difference": 0.0,
+      "max_absolute_gradient_error": 1.7124457407646787e-10,
+      "marginal_max_error": 2.7755575615628914e-17,
+      "cross_moment_max_error": 3.3306690738754696e-16
+    },
+    {
+      "seed": 901,
+      "rho": [
+        0.8,
+        0.9,
+        1.0
+      ],
+      "loss_difference": 0.0,
+      "max_absolute_gradient_error": 1.6690737680846723e-10,
+      "marginal_max_error": 0.0,
+      "cross_moment_max_error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 902,
+      "rho": [
+        0.9,
+        0.9,
+        0
+      ],
+      "loss_difference": 0.0,
+      "max_absolute_gradient_error": 4.625189120588402e-10,
+      "marginal_max_error": 2.7755575615628914e-17,
+      "cross_moment_max_error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 902,
+      "rho": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "loss_difference": 0.0,
+      "max_absolute_gradient_error": 5.248970147420096e-10,
+      "marginal_max_error": 2.7755575615628914e-17,
+      "cross_moment_max_error": 3.3306690738754696e-16
+    },
+    {
+      "seed": 902,
+      "rho": [
+        0.8,
+        0.9,
+        1.0
+      ],
+      "loss_difference": 0.0,
+      "max_absolute_gradient_error": 5.284503945546248e-10,
+      "marginal_max_error": 0.0,
+      "cross_moment_max_error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 903,
+      "rho": [
+        0.9,
+        0.9,
+        0
+      ],
+      "loss_difference": 0.0,
+      "max_absolute_gradient_error": 2.659396591830898e-10,
+      "marginal_max_error": 2.7755575615628914e-17,
+      "cross_moment_max_error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 903,
+      "rho": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "loss_difference": 0.0,
+      "max_absolute_gradient_error": 2.407585797392642e-10,
+      "marginal_max_error": 2.7755575615628914e-17,
+      "cross_moment_max_error": 3.3306690738754696e-16
+    },
+    {
+      "seed": 903,
+      "rho": [
+        0.8,
+        0.9,
+        1.0
+      ],
+      "loss_difference": 0.0,
+      "max_absolute_gradient_error": 1.9779988758017453e-10,
+      "marginal_max_error": 0.0,
+      "cross_moment_max_error": 1.1102230246251565e-16
+    }
+  ],
+  "scope": "Exact finite-state objective and isolated teacher/predictor tangent only; not full checkpoint dynamics."
+}

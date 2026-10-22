@@ -1,0 +1,10 @@
+{
+  "raw_path": "/workspace/scratch/7655b5d2f6fb/research/ssl-recovery-raw/contrastive_traces.json",
+  "raw_bytes": 511541,
+  "raw_sha256": "d5490823cd3e151aea1e1c17b62fa4802d5665b1d47ce67c47b00014f9bbde3c",
+  "raw_rows": 3144,
+  "compact_path": "contrastive_curves.csv",
+  "compact_rows": 336,
+  "selection": "Every run: step divisible by 500, plus its final step. No outcome-based selection.",
+  "reason": "Complete metrics are deterministic and regenerable; large repetitive traces remain outside git. All final values and recovery metrics stay in per-run summaries."
+}

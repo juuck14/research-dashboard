@@ -1,0 +1,10 @@
+{
+  "raw_path": "/workspace/scratch/7655b5d2f6fb/research/ssl-recovery-raw/long_equal_traces.json",
+  "raw_bytes": 1747725,
+  "raw_sha256": "c92037c67330fd4e09cfe68d85ac60ddc74a8addb314ca7ba9e2d0432542d2b1",
+  "raw_rows": 2408,
+  "compact_path": "long_equal_curves.csv",
+  "compact_rows": 248,
+  "selection": "Every run: step divisible by 500, plus its final step. No outcome-based selection.",
+  "reason": "Complete metrics are deterministic and regenerable; large repetitive traces remain outside git. All final values and recovery metrics stay in per-run summaries."
+}

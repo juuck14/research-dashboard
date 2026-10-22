@@ -1,0 +1,10 @@
+{
+  "raw_path": "/workspace/scratch/7655b5d2f6fb/research/ssl-recovery-raw/confirmation_traces.json",
+  "raw_bytes": 1571942,
+  "raw_sha256": "1b83c3a306406d98be4395064735981c368ebc41a04f935fad1b1a128c894fa3",
+  "raw_rows": 2196,
+  "compact_path": "confirmation_curves.csv",
+  "compact_rows": 252,
+  "selection": "Every run: step divisible by 500, plus its final step. No outcome-based selection.",
+  "reason": "Complete metrics are deterministic and regenerable; large repetitive traces remain outside git. All final values and recovery metrics stay in per-run summaries."
+}

@@ -1,0 +1,13 @@
+{
+  "primary_cases": 7,
+  "confirmation_cases": 40,
+  "max_same_law_error": 4.440892098500626e-16,
+  "max_distance_formula_error": 1.1102230246251565e-16,
+  "min_sparsity_gap": 1,
+  "max_nonlinear_bound_ratio": 0.9999999998725826,
+  "seeds": [
+    20261022,
+    20261023
+  ],
+  "evidence": "Exact population algebra plus numerical audits; no empirical identifiability estimator"
+}

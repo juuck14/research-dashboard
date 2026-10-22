@@ -1,0 +1,30 @@
+{
+  "toy": {
+    "pair_diag": "11/75",
+    "pair_off": "7/75",
+    "triple_Q": "29/375",
+    "triple_R": "229/3375",
+    "predictive_Q": "29/55",
+    "predictive_R": "229/495",
+    "triple_difference": "32/3375",
+    "entropy_Q": 0.9502705392332347,
+    "entropy_R": 0.8918673953172509
+  },
+  "population": {
+    "max_exact_formula_error": 5.551115123125783e-16,
+    "n_population_rows": 404
+  },
+  "finite_sample": {
+    "n_datasets": 60,
+    "n_predictions": 180,
+    "truth_agreement_prediction": 0.802020202020202
+  },
+  "vmf": {
+    "primary_fits": 300,
+    "confirmation_fits": 400,
+    "primary_eight_harmonic_small_residual": 63,
+    "max_parameter_error_primary_small_residual": 6.771066710149778e-06,
+    "confirmation_small_residual": 214,
+    "max_parameter_error_confirmation_small_residual": 0.01672269172175191
+  }
+}

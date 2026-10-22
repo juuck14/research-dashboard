@@ -1,0 +1,50 @@
+[
+  {
+    "kappa": 0.1,
+    "max_error": 6.661338147750939e-16,
+    "near_minimum_gap": 0.010000000000000009,
+    "predicted_gap": 0.010000000000000002
+  },
+  {
+    "kappa": 0.01,
+    "max_error": 8.881784197001252e-16,
+    "near_minimum_gap": 9.999999999998899e-05,
+    "predicted_gap": 0.0001
+  },
+  {
+    "kappa": 0.001,
+    "max_error": 8.881784197001252e-16,
+    "near_minimum_gap": 9.999999999177334e-07,
+    "predicted_gap": 1e-06
+  },
+  {
+    "kappa": 0.0001,
+    "max_error": 8.881784197001252e-16,
+    "near_minimum_gap": 9.99999993922529e-09,
+    "predicted_gap": 1e-08
+  },
+  {
+    "kappa": 9.999999999999999e-06,
+    "max_error": 8.881784197001252e-16,
+    "near_minimum_gap": 1.000000082740371e-10,
+    "predicted_gap": 9.999999999999998e-11
+  },
+  {
+    "kappa": 1e-06,
+    "max_error": 6.661338147750939e-16,
+    "near_minimum_gap": 1.000088900582341e-12,
+    "predicted_gap": 1e-12
+  },
+  {
+    "kappa": 1e-07,
+    "max_error": 8.881784197001252e-16,
+    "near_minimum_gap": 9.992007221626409e-15,
+    "predicted_gap": 9.999999999999998e-15
+  },
+  {
+    "kappa": 1e-08,
+    "max_error": 6.661338147750939e-16,
+    "near_minimum_gap": 0.0,
+    "predicted_gap": 1.0000000000000001e-16
+  }
+]
