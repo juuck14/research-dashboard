@@ -1,8 +1,8 @@
 # Negative 관계와 학습 피드백
 
-상태: 수정 후 진행. 기준일 2026-10-22.
+상태: **검증된 수정 방향으로 진행 — 후속 핵심 결과 확보.** 기준일 2026-10-22.
 
-**후속 심화 연구:** [round2/README.md](round2/README.md). 아래는 첫 단계의 보존된 결과다. 후속 단계는 실제 핵심 기여의 성립 여부를 검증하며, 진행 중인 결과를 완료된 논문으로 취급하지 않는다.
+**최신 결과:** [round2/README.md](round2/README.md),[한국어 최종보고](round2/report_ko.md),[논문 원고](round2/manuscript.md). 후속 단계에서 arbitrary-K 전체 spectrum·단조 임계값·자연 exponential 정책의 열린 영역을 증명하고 독립 검산했다. 일반 정보 삭제 주장은 배제했다. 아래는 첫 단계의 보존된 결과이며 최신 판정과 구분한다.
 
 ## 현재 결론
 1. **직접 증명:** positive-invariant binary factor, unconstrained dot-product encoder의 추가 coordinate, stop-gradient sampler와 q>=epsilon/4 아래 누락 factor boundary는 transverse repelling이다. 작은 비영 perturbation의 탈출 시간 상계도 도출했다. 전체 stationary saddle와 혼동하지 않는다.

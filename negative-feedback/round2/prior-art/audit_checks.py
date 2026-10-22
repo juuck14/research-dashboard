@@ -86,15 +86,20 @@ def main():
     natural=[mode_moments(K,.1,-1.) for K in [1,2,4,8,9,16,32,64,128]]
     dcl=[mode_moments(K,.1,-2.,alpha=-.9,positive=False) for K in [1,2,4,8,9,16,32,64,128]]
     infonce=[mode_moments(K,.1,-2.,alpha=-.9,positive=True) for K in [1,2,4,8,9,16,32,64,128]]
+    # Root's analytic follow-up after the original natural-policy failure;
+    # exploratory construction, explicitly documented in protocol.md.
+    followup=[mode_moments(K,.3,-math.log(4)) for K in range(1,129)]
     assert abs(dcl[0]['threshold'])<1e-12
     assert all(b['threshold']>a['threshold'] for a,b in zip(dcl[:-1],dcl[1:]))
     summary=dict(pure_temperature_identity_max_error=pure_error,
                  mixture_vs_pure_identity_max_error=max(x['max_error'] for x in checks if x['epsilon']==.1),
                  natural_exponential=natural,
+                 natural_exponential_followup=followup,
                  shaped_infonce=infonce,shaped_dcl=dcl,
                  generic_performative_witness=[dict(m=m,frozen_curvature=1.,adaptive_curvature=1-m,
                                                     frozen_positive_probability=.5) for m in [.5,2.]])
     save_csv(OUT/'natural_exponential.csv',natural)
+    save_csv(OUT/'natural_exponential_followup.csv',followup)
     save_csv(OUT/'dcl_scalar_control.csv',dcl)
     save_csv(OUT/'temperature_identity.csv',checks)
     (OUT/'audit_checks.json').write_text(json.dumps(summary,indent=2)+'\n')

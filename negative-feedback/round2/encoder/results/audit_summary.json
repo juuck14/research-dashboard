@@ -1,0 +1,12 @@
+{
+  "max_relative_gradient_error_non_tiny": 4.0342460061291303e-08,
+  "min_abs_derivative_checked": 0.00046813049042024096,
+  "initial_probes_reconstructed_from_fixed_seeds": 12,
+  "final_ols_models": 36,
+  "maximum_fork_loss_difference": 0.0,
+  "maximum_fork_gradient_difference": 0.0,
+  "maximum_unit_norm_error": 3.3306690738754696e-16,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0"
+}

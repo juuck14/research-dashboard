@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-22",
+  "status": "core results established; validated revised theoretical direction recommended",
+  "main_artifact": "manuscript.md",
+  "korean_report": "report_ko.md",
+  "question_matrix": "decisive_questions.md",
+  "reproduction": "reproduction.md",
+  "completed": [
+    "arbitrary-K full tangent spectrum and strict count monotonicity proofs",
+    "full-space sufficient conditions and open natural-exponential regime",
+    "DCL denominator-offset control",
+    "independent ordered-tuple, interval and encoder audits",
+    "16 actual generic d4 population trajectories",
+    "36 actual nonlinear encoder forks with failed stronger endpoint preserved",
+    "quantile exact-tie versus tolerance distinction",
+    "primary-source novelty and competing-explanation audit"
+  ],
+  "required_external_gpu_results_pending": false,
+  "core_claim_unproved_or_unexecuted": false,
+  "unsupported_broader_claims": [
+    "permanent semantic information erasure",
+    "universal pretrained encoder failure",
+    "practical GloFND algorithm counterexample",
+    "shared-neural exact multi-negative cutoff"
+  ],
+  "next_research_tasks": [
+    "quantify scope under asymmetric populations",
+    "test multi-negative phase prediction in parameterized encoders",
+    "broaden semantic state geometry without presuming the same threshold",
+    "external expert originality and exposition review"
+  ],
+  "background_jobs_promised_after_turn": false
+}

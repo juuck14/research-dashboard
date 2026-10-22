@@ -29,3 +29,7 @@ No policy parameters will be adjusted to obtain a favorable audit result. Output
 ## Addendum before execution
 
 After reading Yeh et al., ECCV 2022, Proposition1-2, add a stronger control: remove the positive term from the loss denominator, as in DCL. Recompute the same exact balance-mode moments with D_minus=n_self+exp(-1)*N+exp(-2)*n_opp, using the identical preselected shaped policy alpha=-.9 and epsilon=.1. Test K in {1,2,4,8,9,16,32,64,128}. The prediction is threshold0 at K1 and an increasing threshold toward1, so eliminating negative-positive coupling alone does not eliminate the response-slope count effect. This was motivated by a newly read competing explanation, not by results from the audit script. It is a scalar-mode control; it will not by itself establish all-mode DCL stability.
+
+## Analytic follow-up selected after the first audit results
+
+The root analyst constructed a natural exponential example analytically after seeing the epsilon=.1,kappa=-1 normal-mode failure: epsilon=.3,kappa=-log(4), yielding u=.103,v=.187,w=.523, w/v>e and eta between .731 and1. This is an explicitly exploratory analytic construction, not an independent preregistered replication. Enumerate K1-128 with the unchanged moment code and preserve it as natural_exponential_followup.csv. The original failure example remains; it rules out a universal inference from balance stabilization to full stability, not the existence of natural exponential full-stability rescue. Full tangent verification belongs to the theory owner's checks.

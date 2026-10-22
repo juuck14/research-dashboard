@@ -1,0 +1,53 @@
+{
+  "ordered_fd_checks": 16,
+  "max_eigen_error": 5.7269744502264075e-11,
+  "max_stationary_residual": 2.7755575615628914e-17,
+  "natural_Info_K4": {
+    "K": 4,
+    "positive": 1.0,
+    "frozen_balance": 0.20509782952110678,
+    "adaptive_balance": -9.148899128674781e-05,
+    "frozen_ab": 0.2342181123271623,
+    "adaptive_ab": 0.15161755960442047,
+    "normal_constant": 0.2660639672581422,
+    "normal_ab": 0.018935442736501898,
+    "eta": 0.8302939489060306,
+    "T": 0.8299237407665054
+  },
+  "natural_Info_K5": {
+    "K": 5,
+    "positive": 1.0,
+    "frozen_balance": 0.2316244762918532,
+    "adaptive_balance": 0.005228607999523044,
+    "frozen_ab": 0.25661733817633514,
+    "adaptive_ab": 0.16616603203943814,
+    "normal_constant": 0.29140720218572946,
+    "normal_ab": 0.018737663174127256,
+    "eta": 0.8302939489060306,
+    "T": 0.8494695708639369
+  },
+  "natural_DCL_K7": {
+    "K": 7,
+    "positive": 0.0,
+    "frozen_balance": 0.3760209852865515,
+    "adaptive_balance": -0.009825397493455845,
+    "frozen_ab": 0.4153635923244724,
+    "adaptive_ab": 0.2684926185557781,
+    "normal_constant": 0.5045767993657634,
+    "normal_ab": 0.03986621910875143,
+    "eta": 0.8302939489060306,
+    "T": 0.8091509022208834
+  },
+  "natural_DCL_K8": {
+    "K": 8,
+    "positive": 0.0,
+    "frozen_balance": 0.3863925773567425,
+    "adaptive_balance": 0.0019559116938345777,
+    "frozen_ab": 0.4134502557603839,
+    "adaptive_ab": 0.26720100485741444,
+    "normal_constant": 0.4977651851081918,
+    "normal_ab": 0.03475245790545875,
+    "eta": 0.8302939489060306,
+    "T": 0.8345182640898724
+  }
+}

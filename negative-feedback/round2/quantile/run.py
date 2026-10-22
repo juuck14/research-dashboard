@@ -76,3 +76,23 @@ summary={'q_square':Q0.tolist(),'frozen_largest_nonrotation':float(nonzero.max()
          'trajectories_per_policy':6,'tie_tolerance':TIE,'minimum_nonself_support':float(Q0[~np.eye(4,dtype=bool)].min())}
 (OUT/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 print(json.dumps(summary,indent=2))
+
+# Post-review diagnostic: finite tie tolerance creates a real local deadband.
+# The exact mathematical branch is imposed from the sign of delta, so roundoff
+# in nominal square scores cannot silently choose an arbitrary ordering.
+tie_checks=[]
+for delta in [1e-8,1e-10,1e-12,1e-13,1e-14]:
+    theta=np.pi/4+delta;z=tied(theta)
+    q_exact=np.zeros((4,4))
+    for i in range(4):
+        for j in range(4):
+            if i==j:continue
+            if np.all(BITS[j]==-BITS[i]):q_exact[i,j]=Q0[i,j]
+            elif BITS[j,0]!=BITS[i,0]:q_exact[i,j]=EPS/3
+            else:q_exact[i,j]=1/3
+    # theta>pi/4: flipping b has the lower adjacent score.
+    tangent=np.pad(np.stack([-np.sin(theta)*BITS[:,0],np.cos(theta)*BITS[:,1]],axis=1),((0,0),(0,2)))
+    tie_checks.append({'delta':delta,'exact_rank_branch_velocity':float(np.sum(field(z,q_exact)*tangent)/4),
+                       'tolerance_branch_velocity':tied_velocity(theta,'adaptive'),'tie_tolerance':TIE})
+with (OUT/'tie_tolerance_control.csv').open('w') as f:
+    writer=csv.DictWriter(f,fieldnames=tie_checks[0]);writer.writeheader();writer.writerows(tie_checks)

@@ -2,13 +2,11 @@
 
 각 연구주제별로 디렉토리를 만들고 안에 README.md파일 만들어서 거기에 현황을 보고하라.
 
-## 새 검증 회차: 보고서 후보 1·2·3
-
-2026-10-22 시작. **SSL 회복 지연 / 근사 메커니즘 식별 안정성 / pairwise 확률적 SSL의 불확실성**을 실제 사전 검증한다. [대상·규칙·진행 기록](prevalidation-20261022/README.md). 기존 연구 결과는 별도 회차로 보존한다.
-
 ## 이번 사전 연구
 
-후속 심화 단계(2026-10-22): [negative feedback의 핵심 기여 검증](negative-feedback/round2/README.md)을 실제로 진행 중이다. 아래 표와 첫 단계 최종보고는 이전 단계의 판정이며, 후속 단계에서 일반 필터·모든 negative 수에 대한 증명, 비선형 encoder 실험, 독립 반박 검토로 재검증한다.
+후속 심화 단계(2026-10-22): [negative feedback의 핵심 결과 확보](negative-feedback/round2/README.md)를 마쳤다. [한국어 최종보고](negative-feedback/round2/report_ko.md),[논문 원고](negative-feedback/round2/manuscript.md),[핵심 반론 대조표](negative-feedback/round2/decisive_questions.md),[재현 안내](negative-feedback/round2/reproduction.md). 판정은 **검증된 수정 방향으로 진행**이며, 모든 negative 수의 정확한 국소 안정성 법칙과 자연 정책의 열린 성립 영역을 증명·독립 검산했다. 강한 neural clean-loss endpoint 실패와 정보 소실 비주장도 기록했다.
+
+### 보존된 1차 사전 연구
 
 2026-10-22 실제 분석·실험·독립 검토를 마쳤다. [최종 종합보고](coordination/final_report.md), [재현 안내](coordination/reproduction.md), [진행 이력](coordination/progress.md).
 

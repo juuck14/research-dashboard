@@ -1,0 +1,28 @@
+{
+  "gradient_max_error": 6.0042276272404e-11,
+  "raw_oracle": [
+    1.0,
+    1.0
+  ],
+  "runs": 36,
+  "warmup_failures": [],
+  "elapsed_seconds": 290.21745920181274,
+  "criteria": {
+    "warmup/primary": {
+      "passed": 1,
+      "total": 3
+    },
+    "warmup/confirmation": {
+      "passed": 3,
+      "total": 3
+    },
+    "pca/primary": {
+      "passed": 0,
+      "total": 3
+    },
+    "pca/confirmation": {
+      "passed": 2,
+      "total": 3
+    }
+  }
+}

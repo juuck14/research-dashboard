@@ -14,4 +14,6 @@ Tied perturbation f_theta=(cos(theta)*a,sin(theta)*b,0,0)을 보자. theta>pi/4�
 
 이 양의 one-sided limit 때문에 충분히 작은 perturbation은 균형점 쪽으로 복귀하지 않고 양의 속도로 벗어난다. Tied 평면은 이 대칭 sampling 아래 불변이며 이 한 admissible 방향의 탈출만으로 전체 평형의 불안정성이 따른다. 정확히 동점인 square에서는 uniform tie rule 덕분에 vector field가0이다. 그러므로 discontinuous equilibrium이며, linear Jacobian 판정으로 대체할 수 없다. QED.
 
-유한 precision의 tie tolerance는 구현 규칙으로 기록한다. Numeric delta가 tolerance보다 충분히 큰 영역의 one-sided limit만 수식 검산에 쓴다. Small nonzero feature amplitude는 noiseless 정보 소실을 뜻하지 않는다.
+**정리와 수치 구현의 중요한 차이:** 위 Lyapunov 불안정성은 정확한 동점일 때에만 tie split을 적용하는 수학적 정책에 대한 명제다. `run.py`는 floating point score의 오차를 처리하기 위해 TIE=1e-12를 둔다. 그러면 score 차이가 이 tolerance 이내인 유한한 작은 띠에서는 frozen과 같은 tie split이 유지되므로, 이 구현 자체가 infinitesimal Lyapunov unstable이라고 말할 수 없다. Tied angle에서 띠의 폭은 대략 TIE/4이다. 실행한 perturbation1e-4와 one-sided delta1e-6은 이 띠보다 훨씬 크며, 수치 결과는 그 규모에서의 탈출을 검증한다. `tie_tolerance_control.csv`에 exact rank branch와 tolerance branch를 따로 비교한다. 이 구분은 독립 검토에서 지적되어 추가했다.
+
+Small nonzero feature amplitude는 noiseless 정보 소실을 뜻하지 않는다. Smooth filter의 모든-K 정리와 이 불연속 quantile 명제는 별도 결과다.

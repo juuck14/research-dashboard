@@ -1,0 +1,14 @@
+{
+  "scope": "Artifact integrity and saved-result consistency; not a new experimental replication",
+  "python": "3.12.14",
+  "markdown_local_links": 77,
+  "python_sources": 17,
+  "json_files": 27,
+  "csv_files": 20,
+  "manifest_files": 105,
+  "dynamics_criteria_passed": 16,
+  "encoder_runs": 36,
+  "strong_encoder_endpoint": "failed: primary1/3,confirmation3/3",
+  "errors": [],
+  "passed": true
+}

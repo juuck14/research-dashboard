@@ -1,0 +1,7 @@
+{
+  "frozen_normal_ab_curvature": 0.02618925669617534,
+  "frozen_stability_epsilon_upper": 0.4097198918550527,
+  "one_sided_limit": 0.040341213205499264,
+  "tolerance_1e12_at_delta_1e14": -7.216449660063518e-16,
+  "ideal_at_delta_1e14": 0.04034121320549854
+}

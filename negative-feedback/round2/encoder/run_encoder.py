@@ -3,6 +3,7 @@ from pathlib import Path
 from itertools import product
 import copy,csv,json,time,platform
 import numpy as np
+import scipy,matplotlib
 from scipy.special import expit,softmax
 from scipy.linalg import solve
 
@@ -194,7 +195,7 @@ def main():
                 passed+=by['frozen']['worst_linear']-by['adaptive']['worst_linear']>=.15 and by['frozen']['worst_noise_linear']-by['adaptive']['worst_noise_linear']>=.20
             summary['criteria'][arm+'/'+split]={'passed':int(passed),'total':len(seeds)}
     (OUT/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
-    (OUT/'environment.json').write_text(json.dumps({'python':platform.python_version(),'numpy':np.__version__},indent=2)+'\n')
+    (OUT/'environment.json').write_text(json.dumps({'python':platform.python_version(),'numpy':np.__version__,'scipy':scipy.__version__,'matplotlib':matplotlib.__version__,'platform':platform.platform(),'machine':platform.machine(),'training_command':'OPENBLAS_NUM_THREADS=1 python negative-feedback/round2/encoder/run_encoder.py','threads':'OPENBLAS_NUM_THREADS=1','accelerator':'CPU; no torch or GPU used'},indent=2)+'\n')
     print(json.dumps(summary),flush=True)
 
 if __name__=='__main__':main()

@@ -24,38 +24,38 @@ TB[:, 1, 0] = BITS[:, 0] / np.sqrt(2)
 TB[:, 2, 1] = 1
 TB[:, 3, 2] = 1
 
-def qfun(x, alpha):
+def qfun(x, alpha, slope=2., eps=EPS):
     scores = x @ x.T
-    unnorm = np.exp(-2 * scores + alpha * scores * (scores**2-1))
-    return EPS/4 + (1-EPS)*unnorm/unnorm.sum(axis=1)[:, None]
+    unnorm = np.exp(-slope * scores + alpha * scores * (scores**2-1))
+    return eps/4 + (1-eps)*unnorm/unnorm.sum(axis=1)[:, None]
 
-def ordered_field(x, k, alpha, fixed=None):
+def ordered_field(x, k, alpha, fixed=None, slope=2., eps=EPS, positive=1.):
     x = x/np.linalg.norm(x, axis=1)[:, None]
-    q = qfun(x, alpha) if fixed is None else fixed
+    q = qfun(x, alpha, slope, eps) if fixed is None else fixed
     score = x @ x.T
     tuples = np.array(list(product(range(4), repeat=k)), dtype=int)
     coeff = np.zeros((4, 4))
     for anchor in range(4):
         probabilities = np.prod(q[anchor, tuples], axis=1)
         logits = np.exp(score[anchor, tuples]-1)
-        weights = probabilities[:, None]*logits/(1+logits.sum(axis=1))[:, None]/4
+        weights = probabilities[:, None]*logits/(positive+logits.sum(axis=1))[:, None]/4
         for j in range(4):
             coeff[anchor, j] = weights[tuples == j].sum()
     euclidean = (coeff + coeff.T) @ x
     return euclidean - (euclidean*x).sum(axis=1)[:, None]*x
 
-def exact_moments(k):
-    z = exp(-2) + 2 + exp(2)
-    p = np.array([exp(-2), 1., exp(2)])/z
-    u = EPS/4 + (1-EPS)*p[0]
-    v = EPS/4 + (1-EPS)*p[1]
-    w = EPS/4 + (1-EPS)*p[2]
+def exact_moments(k, slope=2., eps=EPS, positive=1.):
+    z = exp(-slope) + 2 + exp(slope)
+    p = np.array([exp(-slope), 1., exp(slope)])/z
+    u = eps/4 + (1-eps)*p[0]
+    v = eps/4 + (1-eps)*p[1]
+    w = eps/4 + (1-eps)*p[2]
     terms = {n: [] for n in ['A','B','C','N2D2','N2D','NSD','mass']}
     for self_n in range(k+1):
         for adj_n in range(k-self_n+1):
             opp_n = k-self_n-adj_n
             pr = comb(k,self_n)*comb(k-self_n,adj_n)*u**self_n*(2*v)**adj_n*w**opp_n
-            den = 1+self_n + A*adj_n+B*opp_n
+            den = positive+self_n + A*adj_n+B*opp_n
             terms['mass'].append(pr)
             terms['A'].append(pr*adj_n/den)
             terms['B'].append(pr*adj_n/den**2)
@@ -69,9 +69,9 @@ def exact_moments(k):
     result['T'] = 1-A*result['R']
     return result
 
-def predicted(k, alpha):
-    m = exact_moments(k)
-    v=m['v']; g=(1-EPS)*m['softadj']*(-2-alpha)
+def predicted(k, alpha, slope=2., eps=EPS, positive=1.):
+    m = exact_moments(k,slope,eps,positive)
+    v=m['v']; g=(1-eps)*m['softadj']*(-slope-alpha)
     frozen_balance=A*m['A']-A*A*m['B']
     adaptive_balance=frozen_balance+A*g/v*m['A']
     frozen_ab=A*m['A']/2-A*A*m['N2D2']/4+B*m['C']
@@ -87,18 +87,18 @@ def predicted(k, alpha):
                                 [normal_constant]*2+[normal_ab]*2+[0.]*5)
     return d,spectra
 
-def finite_difference(k, alpha, h, rotate):
+def finite_difference(k, alpha, h, rotate, slope=2., eps=EPS, positive=1.):
     x=F.copy(); basis=TB.copy()
     if rotate:
         rotation = np.linalg.qr(np.random.default_rng(271828).normal(size=(4,4)))[0]
         x=x@rotation
         basis=np.einsum('ji,njk->nik',rotation,basis)
-    fixed=qfun(x,alpha)
-    _,expected=predicted(k,alpha)
+    fixed=qfun(x,alpha,slope,eps)
+    _,expected=predicted(k,alpha,slope,eps,positive)
     rows=[]
     for policy in ['frozen','adaptive']:
         def field(y):
-            return ordered_field(y,k,alpha,fixed if policy=='frozen' else None)
+            return ordered_field(y,k,alpha,fixed if policy=='frozen' else None,slope,eps,positive)
         jac=np.zeros((12,12))
         for column in range(12):
             state,local=divmod(column,3)

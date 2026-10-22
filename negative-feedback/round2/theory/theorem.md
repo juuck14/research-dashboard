@@ -227,7 +227,7 @@ With epsilon=.1, all satisfy the value conditions in Theorem 3 and have eta prop
 
 Thus identical instantaneous negative laws and frozen-risk geometry do not determine adaptive retention stability. More negatives can stabilize a borderline filtering rule without changing the policy's square distribution at all.
 
-The universal statements follow from Theorems 2–3. The explicit integer cutoff for alpha=−.9 uses the finite moment values `T8=.86868894615...`, `T9=.87797331666...`, bracketing eta=.86986335891... and monotonicity. These decimals are numerical evaluations of exact finite sums, with independent finite-difference checks and margins much larger than numerical error; they are not presented as a computer-assisted interval proof. One can avoid the decimal instance entirely and state the exact result for any eta strictly between exact T8 and T9.
+The universal statements follow from Theorems 2–3. The explicit integer cutoff for alpha=−.9 uses the finite moment values `T8=.86868894615...`, `T9=.87797331666...`, bracketing eta=.86986335891... and monotonicity. These decimals were first evaluated by finite sums and finite-difference checks. A subsequent independent directed-interval audit certified the signs of T8−eta and T9−eta; its code and certificate are in `../review/` and `../review/results/cutoff_interval_certificate.json`. One can also avoid the explicit numerical instance and state the exact result for any eta strictly between exact T8 and T9.
 
 ## 6. Executed checks and their scope
 
@@ -252,3 +252,124 @@ These checks validate formulas; the analytic arguments establish the universal s
 ## 7. Contribution boundary
 
 The additional Jacobian term from a changing sampler is the familiar product rule and belongs to existing performative learning/reweighting theory. This file contributes a candidate sharper object: a closed full-sphere arbitrary-K spectrum, an exact monotone K-dependent feedback-elasticity threshold, and a matched-value policy construction separating static sampling geometry from adaptive stability. Whether these specific results are sufficiently original and important for a paper must be assessed against source literature and learned-encoder tests; this file does not replace that assessment.
+
+## 8. Extension: general denominator offset and the DCL control
+
+### Theorem 5 (offset, count, and positive-negative coupling)
+
+Replace the loss by
+
+`ell_i^(beta)=log(beta+sum_(r=1)^K exp(f_i·f_(Y_r)−1))`, beta≥0.
+
+Beta=1 is the previous InfoNCE loss; beta=0 is the decoupled loss obtained by deleting the identity-positive term from its denominator, while retaining the same negative policy. The negative tuple can include any of the four states, including the anchor state; this convention stays fixed in both controls.
+
+All spectrum formulas of Theorem 1 remain valid with
+
+`D_beta=beta+U+A*N+B*W`.
+
+The balance threshold becomes
+
+```
+T_(K,beta)=1−A*E[N/D_beta²]/E[N/D_beta],
+Y_(K,beta)=beta+A+sum_(l=1)^(K−1) Z_l.
+```
+
+It satisfies:
+
+1. For each beta≥0, T_(K,beta) strictly increases with K and tends to one.
+2. `T_(1,beta)=beta/(beta+A)`; in particular DCL starts at zero rather than .731... .
+3. For each K, the threshold strictly increases with beta. Consequently `T_(K,0)<T_(K,1)` at every finite K.
+4. For every eta∈(0,1), the DCL balance mode eventually becomes stable as K grows. For sufficiently large K, the same Theorem 3 value conditions turn this into full-sphere stability. Thus count rescue is not removed by eliminating the positive-negative denominator coupling.
+
+Under the same sufficient conditions `g≤0`, `t2/t0≥1/A`, and `B*w>A*v`, the adaptive full-sphere square has strictly positive nonrotation eigenvalues if and only if `eta<T_(K,beta)`. If eta is larger, it is unstable; equality is not classified. The matched-frozen square is strictly stable except at the degenerate case `(K,beta)=(1,0)`, where its balance eigenvalue is zero. This exception must not be presented as a stable-frozen/unstable-adaptive comparison.
+
+### Proof
+
+The first derivatives of the log loss and all great-circle second derivatives used in Theorem 1 are unchanged except for D→D_beta. The same conditional moment identities and permutation symmetries apply. In particular no sampler derivative is inserted into one learning update.
+
+Palm conditioning gives `R_(K,beta)=E[Y_(K,beta)^−2]/E[Y_(K,beta)^−1]`. The strict K monotonicity and limit follow from the positive-random-shift argument of Theorem 2. Increasing beta is instead a deterministic positive shift of Y, for which the same r_Y derivative is strictly negative. At K=1, Y=beta+A is constant. These prove items 1–3; item 4 follows from convergence to one.
+
+The full-sphere proof also carries over: the normal-mode Palm denominators are `beta+B+S` and `beta+A+S`, preserving their ordering. In the C_p coefficient proof, simply replace `y=1+A+S` by `y=beta+A+S`; the pointwise ratio `(1/A)*(y+B)/(y+1)<1/A` remains true for every y>0. The residual bound uses only `A*(N−1)<D_beta`, which still holds. The frozen balance eigenvalue is nonnegative since D_beta≥A when N≥1; equality in its Palm form requires K=1 and beta=0. For K≥2 a further strictly positive Z makes it positive. QED.
+
+### What this rules out, and what it does not
+
+For a fixed tuple, let `D_−=sum exp(s−1)`. The InfoNCE gradient is the DCL gradient times `D_−/(1+D_−)`. This is the familiar positive-negative coupling factor. The strict inequality `T_DCL<T_InfoNCE` shows that this coupling contributes to the exact stability boundary; it cannot be ignored. However the DCL threshold itself increases from zero to one, so the count transition is not solely that factor. Multiple-negative softmax curvature and a current-representation-dependent sampling law remain after decoupling. This is an exact control inside the specified four-state model, not a claim that DCL is inferior on practical benchmarks or that existing DCL theory is unaware of count effects.
+
+## 9. Natural exponential policies have an open count-rescue region
+
+The matched-value family in Section 5 is useful for separating frozen geometry from slope response. It is not necessary for count stabilization.
+
+### Theorem 6 (an open regime, not a single engineered filter)
+
+Let `omega(s)=exp(−t*s)`, t>1, and define
+
+```
+Z_t=exp(−t)+2+exp(t),
+rho=(1−epsilon)/[epsilon*Z_t/4+1−epsilon],
+eta=t*rho,
+L(t)=(e−1)/(exp(t)−1).
+```
+
+For every t>1 the interval
+
+`max{L(t), T_(1,1)/t} < rho < 1/t`
+
+is nonempty. Every rho in this interval corresponds to a unique epsilon∈(0,1), yields a strictly stable matched-frozen square for every K, and gives an adaptive square which is unstable at K=1 but strictly stable for all sufficiently large K (apart from unclassified equality at a threshold). Consequently a natural monotone exponential family with a uniform probability floor has an **open parameter region** with full-sphere count rescue. Its DCL counterpart also has a finite rescue cutoff and cannot cross earlier than InfoNCE.
+
+### Proof
+
+For the natural policy, `g=−(1−epsilon)*t/Z_t` and `v=epsilon/4+(1−epsilon)/Z_t`, so eta=t*rho. Also
+
+```
+t2/t0=exp(2t)>e,
+w/v=1+rho*(exp(t)−1).
+```
+
+Thus `B*w>A*v` is exactly `rho>L(t)`. The derivative g is negative. The upper bound rho<1/t makes eta<1, while rho>T_(1,1)/t makes eta>T_(1,1). Theorems 2–3 now give a unique finite onset of full stability, modulo possible isolated equality counts.
+
+It remains to show the interval is nonempty. Obviously `T_(1,1)/t<1/t`. For t>1,
+
+`exp(t)−1 > t*(e−1)`.
+
+Both sides are equal at t=1; the derivative of their difference is `exp(t)−(e−1)>0` for t≥1. Therefore L(t)<1/t. Finally rho decreases continuously from one to zero as epsilon increases from zero to one, and
+
+`epsilon = [4*(1/rho−1)/Z_t] / [1+4*(1/rho−1)/Z_t]`.
+
+It realizes every rho in (0,1). All inequalities are strict and continuous, proving the regime is open. The DCL threshold is strictly lower at every finite K but converges to the same one, proving its stated cutoff relation. QED.
+
+### Analytically selected explicit instance, then executed
+
+Take `t=log(4)`, epsilon=.3. Before numerical execution these simple values imply
+
+```
+(u,v,w)=(103,187,523)/1000,
+eta=(112/187)*log(4)=.830293948906...,
+t2/t0=16>e,
+w/v=523/187=2.79679...>e.
+```
+
+Thus the sufficient conditions are strict. The exact finite-sum evaluations and independent full-field finite-difference checks give:
+
+| Policy | Loss | Last unstable count | Its threshold | First stable count | Its threshold |
+|---|---|---:|---:|---:|---:|
+| Natural `4^(−s)`, epsilon=.3 | InfoNCE | 4 | .8299237407665 | 5 | .8494695708639 |
+| Natural `4^(−s)`, epsilon=.3 | DCL | 7 | .8091509022209 | 8 | .8345182640899 |
+| Matched-value alpha=−.9, epsilon=.1 | InfoNCE | 8 | .8686889461511 | 9 | .8779733166586 |
+| Matched-value alpha=−.9, epsilon=.1 | DCL | 13 | .8697804401970 | 14 | .8791412051673 |
+
+The monotonicity theorem upgrades the finite brackets to all-K cutoffs; it is not an extrapolation from K≤128. A separate reviewer subsequently certified the natural InfoNCE K4/5, natural DCL K7/8, and matched DCL K13/14 brackets with 70-digit directed intervals and rigorous exponential/logarithm enclosures. The certificate is `../review/results/control_interval_certificate.json`, including a certified positive lower bound for the natural normal-mode condition. Its own implementation and correction history are recorded in `../review/review.md`. The natural instance was selected analytically after the first protocol to demonstrate the proved open regime. It is not an independently held-out effect estimate and was not selected by sweeping many numeric policies. Its K4 InfoNCE instability is weak (`lambda_b=−9.1488991e−5`), which matters for finite-duration trajectory tests.
+
+The post-proof control protocol was recorded before execution in protocol.md. Command:
+
+`OPENBLAS_NUM_THREADS=1 python negative-feedback/round2/theory/code/verify_controls.py`
+
+The run evaluated K1–128 for two policies and two losses (512 settings), plus 20 full-field d=4 tangent checks at K1,2,4,8,16. Maximum eigenvalue discrepancies were 7.06e−11 frozen and 9.04e−11 adaptive. Complete outputs are denominator_controls.csv, denominator_fd.csv, and denominator_summary.json in results/.
+
+### Large-K effective-temperature reduction and scope
+
+For epsilon=0 and the natural exponential policy, the K→infinity tuple-average gradient weights reduce to
+
+`q_F(j|i)*exp(s_ij) / sum_l q_F(l|i)*exp(s_il)
+ = exp((1−t)*s_ij)/sum_l exp((1−t)*s_il)`.
+
+For t≠1 this is the gradient of the corresponding row log-partition divided by `(1−t)`; t=1 gives uniform score weights. This elementary reduction should be acknowledged rather than claimed as a discovery. It neither supplies the finite-K threshold nor the nonzero-floor open regime proved above. At epsilon=0, eta=t>1 for t>1, so the balance mode in the natural easy-filter regime is unstable at every finite K. The uniform floor is mathematically active in the count-rescue regime, not just a sampling implementation detail. The complete claims retain this explicit modeling condition.
