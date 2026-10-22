@@ -20,4 +20,4 @@
 
 ## 현황
 
-2026-10-22: 저장소 README 및 기존 Pages 보고서 확인 완료. 세 주제별 독립 담당 연구 시작. 아직 새 명제·실험 결과·신규성 판정은 없음. 다음 checkpoint는 원문 가정 비교와 첫 정확해/반례 또는 population 계산이다.
+2026-10-22 완료: 부분 식별 및 자기 target 교정은 현재 정식화 기각, negative는 normalized full-capacity feedback 경계로 수정 후 진행. 증명·exact population 계산·독립 검토·toy minibatch SGD를 수행했다. [최종 종합보고](final_report.md), [재현 안내](reproduction.md). 구체적 결과와 반론은 각 주제 및 review 디렉터리에 있다.
