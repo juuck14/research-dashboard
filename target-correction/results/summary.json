@@ -1,0 +1,20 @@
+{
+  "operator_max_error": 8.881784197001252e-16,
+  "K_min_entry": 0.012499999999999997,
+  "primary_runs": 72,
+  "primary_max_equilibrium_error": 5.1769062370254915e-09,
+  "confirmation_runs": 108,
+  "confirmation_max_equilibrium_error": 8.637940362987706e-10,
+  "jacobian_checks": 36,
+  "jacobian_max_formula_error": 3.1086244689504383e-15,
+  "fixed_predictor_checks": 54,
+  "fixed_predictor_criterion_all_match": true,
+  "frozen_contrast": {
+    "rho": 0.5,
+    "eta": 0.02,
+    "initial": 0.0419223593595585,
+    "predicted_frozen_equilibrium": 0.031002897925504477,
+    "predicted_ema_equilibrium": 0.0
+  },
+  "elapsed_seconds": 44.4241681098938
+}

@@ -1,0 +1,59 @@
+{
+  "n_runs": 672,
+  "max_jacobian_error": 1.1176864989081992e-10,
+  "main_case": {
+    "eps": 0.1,
+    "kappa": -2,
+    "H_frozen": 0.18795192763809032,
+    "H_adaptive": -0.21866265930328427,
+    "fd_adaptive": -0.21866265922099168,
+    "fd_frozen": 0.1879519275847785,
+    "feedback_term": -0.4066145869413746
+  },
+  "main_trajectories": [
+    {
+      "eps": 0.1,
+      "kappa": -2,
+      "offset": 0.001,
+      "seed": 101,
+      "policy": "adaptive",
+      "theta0": 0.7864159046976728,
+      "theta_final": 1.5707963264950484,
+      "smaller_factor_amplitude": 2.998482075446825e-10,
+      "noisy_probe_accuracy": 0.5000000119622128
+    },
+    {
+      "eps": 0.1,
+      "kappa": -2,
+      "offset": 0.001,
+      "seed": 101,
+      "policy": "frozen_initial",
+      "theta0": 0.7864159046976728,
+      "theta_final": 0.7875999464091018,
+      "smaller_factor_amplitude": 0.7055481727736809,
+      "noisy_probe_accuracy": 1.0
+    },
+    {
+      "eps": 0.1,
+      "kappa": -2,
+      "offset": 0.001,
+      "seed": 101,
+      "policy": "frozen_center",
+      "theta0": 0.7864159046976728,
+      "theta_final": 0.7853981641709049,
+      "smaller_factor_amplitude": 0.7071067806396312,
+      "noisy_probe_accuracy": 1.0
+    },
+    {
+      "eps": 0.1,
+      "kappa": -2,
+      "offset": 0.001,
+      "seed": 101,
+      "policy": "uniform",
+      "theta0": 0.7864159046976728,
+      "theta_final": 0.7853981637358647,
+      "smaller_factor_amplitude": 0.707106780947251,
+      "noisy_probe_accuracy": 1.0
+    }
+  ]
+}

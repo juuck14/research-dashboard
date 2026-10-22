@@ -1,0 +1,50 @@
+[
+  {
+    "c": 0.0,
+    "matrix_rank": 1,
+    "distinct_states": 2,
+    "joint_information_bits": 1.0,
+    "values": [
+      -1.0,
+      -1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "c": 0.001,
+    "matrix_rank": 1,
+    "distinct_states": 4,
+    "joint_information_bits": 2.0,
+    "values": [
+      -1.001,
+      -0.999,
+      0.999,
+      1.001
+    ]
+  },
+  {
+    "c": 0.5,
+    "matrix_rank": 1,
+    "distinct_states": 4,
+    "joint_information_bits": 2.0,
+    "values": [
+      -1.5,
+      -0.5,
+      0.5,
+      1.5
+    ]
+  },
+  {
+    "c": 1.0,
+    "matrix_rank": 1,
+    "distinct_states": 3,
+    "joint_information_bits": 1.5,
+    "values": [
+      -2.0,
+      0.0,
+      0.0,
+      2.0
+    ]
+  }
+]

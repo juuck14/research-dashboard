@@ -1,0 +1,7 @@
+{
+  "max_finite_time_solution_error": 1.784061787191149e-11,
+  "final_time": 1500.0,
+  "observed_frozen_final": 0.031403402646689005,
+  "asymptotic_frozen_equilibrium": 0.031002897925504477,
+  "observed_ema_final": 1.3279261719435673e-13
+}

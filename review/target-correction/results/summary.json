@@ -1,0 +1,7 @@
+{
+  "max_fd_jacobian_error": 2.8755664516211255e-10,
+  "max_fixed_point_residual": 9.8879238130678e-17,
+  "max_spectrum_error": 8.881784197001252e-15,
+  "n_fixed_points": 54,
+  "all_ode_success": true
+}

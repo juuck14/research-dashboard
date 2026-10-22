@@ -25,3 +25,7 @@
 ## 기록
 
 코드·환경·명령·CSV·그림을 저장. 수치 확인과 증명을 구분. 가설/모형 변경은 progress.md에 이유 기록 후 실행. 모든 초기 w,p,a>0 및 rho>0 확인. tiny positive mode의 초기 소실 여부와 solver tolerance를 점검한다.
+
+## P2 후 추가 검증 계획
+
+기존 실행 완료 후, target의 full-rank linear 변형을 error라고 부르는 대안 해석을 검증한다. `context_basis_control.py`에서 위 4-state exact conditional expectation과 임의의 invertible 2×2 B 20개(seeds20261025,20261026), singular values(1,.001~.5)를 사용. `K(Y B^T)B^{-T}=KY`의 최대오차를 측정하고 새 정보 생성으로 표현하지 않는다. 추가 실행 전에 이 계획을 기록했다.

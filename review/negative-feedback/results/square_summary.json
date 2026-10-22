@@ -1,0 +1,76 @@
+{
+  "gradient_directional_error": 5.841212496332515e-12,
+  "jacobian_stepsize_error": 5.601644148534035e-12,
+  "dimensions": [
+    2,
+    3,
+    4
+  ],
+  "epsilon": 0.1,
+  "kappa": -2.0,
+  "conditions": [
+    {
+      "dimension": 2,
+      "policy": "frozen",
+      "min_q": 0.03778840295674994,
+      "n_tangent": 4,
+      "n_rotation_zero": 1,
+      "positive_eigenvalues": 0,
+      "negative_eigenvalues": 3,
+      "eigenvalues": "[-0.1097043029062066, -0.10970430290576431, -0.046987981901561365, 3.5572408733919314e-12]"
+    },
+    {
+      "dimension": 2,
+      "policy": "adaptive",
+      "min_q": 0.03778840295674994,
+      "n_tangent": 4,
+      "n_rotation_zero": 1,
+      "positive_eigenvalues": 1,
+      "negative_eigenvalues": 2,
+      "eigenvalues": "[-0.06421396996194839, -0.06421396996148128, 7.973081830175976e-13, 0.054665664821473225]"
+    },
+    {
+      "dimension": 3,
+      "policy": "frozen",
+      "min_q": 0.03778840295674994,
+      "n_tangent": 8,
+      "n_rotation_zero": 3,
+      "positive_eigenvalues": 0,
+      "negative_eigenvalues": 5,
+      "eigenvalues": "[-0.11834725917120963, -0.10970430290620657, -0.10970430290576436, -0.0540733647382517, -0.04698798190156134, 2.1552405296468728e-12, 2.155250229648119e-12, 3.5572271115312206e-12]"
+    },
+    {
+      "dimension": 3,
+      "policy": "adaptive",
+      "min_q": 0.03778840295674994,
+      "n_tangent": 8,
+      "n_rotation_zero": 3,
+      "positive_eigenvalues": 1,
+      "negative_eigenvalues": 4,
+      "eigenvalues": "[-0.11834725917032943, -0.06421396996194839, -0.06421396996148128, -0.0540733647354, 7.973012156395226e-13, 2.1552379846424348e-12, 2.155256052526825e-12, 0.05466566482147327]"
+    },
+    {
+      "dimension": 4,
+      "policy": "frozen",
+      "min_q": 0.03778840295674994,
+      "n_tangent": 12,
+      "n_rotation_zero": 5,
+      "positive_eigenvalues": 0,
+      "negative_eigenvalues": 7,
+      "eigenvalues": "[-0.11834725917120968, -0.11834725917120965, -0.10970430290620659, -0.10970430290576434, -0.054073364738251736, -0.054073364738251736, -0.04698798190156135, 2.155233341277969e-12, 2.1552464709334025e-12, 2.1552547886275745e-12, 2.1552619142171245e-12, 3.5572413070728004e-12]"
+    },
+    {
+      "dimension": 4,
+      "policy": "adaptive",
+      "min_q": 0.03778840295674994,
+      "n_tangent": 12,
+      "n_rotation_zero": 5,
+      "positive_eigenvalues": 1,
+      "negative_eigenvalues": 6,
+      "eigenvalues": "[-0.11834725917032946, -0.11834725917032944, -0.06421396996194838, -0.06421396996148133, -0.05407336473539998, -0.05407336473539996, 7.973014609641282e-13, 2.1552224474687425e-12, 2.1552285427309887e-12, 2.1552513760001435e-12, 2.1552542256920575e-12, 0.05466566482147324]"
+    }
+  ],
+  "runs": 16,
+  "all_frozen_shrink_and_adaptive_grow": true,
+  "max_norm_drift": 1.2065903831626201e-12
+}

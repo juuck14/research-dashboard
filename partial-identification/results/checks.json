@@ -1,0 +1,23 @@
+{
+  "checks": [
+    {
+      "split": "exploration",
+      "cases": 25,
+      "grid_points_per_gamma": 100001,
+      "max_tc_formula_error": 2.498001805406602e-16,
+      "max_observed_covariance_reconstruction_error": 8.881784197001252e-16,
+      "max_endpoint_error_rad": 7.829380463564295e-06
+    },
+    {
+      "split": "confirmation",
+      "cases": 16,
+      "grid_points_per_gamma": 100001,
+      "max_tc_formula_error": 1.6653345369377348e-16,
+      "max_observed_covariance_reconstruction_error": 8.881784197001252e-16,
+      "max_endpoint_error_rad": 6.831065011663265e-06
+    }
+  ],
+  "sample_replicates": 360,
+  "three_d_examples": 9,
+  "all_assertions_passed": true
+}

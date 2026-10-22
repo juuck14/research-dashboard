@@ -95,6 +95,6 @@ def run():
     fig,ax=plt.subplots(figsize=(7,4))
     for (k,p),(t,w) in traces.items():
       if p=='adaptive' or (k==0 and p=='uniform'):ax.semilogy(t,w,label=f'{p}, kappa={k}')
-    ax.axhline(.1,color='black',ls=':',label='escape threshold');ax.set(xlabel='gradient-flow time',ylabel='omitted factor amplitude',title='All full-support policies escape; timescales differ');ax.legend();fig.tight_layout();fig.savefig(dest/'escape.png',dpi=160);plt.close(fig)
+    ax.axhline(.1,color='black',ls=':',label='escape threshold');ax.set(xlabel='gradient-flow time',ylabel='omitted factor amplitude',title='All full-support policies escape; timescales differ');ax.legend();fig.tight_layout();fig.savefig(dest/'escape.png',dpi=160);fig.savefig(dest/'escape.svg');plt.close(fig)
     print(json.dumps(summary,indent=2))
 if __name__=='__main__':run()

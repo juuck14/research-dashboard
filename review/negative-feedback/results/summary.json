@@ -1,0 +1,10 @@
+{
+  "gradient_fd_max_error": 8.934197652521458e-11,
+  "adaptive_frozen_jacobian_max_error": 2.725027148375858e-11,
+  "normalized_strict_minima_mod_rotation": 4,
+  "normalized_conditions": 15,
+  "flow_runs": 24,
+  "confirmation_runs": 12,
+  "all_unnormalized_directions_unstable": true,
+  "interpretation": "Normalization allows full-support omission, but local adaptive Jacobian equals frozen-q Jacobian; no feedback-specific trap shown."
+}

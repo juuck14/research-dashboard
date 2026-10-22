@@ -1,0 +1,61 @@
+{
+  "random_cases": 400,
+  "max_formula_absolute_error": 3.1086244689504383e-15,
+  "max_reconstruction_frobenius_error": 7.169170216485751e-15,
+  "max_component_scaling_tc_error": 5.551115123125783e-15,
+  "shear_epsilon": 0.03579498363961312,
+  "shear": [
+    {
+      "environment": 0,
+      "tc": 0.0006402303569626423,
+      "budget": 0.001,
+      "reconstruction_error": 1.1102230246251565e-16,
+      "source_covariance": [
+        [
+          1.0012812808537601,
+          0.03579498363961312
+        ],
+        [
+          0.03579498363961312,
+          1.0
+        ]
+      ]
+    },
+    {
+      "environment": 1,
+      "tc": 0.00034484128700260075,
+      "budget": 0.001,
+      "reconstruction_error": 6.958660051814515e-19,
+      "source_covariance": [
+        [
+          1.3008968965976322,
+          0.025056488547729183
+        ],
+        [
+          0.025056488547729183,
+          0.7
+        ]
+      ]
+    }
+  ],
+  "normalized_source_covariance": [
+    [
+      1.0000000000000002,
+      0.035772073938985516
+    ],
+    [
+      0.035772073938985516,
+      1.0
+    ]
+  ],
+  "normalized_mixing_orthogonality_error": 0.0506865705096053,
+  "rare_environment": {
+    "gamma": 0.6,
+    "delta": 0.01,
+    "probability": 0.01,
+    "max_budget_endpoint_degrees": 5.461875,
+    "average_budget_endpoint_degrees": 45.0,
+    "max_budget_endpoint_exact_degrees": 5.462052787682552,
+    "average_budget_endpoint_exact_degrees": 45.0
+  }
+}

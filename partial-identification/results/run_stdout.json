@@ -1,0 +1,165 @@
+{
+  "checks": [
+    {
+      "split": "exploration",
+      "cases": 25,
+      "grid_points_per_gamma": 100001,
+      "max_tc_formula_error": 2.498001805406602e-16,
+      "max_observed_covariance_reconstruction_error": 8.881784197001252e-16,
+      "max_endpoint_error_rad": 7.829380463564295e-06
+    },
+    {
+      "split": "confirmation",
+      "cases": 16,
+      "grid_points_per_gamma": 100001,
+      "max_tc_formula_error": 1.6653345369377348e-16,
+      "max_observed_covariance_reconstruction_error": 8.881784197001252e-16,
+      "max_endpoint_error_rad": 6.831065011663265e-06
+    }
+  ],
+  "confirmation_summary": [
+    {
+      "split": "confirmation",
+      "gamma": 0.03,
+      "n": 100,
+      "repeats": 40,
+      "median_axis_error_deg": 24.87431890707888,
+      "mean_axis_error_deg": 24.40209616285614,
+      "p90_axis_error_deg": 42.795590369494114,
+      "structural_radius_deg": 45.0
+    },
+    {
+      "split": "confirmation",
+      "gamma": 0.03,
+      "n": 1000,
+      "repeats": 40,
+      "median_axis_error_deg": 20.618487692103635,
+      "mean_axis_error_deg": 20.881253546480178,
+      "p90_axis_error_deg": 38.09973504451845,
+      "structural_radius_deg": 45.0
+    },
+    {
+      "split": "confirmation",
+      "gamma": 0.03,
+      "n": 10000,
+      "repeats": 40,
+      "median_axis_error_deg": 7.513146750825923,
+      "mean_axis_error_deg": 9.154325377817315,
+      "p90_axis_error_deg": 19.669849877921237,
+      "structural_radius_deg": 45.0
+    },
+    {
+      "split": "confirmation",
+      "gamma": 0.3,
+      "n": 100,
+      "repeats": 40,
+      "median_axis_error_deg": 8.250914825531716,
+      "mean_axis_error_deg": 9.862535770176242,
+      "p90_axis_error_deg": 20.7615897857368,
+      "structural_radius_deg": 4.0897847898613895
+    },
+    {
+      "split": "confirmation",
+      "gamma": 0.3,
+      "n": 1000,
+      "repeats": 40,
+      "median_axis_error_deg": 1.994296021640678,
+      "mean_axis_error_deg": 2.2703121941934263,
+      "p90_axis_error_deg": 4.519246230338401,
+      "structural_radius_deg": 4.0897847898613895
+    },
+    {
+      "split": "confirmation",
+      "gamma": 0.3,
+      "n": 10000,
+      "repeats": 40,
+      "median_axis_error_deg": 0.7973511151052255,
+      "mean_axis_error_deg": 0.8688563321371146,
+      "p90_axis_error_deg": 1.7767909679085439,
+      "structural_radius_deg": 4.0897847898613895
+    }
+  ],
+  "three_d": [
+    {
+      "delta": 0.0001,
+      "pair": "1-2",
+      "a": 1.02,
+      "b": 0.98,
+      "feasible_radius_deg": 22.495702338973764,
+      "TC": 9.999999999998899e-05,
+      "covariance_reconstruction_error": 2.220446049250313e-16
+    },
+    {
+      "delta": 0.0001,
+      "pair": "1-3",
+      "a": 1.02,
+      "b": 1.8,
+      "feasible_radius_deg": 1.4082378054504874,
+      "TC": 9.999999999998899e-05,
+      "covariance_reconstruction_error": 4.440892098500626e-16
+    },
+    {
+      "delta": 0.0001,
+      "pair": "2-3",
+      "a": 0.98,
+      "b": 1.8,
+      "feasible_radius_deg": 1.3129458906502864,
+      "TC": 9.999999999998899e-05,
+      "covariance_reconstruction_error": 2.220446049250313e-16
+    },
+    {
+      "delta": 0.001,
+      "pair": "1-2",
+      "a": 1.02,
+      "b": 0.98,
+      "feasible_radius_deg": 45.0,
+      "TC": 0.00020004001066986632,
+      "covariance_reconstruction_error": 1.1102230246251565e-16
+    },
+    {
+      "delta": 0.001,
+      "pair": "1-3",
+      "a": 1.02,
+      "b": 1.8,
+      "feasible_radius_deg": 4.471584730925826,
+      "TC": 0.0010000000000000009,
+      "covariance_reconstruction_error": 1.0665130748209607e-17
+    },
+    {
+      "delta": 0.001,
+      "pair": "2-3",
+      "a": 0.98,
+      "b": 1.8,
+      "feasible_radius_deg": 4.166992795017593,
+      "TC": 0.0010000000000000564,
+      "covariance_reconstruction_error": 3.3306690738754696e-16
+    },
+    {
+      "delta": 0.01,
+      "pair": "1-2",
+      "a": 1.02,
+      "b": 0.98,
+      "feasible_radius_deg": 45.0,
+      "TC": 0.00020004001066986632,
+      "covariance_reconstruction_error": 1.1102230246251565e-16
+    },
+    {
+      "delta": 0.01,
+      "pair": "1-3",
+      "a": 1.02,
+      "b": 1.8,
+      "feasible_radius_deg": 14.795728164932823,
+      "TC": 0.010000000000000009,
+      "covariance_reconstruction_error": 2.220446049250313e-16
+    },
+    {
+      "delta": 0.01,
+      "pair": "2-3",
+      "a": 0.98,
+      "b": 1.8,
+      "feasible_radius_deg": 13.707152259626483,
+      "TC": 0.010000000000000009,
+      "covariance_reconstruction_error": 4.440892098500626e-16
+    }
+  ]
+}
