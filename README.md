@@ -4,6 +4,8 @@
 
 ## 이번 사전 연구
 
+후속 심화 단계(2026-10-22): [negative feedback의 핵심 기여 검증](negative-feedback/round2/README.md)을 실제로 진행 중이다. 아래 표와 첫 단계 최종보고는 이전 단계의 판정이며, 후속 단계에서 일반 필터·모든 negative 수에 대한 증명, 비선형 encoder 실험, 독립 반박 검토로 재검증한다.
+
 2026-10-22 실제 분석·실험·독립 검토를 마쳤다. [최종 종합보고](coordination/final_report.md), [재현 안내](coordination/reproduction.md), [진행 이력](coordination/progress.md).
 
 | 주제 | 현재 판정 | 결정적 근거 |

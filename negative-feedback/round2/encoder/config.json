@@ -1,0 +1,23 @@
+{
+  "input_dim": 16,
+  "hidden": 32,
+  "output": 8,
+  "batch": 64,
+  "lr": 0.05,
+  "warmup_steps": 1000,
+  "fork_steps": 3000,
+  "epsilon": 0.1,
+  "kappa": -2.0,
+  "nuisance_sd": 0.25,
+  "feature_noise": 0.05,
+  "primary": [
+    1101,
+    1102,
+    1103
+  ],
+  "confirmation": [
+    2201,
+    2202,
+    2203
+  ]
+}

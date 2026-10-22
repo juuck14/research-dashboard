@@ -2,6 +2,8 @@
 
 상태: 수정 후 진행. 기준일 2026-10-22.
 
+**후속 심화 연구:** [round2/README.md](round2/README.md). 아래는 첫 단계의 보존된 결과다. 후속 단계는 실제 핵심 기여의 성립 여부를 검증하며, 진행 중인 결과를 완료된 논문으로 취급하지 않는다.
+
 ## 현재 결론
 1. **직접 증명:** positive-invariant binary factor, unconstrained dot-product encoder의 추가 coordinate, stop-gradient sampler와 q>=epsilon/4 아래 누락 factor boundary는 transverse repelling이다. 작은 비영 perturbation의 탈출 시간 상계도 도출했다. 전체 stationary saddle와 혼동하지 않는다.
 2. **직접 실행:** exact population gradient-flow 1,080 설정/초기값 반복 중 1,080개가 이론적 deadline 안에서 amplitude0.1까지 탈출. seed101·211의 확인 설정540개 포함. 독립 dataset1,080개나 성공확률의 통계추정이 아니다.
