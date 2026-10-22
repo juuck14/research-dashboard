@@ -33,3 +33,11 @@ Root가 circle-vMF diagonal의 density KL·LRT·singular Jacobian을 별도 구�
 ## C — 주담당 결과에 대한 후속 독립 감사(실행 전)
 
 주담당의 코드·population/finite CSV를 읽었다. 이제 주담당의 matrix einsum을 import하지 않고 latent Z,Z+ 및 세 관측을 중첩 열거해 positive-transition family를 재계산한다. c=.02,.16,.5,.9 각각 11개 a와 seed9319의 100 random (a,b)를 확인한다. pair formula·repeat conditional formula·normalization·전체 risk를 계산하고 최대오차1e−12를 요구한다. finite CSV의 같은 dataset별 세 policy가 실제로 같은 c_hat를 쓰는지, unknown-b 두 대안의 pair risk가 동일한지 확인한다. 이는 owner 결과를 본 후의 **감사**이며 독립 사전 discovery로 세지 않는다.
+
+## D — Root operational branch 후속 감사(실행 전)
+
+Root의 코드를 import하지 않고 exp density를 grid에 정규화한 circular FFT convolution만으로 KL을 재계산한다(Bessel 함수·Bessel derivative 사용하지 않음). c=1,2,4와 t=.04,.08,.16 9조건, grid4096/8192. 원 기록 population.csv의 KL과 상대차1e−5 이하를 기준으로 한다. 희박한 작은 차이에 대해서는 cancellation을 피한 power-series divergence를 쓴다. LRT CSV는 실제 다시 생성하지 않고 원자료 행수·각 행 두 truth datasets·합계 pair count를 감사한다. 이는 Root가 수행한 것과 다른 구현의 계산 검산이며 independent sampling repetition으로 세지 않는다.
+
+## E — 추가 acquisition-budget 실험 감사 및 독립 반복(실행 전)
+
+Owner의 `acquisition_check.py`와 Amendment2, 결과 CSV를 읽었다. 먼저 CSV60행의 total acquisition=3n, plugin width=1−sqrt(c_hat), summary의 mean/sampleSD를 재계산한다. 다음으로 mixture-copy 방식 대신 **mod3 categorical offset의 inverse-CDF sampling**으로 observation/positive/repeat를 별도 구현한다. truth a=.8,b=.25, n=10000/100000, 새 seeds7501..7506 각각6개. 3n acquisition의 npositivepair+nindependentrepeat와 3n acquisition의1.5npositivepair를 비교한다. n100000의 mean a가.8에서.01 이내,b가.25에서.025이내, plugin structural width가.6에서.02이내이면 방향 확인으로 판정한다. 이는 사후에 사전등록한 확인 반복이며 새 가설 발견이 아니다. sample confidence coverage나 asymptotic rate를 이12반복으로 추정하지 않는다.

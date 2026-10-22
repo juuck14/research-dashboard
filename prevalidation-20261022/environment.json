@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-22",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "pillow": "12.3.0"
+  },
+  "training_hardware": "CPU",
+  "blas_threads_for_recorded_runs": 1,
+  "input_report": {
+    "name": "research_directions_20261022.pdf",
+    "sha256": "403aa7b51b494612a940b1d521b5de0311dca941ca5126d7e80879ec9806a98e"
+  },
+  "initial_repository_commit": "ebff86b15237106953487dd9a63f44734e9ef9db",
+  "persistent_running_process": false
+}

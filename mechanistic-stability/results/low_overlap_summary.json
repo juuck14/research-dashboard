@@ -1,0 +1,18 @@
+{
+  "cases": 9,
+  "max_formula_error": 7.105427357601002e-15,
+  "decisive_case": {
+    "pure_rows_per_axis": 3,
+    "mixed_rows": 2,
+    "diagonal_weight": 2.0,
+    "support_overlap": 0.4,
+    "sparsity_min": 10,
+    "nonaligned_sparsity_min": 12,
+    "actual_wrong_sparsity": 14,
+    "true_contrast": 3.999999999999999,
+    "wrong_contrast": 3.000000000000001,
+    "formula_error": 2.6645352591003757e-15,
+    "gram_error": 8.948457268302953e-17
+  },
+  "source": "Independent reviewer proposed this family before execution; owner implementation"
+}

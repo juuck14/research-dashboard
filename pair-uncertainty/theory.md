@@ -2,11 +2,11 @@
 
 증거 상태: 아래 명제 1–4는 제한된 모형에서 **직접 증명**이다. 원형 명제 1은 별도 검토자가 Bessel 급수와 대수 복구를 독립 검산했다. 수치 탐색은 이 증명의 대체물이 아니다. 신규성은 [문헌 대조](literature.md) 및 [판정](verdict.md)에서 별도로 평가한다.
 
-## 0. 원래 가설의 수정
+## 0. 원래 질문과 추가 탐색 가설의 분리
 
-원래 보고서는 unknown positive-correspondence kernel과 observation uncertainty가 서로 혼동될 가능성을 제안했다. 이 표현만으로는 참·거짓이 정해지지 않는다. Kernel family를 정하지 않으면 blind factorization이고, 엄격한 parametric family를 정하면 전체 pair law가 충분할 수 있다.
+원래 보고서의 가설은 observation ambiguity와 unknown correspondence law를 함께 허용하면 pairwise objective가 거의 같은 해들 사이에서 관측 예측이 달라질 **수 있다**는 존재적 명제다(source tex307). 모든 unknown kernel에서 실패한다는 주장이 아니며, 보고서는 그 보편 명제를 명시적으로 배제했다(tex309,687). 아래 categorical 결과는 원래 가설의 한 사례를 지지한다. 그 사례가 학술적으로 새로운지는 별도 질문이다.
 
-따라서 먼저 **unknown scalar positive concentration 자체가 비식별을 뜻하는가**를 검사했다. 결과는 아니었다. 이는 arbitrary categorical 반례가 Kirchhof et al.2023의 vMF 결과를 반박한다는 주장을 명시적으로 배제한다.
+Protocol의 H1인 **unknown scalar positive concentration 자체가 비식별을 뜻하는가**는 이번 검증에서 추가로 세운 더 강한 탐색 가설이다. 원래 가설의 바꿔 쓴 표현이 아니다. Circle 결과는 이 강한 H1을 반박하지만 원래의 존재적 명제를 반박하지 않는다. Kernel family를 고정하면 어떤 경우 비식별이고 어떤 경우 식별되는지 경계를 정리한 결과로 해석한다. Arbitrary categorical 반례가 Kirchhof et al.2023의 vMF 정리를 반박한다는 주장도 하지 않는다.
 
 ## 1. 원형 vMF 모형과 전체 pair law
 
@@ -179,4 +179,4 @@ Uniform negatives에 대해 population infinite-negative contrastive conditional
 
 ## 5. 남는 공백
 
-직접 증명한 내용은 좁은 모형에서 unknown kernel이 항상 비식별을 만든다는 가설을 반박하고, 다른 family에서 exact predictive interval을 계산한 것이다. 아직 임의 heteroscedastic probabilistic encoder의 near-optimal set, 불완전한 acquisition 조건, 자연 이미지의 calibrated uncertainty를 해결하지 않았다. 이 남은 질문 자체가 다음 논문 기여라는 근거도 아직 없다. 선행 singular inference와 blind deconvolution을 제거하고 남는 새 명제가 필요한 상태다.
+직접 증명한 내용은 새로 추가한 강한 탐색 H1을 좁은 모형에서 반박하고, 다른 family에서 원래 존재적 가설을 지지하는 exact predictive interval을 계산한 것이다. 원래 질문을 circle의 식별 성공으로 대신 해결했다고 주장하지 않는다. 아직 임의 heteroscedastic probabilistic encoder의 near-optimal set, 불완전한 acquisition 조건, 자연 이미지의 calibrated uncertainty를 해결하지 않았다. 이 남은 질문 자체가 다음 논문 기여라는 근거도 아직 없다. 선행 singular inference와 blind deconvolution을 제거하고 남는 새 명제가 필요한 상태다.

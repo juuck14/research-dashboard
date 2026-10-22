@@ -1,0 +1,65 @@
+{
+  "cases": 800,
+  "admissible_cases": 473,
+  "violations": 0,
+  "max_normalized_fraction": 0.9964727966682684,
+  "max_absolute_fraction": 0.9945024700896238,
+  "max_condition_among_admissible": 6697.651018976311,
+  "necessity_without_mixed_row_lower": [
+    {
+      "epsilon": 0.1,
+      "residual": 0.14142135623730953,
+      "C_nonzero": 6,
+      "op_B": 1.4142135623730951,
+      "smallest_A_row": 0.14142135623730953,
+      "best_normalized_off": 0.9950371902099893,
+      "naive_bound": 0.14142135623730953
+    },
+    {
+      "epsilon": 0.01,
+      "residual": 0.01414213562373095,
+      "C_nonzero": 6,
+      "op_B": 1.4142135623730951,
+      "smallest_A_row": 0.01414213562373095,
+      "best_normalized_off": 0.9999500037496877,
+      "naive_bound": 0.01414213562373095
+    },
+    {
+      "epsilon": 0.001,
+      "residual": 0.001414213562373095,
+      "C_nonzero": 6,
+      "op_B": 1.4142135623730951,
+      "smallest_A_row": 0.001414213562373095,
+      "best_normalized_off": 0.999999500000375,
+      "naive_bound": 0.001414213562373095
+    },
+    {
+      "epsilon": 0.0001,
+      "residual": 0.0001414213562373095,
+      "C_nonzero": 6,
+      "op_B": 1.4142135623730951,
+      "smallest_A_row": 0.0001414213562373095,
+      "best_normalized_off": 0.999999995,
+      "naive_bound": 0.0001414213562373095
+    },
+    {
+      "epsilon": 9.999999999999999e-06,
+      "residual": 1.414213562373095e-05,
+      "C_nonzero": 6,
+      "op_B": 1.4142135623730951,
+      "smallest_A_row": 1.414213562373095e-05,
+      "best_normalized_off": 0.99999999995,
+      "naive_bound": 1.414213562373095e-05
+    },
+    {
+      "epsilon": 1e-06,
+      "residual": 1.414213562373095e-06,
+      "C_nonzero": 6,
+      "op_B": 1.4142135623730951,
+      "smallest_A_row": 1.414213562373095e-06,
+      "best_normalized_off": 0.9999999999995,
+      "naive_bound": 1.414213562373095e-06
+    }
+  ],
+  "evidence": "Global C support minimization for sampled B, not global B search or proof"
+}

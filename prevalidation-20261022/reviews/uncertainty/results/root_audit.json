@@ -1,0 +1,9 @@
+{
+  "kl_grid_conditions": 18,
+  "max_relative_error_kl4": 1.0023315510920838e-11,
+  "max_relative_error_kl6": 3.3586289305276296e-10,
+  "lrt_rows": 24,
+  "lrt_truth_datasets": 48,
+  "generated_pair_count": 1571928,
+  "note": "Independent deterministic FFT numerical audit; LRT samples not independently rerun"
+}

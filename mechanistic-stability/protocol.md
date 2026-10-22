@@ -62,3 +62,15 @@ F(x)_j=x_j+.1x_j³를 같은 observation coordinates에서 적용한다. 양의 
 작은 nonlinear 계산: p=2,q=1, s,t∈[−.6,.6]. g0=(s+.1s³,1.2s+.05s³,t+.07t³,.9t+.1t³,s+t+.1st). hβ=(s+βsin t,t+βsin s), actual ĝ=g0∘hβ⁻¹, reference ĝ0=g0 on hβ(domain). β=[.001,.003,.01,.03,.05], a=.9,L=1+β. analytic C¹ allowance δ=3β/(1−β)+√2β (g0 norm≤3, derivative Lipschitz≤1 on enlarged domain). 同law reconstruction 및 derivatives를 grid로 확인하고 predicted off-block bound와 C⁰ block approximation을 검산한다. 확인 grid는 primary61×61, confirmation 독립 seed20261024의1024 random points. optimizer/finite-sample 실험으로 부르지 않는다.
 
 별도 norm 점검: off-block derivative가 작다는 사실만으로 global C¹ distance to block function가 같은 선형률로 작아지는지 확인한다. 이것을 원래 decoder-C¹ leakage 주장 전체의 반례로 확대하지 않는다. 실제 theorem이 증명하는 norm을 최종 문서에서 명시한다.
+
+## Amendment 5 — fixed true generator에서 후보 complexity의 필요성
+
+앞 반례는 κ가 줄어드는 family였고 fixed g0의 pointwise stability는 반박하지 않았다. positive proof의 all-row norm 가정을 점검하면서 zero observation rows가 허용될 때 candidate reference가 작은 새 support를 추가하여 sparsity ranking을 바꿀 수 있다는 별도 반례를 발견했다. 실행 전 family를 기록한다: A=[Aκ=1;0_(4×2)] 고정, R=45°, actual C=AR, exact reference Bε=[A1R;εI;εI]. ε=[.1,.03,.01,.003,.001,1e−4,1e−6]. 예측 true minℓ0=8/nonaligned9, Bε min14/nonaligned15, singular values √3와√(3+2ε²), C¹ distance√2ε. 동일한 row-annihilator 전역 열거 및 independent weighted strong-row confirmation20조건(seed20261025)을 시행한다. 이 경우 후보 reference의 전체 sparsity가 true보다 크고 일부 weak witness가 ε로 줄어든다는 점이 핵심이다. 알려진 sparsity budget이나 candidate-side quantitative margin이 고정된 class의 반례로 쓰지 않는다.
+
+## Amendment 6 — weak witnesses 이외의 surrogate preference
+
+명제3은 local-minimum 문제였으므로 objective 자체의 순위와 구별한다. Aκ의 diagonal± 두 row만 w배 scaling하여 강도를 바꾼다. 실행 전 예측은 `Ccomp(θ)=(1+κ²)|sin2θ|+w²|cos2θ|`, `AᵀA=(1+w²+κ²)I`, TypeS min8/nonaligned9다. κ=1,w=2에서는 witness amplitude·condition이 고정되어도 trueaxis4,45°axis2일 것이다. grid κ=[.3,1,2], w=[.5,1,2,3], θ10001points를 계산한다. 같은 observation coordinates와 Jacobian metric을 유지하므로 latent/observation 차원·norm 차이는 원인이 아니다. 단 observation row-weighting이 structural ℓ0와 smooth weighted surrogate를 다르게 변화시키는 것이 원인이다. 이 결과는 저자들이 general Ccomp guarantee를 증명했다는 주장이나 전체 nonlinear 학습 실패 확률로 쓰지 않는다.
+
+## Amendment 7 — 검토자가 제시한 overlap 대안 설명 검증
+
+독립 검토자는 앞6row 예가 support overlap50%라는 반론을 제기하고 p=3 pure rows/axis +2 mixed diagonals,w=2를 제안했다. 실행 전 예측은 TypeS min10/nonalign12, overlap40%, Gram7I, trueCcomp4/wrong45°Ccomp3이다. p=[3,4,6], w=[1,2,3]9조건을 검산한다. p>q2와 모든 row amplitude floor를 갖는 family에서도 smooth surrogate가 learned ℓ0 budget를 보장하지 않는지를 직접 구분한다. 이는 실험 후 유리한 조건만 선별하는 것이 아니라 명시된 대안 설명을 새 사전조건에서 시험하는 추가 검증이다.

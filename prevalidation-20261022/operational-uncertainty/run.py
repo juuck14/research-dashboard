@@ -169,5 +169,11 @@ for c in (1., 2., 4.):
         a.loglog(ts, const*ts**power, '--', alpha=.4)
 for a, title in zip(ax, ['Null path versus equal channels', 'Opposite signs along null path']):
     a.set(xlabel='perturbation t', ylabel='population KL per pair', title=title)
+    a.set_xticks([.02, .04, .08, .16], labels=['0.02', '0.04', '0.08', '0.16'])
+    a.xaxis.set_minor_locator(matplotlib.ticker.NullLocator())
     a.grid(alpha=.2); a.legend()
-fig.tight_layout(); fig.savefig(OUT/'singular_kl.png', dpi=150); plt.close(fig)
+fig.tight_layout()
+plot_tmp = OUT/'singular_kl.tmp.png'
+fig.savefig(plot_tmp, dpi=150)
+plt.close(fig)
+plot_tmp.replace(OUT/'singular_kl.png')

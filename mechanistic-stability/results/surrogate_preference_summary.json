@@ -1,0 +1,19 @@
+{
+  "cases": 12,
+  "wrong_rotation_strictly_preferred": 5,
+  "max_formula_error": 7.105427357601002e-15,
+  "max_gram_error": 1.7763568394002505e-15,
+  "decisive_case": {
+    "kappa": 1.0,
+    "diagonal_row_weight": 2.0,
+    "sparsity_min": 8,
+    "nonaligned_sparsity_min": 9,
+    "true_axis_contrast": 3.999999999999999,
+    "rotated_axis_contrast": 2.000000000000001,
+    "rotation_minimum": 2.000000000000001,
+    "minimum_angle": 45.0,
+    "formula_error": 2.6645352591003757e-15,
+    "gram_error": 8.881784197001252e-16
+  },
+  "limitation": "Exact preference among rotations with fixed Jacobian metric; no arbitrary decoder training"
+}

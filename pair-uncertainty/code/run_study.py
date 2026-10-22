@@ -146,7 +146,7 @@ def finite_sample():
                         pair_excess_logloss=float(np.sum(pair*np.log(pair/fitted))),
                         repeat_brier_regret=brier_regret(predtrue,phat,pair),
                         repeat_clipped_log_regret=clipped_log_regret(predtrue,phat,pair),
-                        exact_log_regret_is_infinite=bool(np.any((ptrue_mask := predtrue>0) & (phat==0))),
+                        exact_log_regret_is_infinite=bool(np.any((predtrue>0) & (phat==0))),
                         agreement_repeat_prediction=float(phat[0,0,0])))
     write_csv("finite_sample.csv",rows)
     summary=[]
@@ -206,6 +206,8 @@ def plots():
         axs[1].plot(dd["a"],dd["pair_cross_entropy"]-dd["pair_cross_entropy"][0],label=f"c={c:g}")
     axs[0].set(xlabel="Observation concentration a",ylabel="P(repeat=i | X1=X2=i)")
     axs[1].set(xlabel="Observation concentration a",ylabel="Population pair-loss excess")
+    axs[1].set_ylim(-1e-12,1e-12)
+    axs[1].set_title("Numerical roundoff only (under 1e-15)",fontsize=10)
     for ax in axs: ax.legend(frameon=False);ax.grid(alpha=.2)
     fig.tight_layout();fig.savefig(OUT/"pair_equivalent_predictions.png",dpi=160)
     plt.close(fig)

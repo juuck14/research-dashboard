@@ -1,0 +1,37 @@
+{
+  "owner_rows_audited": 60,
+  "owner_summary_max_abs_error": 0.0,
+  "independent_seeds": [
+    7501,
+    7502,
+    7503,
+    7504,
+    7505,
+    7506
+  ],
+  "independent_datasets": 12,
+  "independent_summary": [
+    {
+      "n": 10000,
+      "datasets": 6,
+      "repeat_a_hat_mean": 0.7989590639953006,
+      "repeat_a_hat_sd": 0.004158950793641049,
+      "repeat_b_hat_mean": 0.24426305723575314,
+      "repeat_b_hat_sd": 0.010063907905041,
+      "more_pairs_plugin_width_mean": 0.5986262922013067,
+      "more_pairs_plugin_width_sd": 0.004356148013456735
+    },
+    {
+      "n": 100000,
+      "datasets": 6,
+      "repeat_a_hat_mean": 0.8003967108497284,
+      "repeat_a_hat_sd": 0.0017681383213563647,
+      "repeat_b_hat_mean": 0.2501475864955924,
+      "repeat_b_hat_sd": 0.0032838975137268766,
+      "more_pairs_plugin_width_mean": 0.6001435019077078,
+      "more_pairs_plugin_width_sd": 0.001933163221903687
+    }
+  ],
+  "sampling": "inverse-CDF of mod3 offset; no owner code imported",
+  "note": "plugin structural width, not a finite-sample confidence interval; repeated-measurement principle is classical"
+}

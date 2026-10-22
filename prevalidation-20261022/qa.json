@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-22",
+  "missing_markdown_targets": [],
+  "python_files_compiled": 28,
+  "compile_errors": [],
+  "png_files_verified": [
+    "ssl-recovery/results/recovery_controls.png",
+    "mechanistic-stability/figures/counterexample.png",
+    "mechanistic-stability/figures/surrogate_landscape.png",
+    "pair-uncertainty/results/pair_equivalent_predictions.png",
+    "prevalidation-20261022/operational-uncertainty/results/singular_kl.png"
+  ],
+  "png_errors": [],
+  "scientific_reexecution": false,
+  "notes": "Compile, link, checksum QA only. Independent scientific computations are recorded in each review. Link targets were checked again after creating this QA artifact."
+}

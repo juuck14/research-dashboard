@@ -48,3 +48,9 @@ Kirchhof et al2023 Thm4.4 및 Appendix A, Anandkumar2014 multi-view moments, All
 이 수정은 초기에 계획한 additional true repeat의 구체적 비교를 확정한다. 모형 B에서 independent repeat pair의 correlation r=a²이므로 c=a²b와 함께 두 parameter를 정한다. 반면 X1의 bytes 복제는 r=1을 주며 이 공식을 적용할 근거가 없다. 일반 full-rank categorical emission의 third-order tensor 복구와는 다른 제한 모형이다.
 
 truth a=.8,b=.25. n=1000/10000/100000. primary seeds20..29, confirmation201..210. 원래 n positive pair(2n acquisition)에 anchor-state independent repeat n개를 더해 총3n acquisition. 같은 3n acquisition budget에서1.5n positive pair만 수집한 조건도 실행한다. Pair-only에서 a가 비식별이므로 arbitrary point estimate를 비교해 이긴다고 주장하지 않고 c 추정과 sharp interval만 보고한다. 같은 bytes 복제는 추가 acquisition 비용0인 별도 invalid-lineage 진단이며 공정한 성능 경쟁으로 세지 않는다. 판정은 independent repeat의 추정 a가 .8로 수렴하는지와, budget-matched positive pair의 구조구간이 사라지지 않는지다.
+
+## Amendment 3 — 원가설과 새 탐색 H1의 범위 정정 (분석 완료 뒤)
+
+실행 전의 H1/H2 문구와 기준은 위에 그대로 보존한다. Root의 source 대조 지적 후 tex307/309/687을 직접 확인했다. 원자료 가설은 unknown correspondence를 허용하면 pairwise fit이 같은 해들 사이에서 예측이 달라질 **수 있다**는 존재적 명제이며, 모든 uncertainty가 pair로 불가능하다는 명제를 명시적으로 배제했다.
+
+따라서 위 H1은 이번에 추가한 더 강한 탐색 질문이지 원가설의 동치 표현이 아니다. Circle 주입성은 H1을 반박하지만 원가설은 categorical 결과로 지지된다. 이전 verdict에서 원가설을 broad impossibility로 부른 해석 오류를 progress에 보존하고 정정했다. 수치·실험·사전 기준은 바꾸지 않으며 최종 기각 근거도 “원가설 거짓” 대신 현재 결과의 신규성과 기여 부족으로 제한한다.

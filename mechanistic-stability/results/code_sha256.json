@@ -1,0 +1,8 @@
+{
+  "code/fixed_base_check.py": "7bdfb34cea54bdd188721080a206bf5de6ca99e2cad9474a64164057a6bbd8ba",
+  "code/low_overlap_surrogate.py": "12b11a0f448b4ce2c1b414f93e163f9c3afe8770715a65424203b8c7a6e593e4",
+  "code/positive_check.py": "4f86f4ab58e67309f3196363289602e9d965195cc009c98322ea25e1ff3d6a99",
+  "code/run_study.py": "f07ef5eeba713dfb9b0688e7f3f06e9f7b107356e7b9e81a7b8fcac548d7832a",
+  "code/surrogate_check.py": "b34c69116ea198f2c00e82b8b3e7cecfff003e043f8d0675baccabc9b3d928b6",
+  "code/surrogate_preference.py": "bd8f4fc214e1e2d4f405dd14444ac98a40f4121acf80d198afb0d983b8b78a06"
+}

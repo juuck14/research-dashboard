@@ -1,0 +1,15 @@
+{
+  "cases": 27,
+  "fixed_true_reference": true,
+  "true_sparsity_min": [
+    8
+  ],
+  "candidate_reference_sparsity_min": [
+    14
+  ],
+  "minimum_true_gap": 1,
+  "minimum_candidate_gap": 1,
+  "max_distance_error": 2.7755575615628914e-17,
+  "max_same_law_error": 4.440892098500626e-16,
+  "limitation": "zero observation rows and a larger candidate-reference sparsity budget are allowed"
+}

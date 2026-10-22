@@ -10,7 +10,7 @@ S⊂R²는 connected open domain. g0:S→R^m, ĝ0:Z→R^m는 C¹이고 m=2p+q,p>
 2. 남은 q개의 row는 arbitrary이며 Euclidean row norm≥a. 이들은 서로 다른 factor가 동시에 작용하는 행으로 허용한다.
 3. learned reference C=Dĝ0(z)는 각 z에서 ||C||0≤m+q. C의 row pattern은 미리 알려 주지 않는다.
 
-g,ĝ는 같은 observation manifold의 C¹ diffeomorphic charts이며 g=ĝ∘h, h:S→Z는 C¹ diffeomorphism이다. ||Dg−Dg0||op≤δ, ||Dĝ−Dĝ0||op≤δ, ||Dh||op≤L를 가정한다. 두 decoder의 singular values를 위아래로 제어하면 마지막 L bound를 유도할 수 있지만 이 노트는 L을 알려진 chart regularity 상수로 둔다. 이는 transition의 무한 확대를 제한하며 h=tI,t→0 같은 축소 gauge까지 금하지는 않는다. 아래 absolute derivative/C⁰ bound는 고정된 chart의 단위에 의존하고, normalized row direction에 대한 angle bound가 좌표별 재매개화에 불변인 핵심이다.
+g,ĝ는 같은 observation manifold의 C¹ diffeomorphic charts이며 g=ĝ∘h, h:S→Z는 C¹ diffeomorphism이다. ||Dg−Dg0||op≤δ, ||Dĝ−Dĝ0||op≤δ, ||Dh||op≤L를 가정한다. 두 decoder의 singular values를 위아래로 제어하면 마지막 L bound를 유도할 수 있지만 이 노트는 L을 알려진 chart regularity 상수로 둔다. 이는 transition의 무한 확대를 제한하며 h=tI,t→0 같은 축소 gauge까지 금하지는 않는다. 아래 absolute derivative/C⁰ bound는 고정된 chart의 단위에 의존한다. normalized row angle은 learned 좌표별 재매개화가 row를 scalar배하는 데에는 불변이나, true source 좌표의 재매개화로 columns의 단위를 바꾸면 변한다. 따라서 true-source chart metric도 고정해야 하며 완전히 gauge-free한 정리라고 부르지 않는다.
 
 η=δ(1+L)<a/√2라 하자. 그러면 하나의 global permutation π가 존재하여 모든 s에서
 

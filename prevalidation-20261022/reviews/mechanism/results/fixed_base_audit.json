@@ -1,0 +1,176 @@
+{
+  "true_audit": {
+    "minimum": 8,
+    "nonaligned_minimum": 9,
+    "all_optima_aligned": true
+  },
+  "true_svals": [
+    1.7320508075688772,
+    1.7320508075688772
+  ],
+  "observation_dimension": 10,
+  "true_reference_fixed": true,
+  "candidate_actual_fixed": true,
+  "rows": [
+    {
+      "epsilon": 0.1,
+      "candidate_reference_audit": {
+        "minimum": 14,
+        "nonaligned_minimum": 15,
+        "all_optima_aligned": true
+      },
+      "distance": 0.1414213562373095,
+      "predicted_distance": 0.14142135623730953,
+      "svals": [
+        1.7378147196982772,
+        1.7378147196982767
+      ],
+      "predicted_sigma": 1.7378147196982767,
+      "exact_same_observation_covariance_error": 7.194286451301231e-16
+    },
+    {
+      "epsilon": 0.01,
+      "candidate_reference_audit": {
+        "minimum": 14,
+        "nonaligned_minimum": 15,
+        "all_optima_aligned": true
+      },
+      "distance": 0.01414213562373095,
+      "predicted_distance": 0.014142135623730952,
+      "svals": [
+        1.7321085416335784,
+        1.7321085416335782
+      ],
+      "predicted_sigma": 1.732108541633578,
+      "exact_same_observation_covariance_error": 7.194286451301231e-16
+    },
+    {
+      "epsilon": 0.001,
+      "candidate_reference_audit": {
+        "minimum": 14,
+        "nonaligned_minimum": 15,
+        "all_optima_aligned": true
+      },
+      "distance": 0.001414213562373095,
+      "predicted_distance": 0.0014142135623730952,
+      "svals": [
+        1.7320513849190502,
+        1.7320513849190502
+      ],
+      "predicted_sigma": 1.7320513849190502,
+      "exact_same_observation_covariance_error": 7.194286451301231e-16
+    },
+    {
+      "epsilon": 0.0001,
+      "candidate_reference_audit": {
+        "minimum": 14,
+        "nonaligned_minimum": 15,
+        "all_optima_aligned": true
+      },
+      "distance": 0.0001414213562373095,
+      "predicted_distance": 0.0001414213562373095,
+      "svals": [
+        1.7320508133423802,
+        1.73205081334238
+      ],
+      "predicted_sigma": 1.73205081334238,
+      "exact_same_observation_covariance_error": 7.194286451301231e-16
+    },
+    {
+      "epsilon": 9.999999999999999e-06,
+      "candidate_reference_audit": {
+        "minimum": 14,
+        "nonaligned_minimum": 15,
+        "all_optima_aligned": true
+      },
+      "distance": 1.414213562373095e-05,
+      "predicted_distance": 1.414213562373095e-05,
+      "svals": [
+        1.7320508076266128,
+        1.7320508076266126
+      ],
+      "predicted_sigma": 1.7320508076266123,
+      "exact_same_observation_covariance_error": 7.194286451301231e-16
+    },
+    {
+      "epsilon": 1e-06,
+      "candidate_reference_audit": {
+        "minimum": 14,
+        "nonaligned_minimum": 15,
+        "all_optima_aligned": true
+      },
+      "distance": 1.414213562373095e-06,
+      "predicted_distance": 1.4142135623730952e-06,
+      "svals": [
+        1.732050807569455,
+        1.7320508075694547
+      ],
+      "predicted_sigma": 1.7320508075694547,
+      "exact_same_observation_covariance_error": 7.194286451301231e-16
+    },
+    {
+      "epsilon": 1e-07,
+      "candidate_reference_audit": {
+        "minimum": 14,
+        "nonaligned_minimum": 15,
+        "all_optima_aligned": true
+      },
+      "distance": 1.414213562373095e-07,
+      "predicted_distance": 1.4142135623730952e-07,
+      "svals": [
+        1.7320508075688832,
+        1.732050807568883
+      ],
+      "predicted_sigma": 1.732050807568883,
+      "exact_same_observation_covariance_error": 7.194286451301231e-16
+    },
+    {
+      "epsilon": 1e-08,
+      "candidate_reference_audit": {
+        "minimum": 14,
+        "nonaligned_minimum": 15,
+        "all_optima_aligned": true
+      },
+      "distance": 1.414213562373095e-08,
+      "predicted_distance": 1.4142135623730952e-08,
+      "svals": [
+        1.7320508075688776,
+        1.7320508075688774
+      ],
+      "predicted_sigma": 1.7320508075688772,
+      "exact_same_observation_covariance_error": 7.194286451301231e-16
+    },
+    {
+      "epsilon": 1e-09,
+      "candidate_reference_audit": {
+        "minimum": 14,
+        "nonaligned_minimum": 15,
+        "all_optima_aligned": true
+      },
+      "distance": 1.4142135623730951e-09,
+      "predicted_distance": 1.4142135623730953e-09,
+      "svals": [
+        1.7320508075688774,
+        1.7320508075688772
+      ],
+      "predicted_sigma": 1.7320508075688772,
+      "exact_same_observation_covariance_error": 7.194286451301231e-16
+    },
+    {
+      "epsilon": 1e-10,
+      "candidate_reference_audit": {
+        "minimum": 14,
+        "nonaligned_minimum": 15,
+        "all_optima_aligned": true
+      },
+      "distance": 1.414213562373095e-10,
+      "predicted_distance": 1.4142135623730953e-10,
+      "svals": [
+        1.7320508075688774,
+        1.7320508075688772
+      ],
+      "predicted_sigma": 1.7320508075688772,
+      "exact_same_observation_covariance_error": 7.194286451301231e-16
+    }
+  ]
+}

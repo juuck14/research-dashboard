@@ -1,6 +1,6 @@
 # 후보 3 — 독립 비판 검토
 
-담당 uncertainty_review. 2026-10-22. **현재 구체화의 독립 연구 착수에는 기각 의견**이다. 이는 uncertainty/unknown-correspondence 문제 전체가 해결됐다는 결론이 아니다. 원가설은 명시한 vMF subclass에서 반박되었고, 실행으로 살아남은 categorical·singular 사례는 고전 결과의 구체 대입이라는 반론을 아직 넘지 못했다.
+담당 uncertainty_review. 2026-10-22. **현재 구체화의 독립 연구 착수에는 기각 의견**이다. 이는 uncertainty/unknown-correspondence 문제 전체가 해결됐다는 결론이 아니다. 조사 중 시험한 **강화된 보편 가설**은 명시한 vMF subclass에서 반박되었고, 실행으로 살아남은 categorical·singular 사례는 고전 결과의 구체 대입이라는 반론을 아직 넘지 못했다. 원 보고서의 존재적 가설을 반박한 것은 아니다.
 
 ## 무엇을 직접 확인했는가
 
@@ -11,6 +11,8 @@
 | 직접 증명 검토 | diagonal null-path의 KL 차수 t⁴/t⁶와 양의 leading constants | 특정 simple vs simple 판별; 일반 minimax theorem 아님 |
 | 독립 실행 | 1001 primary+200 random categorical Gram orbit 계산; 42 Bessel expansion 계산 | script가 owner code를 import하지 않음 |
 | owner 감사 | 144개 explicit latent enumeration; 60 pair datasets/180 prediction CSV 검사 | posterior/held-out repeat 위험은 population law로 평가 |
+| Root 감사 | 별도 FFT convolution으로 KL 9조건×2grid 재계산; LRT 행수·예산 감사 | Bessel/Root code import 없음; LRT 재표본 실행은 아님 |
+| 추가 acquisition 확인 | Owner60행 감사 및 inverse-CDF offset 구현의 새12datasets | 같은3n acquisition 예산; 실제 genuine repeat 생성 |
 
 재현 명령은 `OPENBLAS_NUM_THREADS=1 python prevalidation-20261022/reviews/uncertainty/independent_check.py`, `OPENBLAS_NUM_THREADS=1 python prevalidation-20261022/reviews/uncertainty/owner_audit.py`. 실행 전 [protocol](protocol.md), [실패·변경 이력](progress.md), [summary](results/summary.json), [owner audit](results/owner_audit.json), [독립 증명](exact_identification.md)을 함께 보라.
 
@@ -42,11 +44,31 @@ Owner의 unknown-kernel symmetric channel branch도 별도 double-latent enumera
 
 Finite-sample script가 실제로 생성한 것은 pair samples이며 repeat 위험은 true population conditional에 대한 정확한 기대값이다. 별도 held-out third observations를 생성해 calibration을 측정한 실험은 없다. 이 분석에는 population score가 적절하지만, ‘neural SSL calibration 확인’이라고 쓰면 안 된다. a=1 대안의 log risk는 무한대이며 clipped diagnostic을 exact finite log score와 구별한 owner amendment는 타당하다.
 
+Root의 operational branch는 `root_audit.py`로 재계산했다. Bessel 함수·analytic coefficient를 쓰지 않고 exp(vM) density를 확률질량으로 정규화하여 FFT convolution하고 KL을 독립 산출했다. c=1,2,4; t=.04,.08,.16; grid4096/8192 총18조건에서 Root 기록 대비 상대오차는 t⁴ KL `1.01e−11` 이하, t⁶ KL `3.36e−10` 이하였다. 원 LRT CSV의 24행은 각 두 truth dataset을 담으므로 **48개 데이터셋, 총1,571,928 pair**다. 샘플은 독립 재실행하지 않았고 행수와 count만 감사했다. [감사결과](results/root_audit.json), [원자료](results/root_kl_audit.csv). Root의 KL law 주장은 수치와 증명 모두 타당한 범위이나, 이 판별 법칙 자체의 신규성 평가는 위 Rotnitzky 반론을 받는다.
+
+### 실제 repeat 및 같은 acquisition 예산의 후속 확인
+
+Owner가 실행 전 Amendment2를 기록하고 실제 independent repeat를 생성했다. `acquisition.csv`60행과 summary를 재계산해 수치 오차0으로 확인했다. 이후 owner의 mixture-copy 구현을 가져오지 않고 **mod3 offset inverse-CDF**로 positive transition과 세 관측을 별도 구현했다. 사전등록한 seeds7501–7506, n=10000/100000 총12datasets에서, 3n genuine acquisitions의 `n positive pair + n anchor repeat`와 같은3n acquisitions의 `1.5n positive pairs`를 비교했다.
+
+| n | repeat a 추정 mean±sampleSD | repeat b 추정 mean±sampleSD | positive-only plugin 구조구간 폭 |
+|---|---|---|---|
+| 10000 | .798959±.004159 | .244263±.010064 | .598626±.004356 |
+| 100000 | .800397±.001768 | .250148±.003284 | .600144±.001933 |
+
+참값은 a=.8,b=.25, pair-only population 구조구간 폭은.6이다. 독립 repeat의 새 정보가 두 channel을 분리하고 positive pairs를 더 늘려도 이 family의 구조 모호성은 사라지지 않는다는 방향을 확인했다. plugin 구조구간은 finite-sample confidence interval이 아니다. 이는 실제 추가 측정을 생성한 확인이며 자연 이미지 uncertainty/calibration이나 neural objective를 실행한 증거가 아니다. [감사·독립 확인 결과](results/acquisition_audit.json), [원자료](results/acquisition_confirmation.csv), `acquisition_audit.py`에 보존했다. 값은 예상 원리와 일치하나 classical replicated-deconvolution이라는 신규성 반론은 해결하지 않는다.
+
 ## 반박에 대한 결론과 미해결 이견
 
-- ‘kernel 폭을 몰라서 두 uncertainty를 원리상 구분 못한다’는 원가설은 model family를 명시하면 참/거짓이 갈린다. circle-vMF의 양의 scalar case는 직접 반례다.
+- 원 보고서의 가설은 ‘observation ambiguity와 unknown correspondence를 허용하면 pair 법칙이 거의 같은 해들 사이에서 관측 예측이 **달라질 수 있다**’는 존재적 주장이다. categorical branch가 이를 지지하며, circle-vMF의 주입성은 이를 반박하지 않는다. 보고서 자체도 ‘pair로 분포를 학습하면 반드시 실패한다’는 해석을 명시적으로 배제했다.
+- 조사 중 H1으로 강화한 ‘unknown scalar positive parameter만으로 본질적으로 비식별’이라는 보편 주장은 circle-vMF의 양의 scalar case로 반박된다. 이 반박은 family 선택의 중요성을 밝히지만 원 보고서의 질문을 해결하지 못한 채 대체하는 기각 이유가 될 수 없다.
 - 가장 명확한 negative result는 categorical unrestricted factorization이다. 그러나 고전 inverse problem의 특수 경우라 독립 기여의 크기가 작다.
 - exact circle identification과 singular sensitivity는 흥미로운 기술 note가 될 수 있다. 다만 singular inference와 independent repeat의 핵심 논리는 기존 원리다. **현재 확보한 자료만으로 수개월 독립 연구를 우선 착수하라는 근거는 부족하다.**
-- Root가 보는 운영상 분해 가능성의 중요성은 인정한다. 내가 낮게 평가하는 부분은 결과의 진실성이 아니라 기존 일반론을 제거한 뒤 남는 학술적 폭이다. 새로운 architecture/loss를 추가하는 것으로 이 반론이 해결되지는 않는다.
+- Root가 보는 운영상 분해 가능성의 중요성은 인정한다. 내가 낮게 평가하는 부분은 결과의 진실성이 아니라 기존 일반론을 제거한 뒤 남는 학술적 폭이다. 추가 KL·repeat 검토 뒤 Root도 현재 구체화의 독립 착수 기각에 동의했다. 새로운 architecture/loss를 추가하는 것으로 이 반론이 해결되지는 않는다.
 
 재개하려면 (i) 실제 probabilistic SSL objective의 near-optimal set에서 representation/observable target의 sharp law를 얻거나, (ii) heteroscedastic/learned mean family에서 정확한 추가 acquisition budget의 하한·상한이 맞거나, (iii) standard singular explanation은 같지만 uncertainty claim의 성패를 구분하는 현상을 확보해야 한다. 핵심 검증이 아직 이 상태라면 ‘수정 후 진행’ 대신 보류 또는 현재 구체화 기각이 정직하다.
+
+위 ‘별도 held-out repeat calibration 실행 없음’은 최초 finite-sample scoring script의 범위다. 후속 acquisition 실험에서는 실제 repeat를 생성해 channel parameters를 추정했으며, held-out neural calibration을 측정한 것은 아니다.
+
+### 해석 정정 이력
+
+Root가 원 보고서 tex의 존재적 가설 및 별도 명시적 한계를 재확인한 뒤, 본 검토의 초기 ‘원가설 반박’ 표현을 정정했다. 정확한 대상은 **이번 조사에서 시험한 강화 가설**이다. 원래 질문은 categorical 결과와 양립하며 그 존재적 부분은 지지된다. 수치·증명·기각의 핵심 신규성 판단은 바뀌지 않았다. 긍정적 존재 예제가 고전 factorization을 넘어서는 기여인가가 기각 판단의 근거다.

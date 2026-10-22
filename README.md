@@ -22,3 +22,16 @@ Negative의 [실제 결과 기반 논문 초안](negative-feedback/paper_draft.m
 - [근사 가정 아래의 부분 식별](partial-identification/README.md)
 - [의미 요인별 negative 관계와 피드백](negative-feedback/README.md)
 - [불완전한 자기 생성 target의 교정](target-correction/README.md)
+
+
+## 새 검증 회차: 보고서 후보 1·2·3
+
+2026-10-22 실제 분석·실험·독립 교차 검토를 완료했다. **후보1 현재 구체화 기각 / 후보2 판정 보류 / 후보3 현재 구체화 기각.** 이번 결과로 즉시 수개월 연구를 권하는 후보는 없다.
+
+| 후보 | 실제 확보한 것 | 남은 핵심 |
+|---|---|---|
+| SSL 회복 지연 | nonlinear 학습·상태 개입·장기 및 contrastive 대조, flat optimum 증명 | 기존 설명을 넘는 새 회복 예측 미확보 |
+| 근사 메커니즘 식별 안정성 | same-law 반례·all-candidate 제한 정리·surrogate preference 반례 | 일반 quantitative margin·learned candidate 연결·신규성 미해결 |
+| pairwise 확률적 SSL의 불확실성 | sharp prediction set·표본/예산 실험·vMF 식별·singular KL | 고전 원리를 넘는 실제 SSL 기여 미확보 |
+
+[최종 종합보고](prevalidation-20261022/final_report.md) · [증거·역할](prevalidation-20261022/evidence.md) · [재현 안내](prevalidation-20261022/reproduction.md) · [진행 이력](prevalidation-20261022/progress.md). 아래 기존 연구 결과는 별도 회차로 보존한다.
