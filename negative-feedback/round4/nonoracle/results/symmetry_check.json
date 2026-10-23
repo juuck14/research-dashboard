@@ -1,0 +1,136 @@
+{
+  "posthoc_algebraic_diagnostic": true,
+  "field_max_equivariance_error": 4.163336342344337e-17,
+  "value_max_equivariance_error": 2.6645352591003757e-15,
+  "settings": 144,
+  "squares": [
+    {
+      "matching": 0,
+      "coordinates": [
+        [
+          -0.7071067811865475,
+          -0.7071067811865475
+        ],
+        [
+          0.7071067811865475,
+          0.7071067811865475
+        ],
+        [
+          -0.7071067811865475,
+          0.7071067811865475
+        ],
+        [
+          0.7071067811865475,
+          -0.7071067811865475
+        ]
+      ],
+      "balanced_partitions": [
+        "a",
+        "b",
+        "ab"
+      ],
+      "affine_readout_max_residuals": [
+        1.0,
+        2.220446049250313e-16,
+        2.220446049250313e-16
+      ],
+      "linearly_separable": [
+        false,
+        true,
+        true
+      ],
+      "exact_factor_information_bits": [
+        1,
+        1,
+        1
+      ],
+      "explanation": "four distinct class vertices permit exact nonlinear decoding; the remaining balanced partition is XOR and has optimal affine classifier accuracy3/4 at the exact reference"
+    },
+    {
+      "matching": 1,
+      "coordinates": [
+        [
+          -0.7071067811865475,
+          -0.7071067811865475
+        ],
+        [
+          -0.7071067811865475,
+          0.7071067811865475
+        ],
+        [
+          0.7071067811865475,
+          0.7071067811865475
+        ],
+        [
+          0.7071067811865475,
+          -0.7071067811865475
+        ]
+      ],
+      "balanced_partitions": [
+        "a",
+        "b",
+        "ab"
+      ],
+      "affine_readout_max_residuals": [
+        1.1102230246251565e-16,
+        1.0,
+        1.1102230246251565e-16
+      ],
+      "linearly_separable": [
+        true,
+        false,
+        true
+      ],
+      "exact_factor_information_bits": [
+        1,
+        1,
+        1
+      ],
+      "explanation": "four distinct class vertices permit exact nonlinear decoding; the remaining balanced partition is XOR and has optimal affine classifier accuracy3/4 at the exact reference"
+    },
+    {
+      "matching": 2,
+      "coordinates": [
+        [
+          -0.7071067811865475,
+          -0.7071067811865475
+        ],
+        [
+          -0.7071067811865475,
+          0.7071067811865475
+        ],
+        [
+          0.7071067811865475,
+          -0.7071067811865475
+        ],
+        [
+          0.7071067811865475,
+          0.7071067811865475
+        ]
+      ],
+      "balanced_partitions": [
+        "a",
+        "b",
+        "ab"
+      ],
+      "affine_readout_max_residuals": [
+        1.1102230246251565e-16,
+        2.220446049250313e-16,
+        1.0
+      ],
+      "linearly_separable": [
+        true,
+        true,
+        false
+      ],
+      "exact_factor_information_bits": [
+        1,
+        1,
+        1
+      ],
+      "explanation": "four distinct class vertices permit exact nonlinear decoding; the remaining balanced partition is XOR and has optimal affine classifier accuracy3/4 at the exact reference"
+    }
+  ],
+  "conditional_matching_probability": "1/3 each, if an equivariant deterministic algorithm with iid class-symmetric initialization reaches one of three square classes",
+  "scope": "standard relabeling symmetry; not a new theorem of learning quality or a global convergence result"
+}

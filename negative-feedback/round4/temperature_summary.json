@@ -1,0 +1,8 @@
+{
+  "settings": 96,
+  "max_stationary_drift": 2.7755575615628914e-17,
+  "max_fd_error": 1.1000218513856908e-09,
+  "hard_or_uniform_min_curvature": 0.11683488772649983,
+  "theta_gt1_settings": 30,
+  "scope": "temperature rescaling and a direct local corollary; neither new top-journal contribution nor generic hard-negative guarantee"
+}

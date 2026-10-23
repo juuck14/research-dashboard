@@ -1,0 +1,14 @@
+{
+  "parsed_sources": [
+    "negative-feedback/round4/recheck.py",
+    "negative-feedback/round4/temperature_check.py",
+    "negative-feedback/round4/value_audit/task_meaning_check.py",
+    "negative-feedback/round4/nonoracle/run.py",
+    "negative-feedback/round4/nonoracle/symmetry_check.py",
+    "negative-feedback/round4/assumptions/check_assumptions.py"
+  ],
+  "parsed_json_count": 10,
+  "broken_links": [],
+  "isolated_recheck_passed": true,
+  "python": "3.12.14"
+}

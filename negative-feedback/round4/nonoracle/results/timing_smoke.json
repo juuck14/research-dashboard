@@ -1,0 +1,7 @@
+{
+  "evaluations": 200,
+  "seconds": 0.1418203179999864,
+  "projected384000_evaluations_seconds": 272.2950105599739,
+  "seed": 6000,
+  "only_timing_not_endpoint": true
+}

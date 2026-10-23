@@ -1,0 +1,627 @@
+{
+  "purpose": "scope counterexample; task meaning is not implied by stability",
+  "normal_direction_field_checks": [
+    {
+      "K": 8,
+      "sampler": "frozen",
+      "step": 1e-05,
+      "restoring": 0.0026759427992974626,
+      "flow_grows": false,
+      "eigen_residual": 4.6919780692368755e-17
+    },
+    {
+      "K": 8,
+      "sampler": "frozen",
+      "step": 0.0001,
+      "restoring": 0.002675945101088598,
+      "flow_grows": false,
+      "eigen_residual": 7.468886122617112e-17
+    },
+    {
+      "K": 8,
+      "sampler": "adaptive",
+      "step": 1e-05,
+      "restoring": 0.0026759427802694868,
+      "flow_grows": false,
+      "eigen_residual": 6.641691893388121e-17
+    },
+    {
+      "K": 8,
+      "sampler": "adaptive",
+      "step": 0.0001,
+      "restoring": 0.0026759431982897085,
+      "flow_grows": false,
+      "eigen_residual": 4.845595356719822e-17
+    },
+    {
+      "K": 16,
+      "sampler": "frozen",
+      "step": 1e-05,
+      "restoring": -0.0025799821379085116,
+      "flow_grows": true,
+      "eigen_residual": 1.4616332115304595e-16
+    },
+    {
+      "K": 16,
+      "sampler": "frozen",
+      "step": 0.0001,
+      "restoring": -0.0025799791798267746,
+      "flow_grows": true,
+      "eigen_residual": 6.357974530584207e-17
+    },
+    {
+      "K": 16,
+      "sampler": "adaptive",
+      "step": 1e-05,
+      "restoring": -0.0025799821600484807,
+      "flow_grows": true,
+      "eigen_residual": 7.161645726722179e-17
+    },
+    {
+      "K": 16,
+      "sampler": "adaptive",
+      "step": 0.0001,
+      "restoring": -0.002579981393832151,
+      "flow_grows": true,
+      "eigen_residual": 6.708750085096608e-17
+    }
+  ],
+  "exact_information": [
+    {
+      "alpha": 0.0,
+      "I_a_bits": 1.0,
+      "I_b_bits": 1.0,
+      "I_v_bits": 0.0,
+      "I_X_bits_exact_formula": 2.0,
+      "I_X_bits_finite_enumeration": 2.0,
+      "linear_a_accuracy": 1.0,
+      "linear_b_accuracy": 1.0,
+      "linear_v_accuracy": 0.5
+    },
+    {
+      "alpha": 0.001,
+      "I_a_bits": 1.0,
+      "I_b_bits": 1.0,
+      "I_v_bits": 1.0,
+      "I_X_bits_exact_formula": 3.0,
+      "I_X_bits_finite_enumeration": 3.0,
+      "linear_a_accuracy": 1.0,
+      "linear_b_accuracy": 1.0,
+      "linear_v_accuracy": 1.0
+    },
+    {
+      "alpha": 0.01,
+      "I_a_bits": 1.0,
+      "I_b_bits": 1.0,
+      "I_v_bits": 1.0,
+      "I_X_bits_exact_formula": 3.0,
+      "I_X_bits_finite_enumeration": 3.0,
+      "linear_a_accuracy": 1.0,
+      "linear_b_accuracy": 1.0,
+      "linear_v_accuracy": 1.0
+    },
+    {
+      "alpha": 0.1,
+      "I_a_bits": 1.0,
+      "I_b_bits": 1.0,
+      "I_v_bits": 1.0,
+      "I_X_bits_exact_formula": 3.0,
+      "I_X_bits_finite_enumeration": 3.0,
+      "linear_a_accuracy": 1.0,
+      "linear_b_accuracy": 1.0,
+      "linear_v_accuracy": 1.0
+    },
+    {
+      "alpha": 0.3,
+      "I_a_bits": 1.0,
+      "I_b_bits": 1.0,
+      "I_v_bits": 1.0,
+      "I_X_bits_exact_formula": 3.0,
+      "I_X_bits_finite_enumeration": 3.0,
+      "linear_a_accuracy": 1.0,
+      "linear_b_accuracy": 1.0,
+      "linear_v_accuracy": 1.0
+    },
+    {
+      "alpha": 0.6,
+      "I_a_bits": 1.0,
+      "I_b_bits": 1.0,
+      "I_v_bits": 1.0,
+      "I_X_bits_exact_formula": 3.0,
+      "I_X_bits_finite_enumeration": 3.0,
+      "linear_a_accuracy": 1.0,
+      "linear_b_accuracy": 1.0,
+      "linear_v_accuracy": 1.0
+    }
+  ],
+  "gaussian_tasks": [
+    {
+      "alpha": 0.0,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997965239912775,
+      "view_bayes_accuracy": 0.5,
+      "view_task_weight": 0.0,
+      "weighted_accuracy": 0.9997965239912775
+    },
+    {
+      "alpha": 0.0,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997965239912775,
+      "view_bayes_accuracy": 0.5,
+      "view_task_weight": 0.1,
+      "weighted_accuracy": 0.9498168715921498
+    },
+    {
+      "alpha": 0.0,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997965239912775,
+      "view_bayes_accuracy": 0.5,
+      "view_task_weight": 0.5,
+      "weighted_accuracy": 0.7498982619956387
+    },
+    {
+      "alpha": 0.0,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997965239912775,
+      "view_bayes_accuracy": 0.5,
+      "view_task_weight": 1.0,
+      "weighted_accuracy": 0.5
+    },
+    {
+      "alpha": 0.0,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.9213503964748575,
+      "view_bayes_accuracy": 0.5,
+      "view_task_weight": 0.0,
+      "weighted_accuracy": 0.9213503964748575
+    },
+    {
+      "alpha": 0.0,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.9213503964748575,
+      "view_bayes_accuracy": 0.5,
+      "view_task_weight": 0.1,
+      "weighted_accuracy": 0.8792153568273718
+    },
+    {
+      "alpha": 0.0,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.9213503964748575,
+      "view_bayes_accuracy": 0.5,
+      "view_task_weight": 0.5,
+      "weighted_accuracy": 0.7106751982374288
+    },
+    {
+      "alpha": 0.0,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.9213503964748575,
+      "view_bayes_accuracy": 0.5,
+      "view_task_weight": 1.0,
+      "weighted_accuracy": 0.5
+    },
+    {
+      "alpha": 0.001,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997965226298453,
+      "view_bayes_accuracy": 0.5019947030907408,
+      "view_task_weight": 0.0,
+      "weighted_accuracy": 0.9997965226298453
+    },
+    {
+      "alpha": 0.001,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997965226298453,
+      "view_bayes_accuracy": 0.5019947030907408,
+      "view_task_weight": 0.1,
+      "weighted_accuracy": 0.9500163406759349
+    },
+    {
+      "alpha": 0.001,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997965226298453,
+      "view_bayes_accuracy": 0.5019947030907408,
+      "view_task_weight": 0.5,
+      "weighted_accuracy": 0.750895612860293
+    },
+    {
+      "alpha": 0.001,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997965226298453,
+      "view_bayes_accuracy": 0.5019947030907408,
+      "view_task_weight": 1.0,
+      "weighted_accuracy": 0.5019947030907408
+    },
+    {
+      "alpha": 0.001,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.9213502926979051,
+      "view_bayes_accuracy": 0.5007978840288801,
+      "view_task_weight": 0.0,
+      "weighted_accuracy": 0.9213502926979051
+    },
+    {
+      "alpha": 0.001,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.9213502926979051,
+      "view_bayes_accuracy": 0.5007978840288801,
+      "view_task_weight": 0.1,
+      "weighted_accuracy": 0.8792950518310028
+    },
+    {
+      "alpha": 0.001,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.9213502926979051,
+      "view_bayes_accuracy": 0.5007978840288801,
+      "view_task_weight": 0.5,
+      "weighted_accuracy": 0.7110740883633926
+    },
+    {
+      "alpha": 0.001,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.9213502926979051,
+      "view_bayes_accuracy": 0.5007978840288801,
+      "view_task_weight": 1.0,
+      "weighted_accuracy": 0.5007978840288801
+    },
+    {
+      "alpha": 0.01,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997963878025545,
+      "view_bayes_accuracy": 0.5199388058383725,
+      "view_task_weight": 0.0,
+      "weighted_accuracy": 0.9997963878025545
+    },
+    {
+      "alpha": 0.01,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997963878025545,
+      "view_bayes_accuracy": 0.5199388058383725,
+      "view_task_weight": 0.1,
+      "weighted_accuracy": 0.9518106296061364
+    },
+    {
+      "alpha": 0.01,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997963878025545,
+      "view_bayes_accuracy": 0.5199388058383725,
+      "view_task_weight": 0.5,
+      "weighted_accuracy": 0.7598675968204636
+    },
+    {
+      "alpha": 0.01,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997963878025545,
+      "view_bayes_accuracy": 0.5199388058383725,
+      "view_task_weight": 1.0,
+      "weighted_accuracy": 0.5199388058383725
+    },
+    {
+      "alpha": 0.01,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.9213400180090479,
+      "view_bayes_accuracy": 0.5079783137169019,
+      "view_task_weight": 0.0,
+      "weighted_accuracy": 0.9213400180090479
+    },
+    {
+      "alpha": 0.01,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.9213400180090479,
+      "view_bayes_accuracy": 0.5079783137169019,
+      "view_task_weight": 0.1,
+      "weighted_accuracy": 0.8800038475798333
+    },
+    {
+      "alpha": 0.01,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.9213400180090479,
+      "view_bayes_accuracy": 0.5079783137169019,
+      "view_task_weight": 0.5,
+      "weighted_accuracy": 0.7146591658629748
+    },
+    {
+      "alpha": 0.01,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.9213400180090479,
+      "view_bayes_accuracy": 0.5079783137169019,
+      "view_task_weight": 1.0,
+      "weighted_accuracy": 0.5079783137169019
+    },
+    {
+      "alpha": 0.1,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997824395978682,
+      "view_bayes_accuracy": 0.6914624612740131,
+      "view_task_weight": 0.0,
+      "weighted_accuracy": 0.9997824395978682
+    },
+    {
+      "alpha": 0.1,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997824395978682,
+      "view_bayes_accuracy": 0.6914624612740131,
+      "view_task_weight": 0.1,
+      "weighted_accuracy": 0.9689504417654826
+    },
+    {
+      "alpha": 0.1,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997824395978682,
+      "view_bayes_accuracy": 0.6914624612740131,
+      "view_task_weight": 0.5,
+      "weighted_accuracy": 0.8456224504359406
+    },
+    {
+      "alpha": 0.1,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9997824395978682,
+      "view_bayes_accuracy": 0.6914624612740131,
+      "view_task_weight": 1.0,
+      "weighted_accuracy": 0.6914624612740131
+    },
+    {
+      "alpha": 0.1,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.920304796612983,
+      "view_bayes_accuracy": 0.579259709439103,
+      "view_task_weight": 0.0,
+      "weighted_accuracy": 0.920304796612983
+    },
+    {
+      "alpha": 0.1,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.920304796612983,
+      "view_bayes_accuracy": 0.579259709439103,
+      "view_task_weight": 0.1,
+      "weighted_accuracy": 0.886200287895595
+    },
+    {
+      "alpha": 0.1,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.920304796612983,
+      "view_bayes_accuracy": 0.579259709439103,
+      "view_task_weight": 0.5,
+      "weighted_accuracy": 0.749782253026043
+    },
+    {
+      "alpha": 0.1,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.920304796612983,
+      "view_bayes_accuracy": 0.579259709439103,
+      "view_task_weight": 1.0,
+      "weighted_accuracy": 0.579259709439103
+    },
+    {
+      "alpha": 0.3,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9996278038746007,
+      "view_bayes_accuracy": 0.9331927987311419,
+      "view_task_weight": 0.0,
+      "weighted_accuracy": 0.9996278038746007
+    },
+    {
+      "alpha": 0.3,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9996278038746007,
+      "view_bayes_accuracy": 0.9331927987311419,
+      "view_task_weight": 0.1,
+      "weighted_accuracy": 0.9929843033602548
+    },
+    {
+      "alpha": 0.3,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9996278038746007,
+      "view_bayes_accuracy": 0.9331927987311419,
+      "view_task_weight": 0.5,
+      "weighted_accuracy": 0.9664103013028713
+    },
+    {
+      "alpha": 0.3,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9996278038746007,
+      "view_bayes_accuracy": 0.9331927987311419,
+      "view_task_weight": 1.0,
+      "weighted_accuracy": 0.9331927987311419
+    },
+    {
+      "alpha": 0.3,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.911343361624182,
+      "view_bayes_accuracy": 0.7257468822499265,
+      "view_task_weight": 0.0,
+      "weighted_accuracy": 0.911343361624182
+    },
+    {
+      "alpha": 0.3,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.911343361624182,
+      "view_bayes_accuracy": 0.7257468822499265,
+      "view_task_weight": 0.1,
+      "weighted_accuracy": 0.8927837136867565
+    },
+    {
+      "alpha": 0.3,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.911343361624182,
+      "view_bayes_accuracy": 0.7257468822499265,
+      "view_task_weight": 0.5,
+      "weighted_accuracy": 0.8185451219370542
+    },
+    {
+      "alpha": 0.3,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.911343361624182,
+      "view_bayes_accuracy": 0.7257468822499265,
+      "view_task_weight": 1.0,
+      "weighted_accuracy": 0.7257468822499265
+    },
+    {
+      "alpha": 0.6,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9976611325094764,
+      "view_bayes_accuracy": 0.9986501019683699,
+      "view_task_weight": 0.0,
+      "weighted_accuracy": 0.9976611325094764
+    },
+    {
+      "alpha": 0.6,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9976611325094764,
+      "view_bayes_accuracy": 0.9986501019683699,
+      "view_task_weight": 0.1,
+      "weighted_accuracy": 0.9977600294553658
+    },
+    {
+      "alpha": 0.6,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9976611325094764,
+      "view_bayes_accuracy": 0.9986501019683699,
+      "view_task_weight": 0.5,
+      "weighted_accuracy": 0.9981556172389232
+    },
+    {
+      "alpha": 0.6,
+      "sigma": 0.2,
+      "semantic_bayes_accuracy": 0.9976611325094764,
+      "view_bayes_accuracy": 0.9986501019683699,
+      "view_task_weight": 1.0,
+      "weighted_accuracy": 0.9986501019683699
+    },
+    {
+      "alpha": 0.6,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.8710504823538303,
+      "view_bayes_accuracy": 0.8849303297782918,
+      "view_task_weight": 0.0,
+      "weighted_accuracy": 0.8710504823538303
+    },
+    {
+      "alpha": 0.6,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.8710504823538303,
+      "view_bayes_accuracy": 0.8849303297782918,
+      "view_task_weight": 0.1,
+      "weighted_accuracy": 0.8724384670962765
+    },
+    {
+      "alpha": 0.6,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.8710504823538303,
+      "view_bayes_accuracy": 0.8849303297782918,
+      "view_task_weight": 0.5,
+      "weighted_accuracy": 0.877990406066061
+    },
+    {
+      "alpha": 0.6,
+      "sigma": 0.5,
+      "semantic_bayes_accuracy": 0.8710504823538303,
+      "view_bayes_accuracy": 0.8849303297782918,
+      "view_task_weight": 1.0,
+      "weighted_accuracy": 0.8849303297782918
+    }
+  ],
+  "positive_invariant_rectangular_tasks": [
+    {
+      "theta": 0.7853981633974483,
+      "sigma": 0.2,
+      "task_a_accuracy": 0.9997965239912775,
+      "task_b_accuracy": 0.9997965239912775,
+      "a_task_weight": 0.1,
+      "weighted_accuracy": 0.9997965239912775
+    },
+    {
+      "theta": 0.7853981633974483,
+      "sigma": 0.2,
+      "task_a_accuracy": 0.9997965239912775,
+      "task_b_accuracy": 0.9997965239912775,
+      "a_task_weight": 0.5,
+      "weighted_accuracy": 0.9997965239912775
+    },
+    {
+      "theta": 0.7853981633974483,
+      "sigma": 0.2,
+      "task_a_accuracy": 0.9997965239912775,
+      "task_b_accuracy": 0.9997965239912775,
+      "a_task_weight": 0.9,
+      "weighted_accuracy": 0.9997965239912775
+    },
+    {
+      "theta": 0.7545192717973,
+      "sigma": 0.2,
+      "task_a_accuracy": 0.9998652629284895,
+      "task_b_accuracy": 0.999692252120731,
+      "a_task_weight": 0.1,
+      "weighted_accuracy": 0.9997095532015069
+    },
+    {
+      "theta": 0.7545192717973,
+      "sigma": 0.2,
+      "task_a_accuracy": 0.9998652629284895,
+      "task_b_accuracy": 0.999692252120731,
+      "a_task_weight": 0.5,
+      "weighted_accuracy": 0.9997787575246102
+    },
+    {
+      "theta": 0.7545192717973,
+      "sigma": 0.2,
+      "task_a_accuracy": 0.9998652629284895,
+      "task_b_accuracy": 0.999692252120731,
+      "a_task_weight": 0.9,
+      "weighted_accuracy": 0.9998479618477136
+    },
+    {
+      "theta": 0.7853981633974483,
+      "sigma": 0.5,
+      "task_a_accuracy": 0.9213503964748575,
+      "task_b_accuracy": 0.9213503964748574,
+      "a_task_weight": 0.1,
+      "weighted_accuracy": 0.9213503964748575
+    },
+    {
+      "theta": 0.7853981633974483,
+      "sigma": 0.5,
+      "task_a_accuracy": 0.9213503964748575,
+      "task_b_accuracy": 0.9213503964748574,
+      "a_task_weight": 0.5,
+      "weighted_accuracy": 0.9213503964748575
+    },
+    {
+      "theta": 0.7853981633974483,
+      "sigma": 0.5,
+      "task_a_accuracy": 0.9213503964748575,
+      "task_b_accuracy": 0.9213503964748574,
+      "a_task_weight": 0.9,
+      "weighted_accuracy": 0.9213503964748575
+    },
+    {
+      "theta": 0.7545192717973,
+      "sigma": 0.5,
+      "task_a_accuracy": 0.9274696571190666,
+      "task_b_accuracy": 0.9146373462661277,
+      "a_task_weight": 0.1,
+      "weighted_accuracy": 0.9159205773514216
+    },
+    {
+      "theta": 0.7545192717973,
+      "sigma": 0.5,
+      "task_a_accuracy": 0.9274696571190666,
+      "task_b_accuracy": 0.9146373462661277,
+      "a_task_weight": 0.5,
+      "weighted_accuracy": 0.9210535016925971
+    },
+    {
+      "theta": 0.7545192717973,
+      "sigma": 0.5,
+      "task_a_accuracy": 0.9274696571190666,
+      "task_b_accuracy": 0.9146373462661277,
+      "a_task_weight": 0.9,
+      "weighted_accuracy": 0.9261864260337727
+    }
+  ],
+  "limitations": [
+    "f_alpha is a declared perturbation family, not a solved nonlinear flow endpoint",
+    "Gaussian observation noise and task weights are evaluation assumptions, not consequences of contrastive training",
+    "v is not positive-invariant; separate rectangular a/b comparison addresses that caveat",
+    "Task dependence is established knowledge, not a new publication contribution"
+  ]
+}

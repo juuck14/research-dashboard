@@ -1,0 +1,167 @@
+{
+  "theory": "general normalizer-aware curvature, conditional-mean decomposition, common-stationarity equivalence",
+  "max_linear_drift_identity_error": 2.0816681711721685e-17,
+  "max_quadratic_slope_identity_error": 7.566375911233214e-17,
+  "max_ordered_tuple_fd_error": 1.2951972827579539e-11,
+  "max_formula_vs_tuple_drift_error": 3.122502256758253e-17,
+  "jitter_roots_found": 9,
+  "jitter_runs": 9,
+  "jitter_root_rows": [
+    {
+      "jitter": 0.0001,
+      "K": 1,
+      "reference_G": 5.310576466238263e-07,
+      "reference_H": -0.03316855708730286,
+      "six_distinct_scores": true,
+      "conditional_mean_squared": 0.7300000000000001,
+      "root_in_fixed_bracket": true,
+      "root": 1.6010875750837507e-05,
+      "root_G": -3.1453982227285765e-17,
+      "root_H": -0.03316855711520314,
+      "root_attractive": false
+    },
+    {
+      "jitter": 0.0001,
+      "K": 4,
+      "reference_G": 7.560807969414145e-07,
+      "reference_H": -0.02810168381859198,
+      "six_distinct_scores": true,
+      "conditional_mean_squared": 0.7300000000000001,
+      "root_in_fixed_bracket": true,
+      "root": 2.6905177676335884e-05,
+      "root_G": -2.719148003220981e-17,
+      "root_H": -0.028101683827173842,
+      "root_attractive": false
+    },
+    {
+      "jitter": 0.0001,
+      "K": 8,
+      "reference_G": 7.043897339567422e-07,
+      "reference_H": -0.0037284698823438008,
+      "six_distinct_scores": true,
+      "conditional_mean_squared": 0.7300000000000001,
+      "root_in_fixed_bracket": true,
+      "root": 0.00018892206470892008,
+      "root_G": 6.603771725224431e-18,
+      "root_H": -0.0037284612943790656,
+      "root_attractive": false
+    },
+    {
+      "jitter": 0.001,
+      "K": 1,
+      "reference_G": 5.310452932794989e-06,
+      "reference_H": -0.03316909460406998,
+      "six_distinct_scores": true,
+      "conditional_mean_squared": 0.7300000000000001,
+      "root_in_fixed_bracket": true,
+      "root": 0.00016010242909065094,
+      "root_G": -2.851906315460734e-17,
+      "root_H": -0.03316909739387666,
+      "root_attractive": false
+    },
+    {
+      "jitter": 0.001,
+      "K": 4,
+      "reference_G": 7.559262071507407e-06,
+      "reference_H": -0.0280936478015762,
+      "six_distinct_scores": true,
+      "conditional_mean_squared": 0.7300000000000001,
+      "root_in_fixed_bracket": true,
+      "root": 0.0002690736815190233,
+      "root_G": -7.761566997959325e-17,
+      "root_H": -0.02809364865841601,
+      "root_attractive": false
+    },
+    {
+      "jitter": 0.001,
+      "K": 8,
+      "reference_G": 7.041183682009837e-06,
+      "reference_H": -0.0037133464737337907,
+      "six_distinct_scores": true,
+      "conditional_mean_squared": 0.7300000000000001,
+      "root_in_fixed_bracket": true,
+      "root": 0.001896317540227152,
+      "root_G": -7.215236332276498e-17,
+      "root_H": -0.0037124807395828886,
+      "root_attractive": false
+    },
+    {
+      "jitter": 0.01,
+      "K": 1,
+      "reference_G": 5.3091798692126254e-05,
+      "reference_H": -0.03317403028560015,
+      "six_distinct_scores": true,
+      "conditional_mean_squared": 0.7300000000000001,
+      "root_in_fixed_bracket": true,
+      "root": 0.001600392920093939,
+      "root_G": 5.245574056721297e-18,
+      "root_H": -0.03317430904063031,
+      "root_attractive": false
+    },
+    {
+      "jitter": 0.01,
+      "K": 4,
+      "reference_G": 7.543740548877663e-05,
+      "reference_H": -0.028012555151402593,
+      "six_distinct_scores": true,
+      "conditional_mean_squared": 0.7300000000000001,
+      "root_in_fixed_bracket": true,
+      "root": 0.0026929559113296215,
+      "root_G": -5.0890194096642697e-17,
+      "root_H": -0.028012639471270924,
+      "root_attractive": false
+    },
+    {
+      "jitter": 0.01,
+      "K": 8,
+      "reference_G": 7.013969677302742e-05,
+      "reference_H": -0.0035611669090521002,
+      "six_distinct_scores": true,
+      "conditional_mean_squared": 0.7300000000000001,
+      "root_in_fixed_bracket": true,
+      "root": 0.019858956045470725,
+      "root_G": 5.927271808348918e-18,
+      "root_H": -0.0034655913521649,
+      "root_attractive": false
+    }
+  ],
+  "finite_kernel_conditioning": [
+    {
+      "score_levels": 2,
+      "singular_values": [
+        1.3228090111125221,
+        0.0170624577711961
+      ],
+      "condition_number": 77.52745992699923,
+      "determinant_float": 0.022570372891464976,
+      "interpretation": "Exact invertibility does not provide a well-conditioned approximate-balance certificate."
+    },
+    {
+      "score_levels": 3,
+      "singular_values": [
+        1.8304135364825578,
+        0.029089280094721504,
+        0.00020759499274764607
+      ],
+      "condition_number": 8817.233557784417,
+      "determinant_float": 1.1053480928762396e-05,
+      "interpretation": "Exact invertibility does not provide a well-conditioned approximate-balance certificate."
+    },
+    {
+      "score_levels": 6,
+      "singular_values": [
+        3.0265547501839025,
+        0.06232484777990177,
+        0.0008580095193623707,
+        8.362636626141592e-06,
+        5.1477412977098156e-08,
+        1.4810690307702998e-10
+      ],
+      "condition_number": 20434933735.734116,
+      "determinant_float": 1.0318986788227964e-26,
+      "interpretation": "Exact invertibility does not provide a well-conditioned approximate-balance certificate."
+    }
+  ],
+  "stability_warning": "Only root_H is an equilibrium restoring derivative. reference_H with nonzero reference_G is not a stability eigenvalue.",
+  "scope_warning": "Scalar score-law audit, not a generic realizable Gram geometry or a top-journal contribution."
+}

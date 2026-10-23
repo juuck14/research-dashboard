@@ -4,7 +4,7 @@
 
 ## 최신: 중요성 판정 정정과 재검증
 
-2026-10-23 **‘최상위 학술지 논문의 핵심50% 확보’ 판정을 철회했다. 현재는 추가 핵심 연구 필요.** [정정 근거](negative-feedback/ASSESSMENT_CORRECTION.md) · [현재 검증](negative-feedback/round4/README.md). 기존의 정확한 국소 정리·계산은 유지하지만, 그것과 중요한 학습 문제 사이의 설명 공백은 아직 해결되지 않았다. 아래 round3의 통과 판정은 당시의 보존된 기록이며 현재 판정이 아니다.
+2026-10-23 **‘최상위 학술지 논문의 핵심50% 확보’ 판정을 철회했다. 현재는 추가 핵심 연구 필요.** [정정 근거](negative-feedback/ASSESSMENT_CORRECTION.md) · [현재 검증](negative-feedback/round4/README.md) · [추가 검증 최종보고](negative-feedback/round4/report_ko.md). 기존의 정확한 국소 정리·계산은 유지하지만, 그것과 중요한 학습 문제 사이의 설명 공백은 아직 해결되지 않았다. 아래 round3의 통과 판정은 당시의 보존된 기록이며 현재 판정이 아니다.
 
 ## 보존된 round3 판정: negative feedback의 최상위 기준 재검증
 

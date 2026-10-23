@@ -1,0 +1,59 @@
+{
+  "script_checks": [
+    {
+      "script": "assumptions/check_assumptions.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.5894031039999845,
+      "stderr": ""
+    },
+    {
+      "script": "value_audit/task_meaning_check.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.38102034899998216,
+      "stderr": ""
+    },
+    {
+      "script": "temperature_check.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.09295402499992633,
+      "stderr": ""
+    },
+    {
+      "script": "nonoracle/symmetry_check.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.35035247499990874,
+      "stderr": ""
+    }
+  ],
+  "nonoracle_seed6201_replay": [
+    {
+      "K": 4,
+      "absolute_differences": {
+        "best_square_error": 0.0,
+        "view_variance": 0.0,
+        "full_field_norm": 0.0
+      },
+      "matches": true
+    },
+    {
+      "K": 8,
+      "absolute_differences": {
+        "best_square_error": 0.0,
+        "view_variance": 0.0,
+        "full_field_norm": 0.0
+      },
+      "matches": true
+    },
+    {
+      "K": 16,
+      "absolute_differences": {
+        "best_square_error": 0.0,
+        "view_variance": 0.0,
+        "full_field_norm": 0.0
+      },
+      "matches": true
+    }
+  ],
+  "passed": true,
+  "scope": "same-source isolated rerun, not independent implementation, additional seed or importance evidence"
+}
