@@ -1,5 +1,9 @@
 # Negative 관계와 학습 피드백
 
+**현재 판정(2026-10-23): 추가 핵심 연구 필요. 이전 ‘최상위 학술지 핵심50% 확보’ 판정을 철회했다.** [정정 이유](ASSESSMENT_CORRECTION.md), [현재 검증](round4/README.md). 기존 국소 이론의 정확성과 학술적 중요성을 별도로 평가한다. 아래 문장은 당시 판정의 보존 기록이며 현재 상태가 아니다.
+
+## 보존된 round3 판정
+
 **최신 상태(2026-10-22): 수정된 국소 population 이론으로 진행 — 핵심50% 확보 판정.** [round3 최종보고](round3/report_ko.md), [새 원고](round3/manuscript.md), [독립 재심](round3/review/final_review.md), [재현](round3/reproduction.md). 일반·연속 분포의 all-count rescue 법칙과 positive-gap 상충 조건을 증명했다. 원래 정보 소실 해석은 기각, 일반 학습 applicability 실패는 보존했다. 실전 성능·일반 cutoff를 확보했다는 뜻은 아니다.
 
 ## 이전 round2와 첫 단계의 보존 기록
