@@ -1,0 +1,146 @@
+[
+  {
+    "nu": 0.0,
+    "lambda": 0.0,
+    "prediction_coefficient": 1.0,
+    "closed_form_mse": 0.0,
+    "observed_mse": 1.5496981922998389e-30,
+    "absolute_error": 1.5496981922998389e-30
+  },
+  {
+    "nu": 0.0,
+    "lambda": 0.01,
+    "prediction_coefficient": 0.970873786407767,
+    "closed_form_mse": 0.0008483363182203782,
+    "observed_mse": 0.0008483363182203836,
+    "absolute_error": 5.421010862427522e-18
+  },
+  {
+    "nu": 0.0,
+    "lambda": 0.1,
+    "prediction_coefficient": 0.7692307692307692,
+    "closed_form_mse": 0.053254437869822514,
+    "observed_mse": 0.053254437869822535,
+    "absolute_error": 2.0816681711721685e-17
+  },
+  {
+    "nu": 0.05,
+    "lambda": 0.0,
+    "prediction_coefficient": 0.9493670886075949,
+    "closed_form_mse": 0.002563691716071147,
+    "observed_mse": 0.002563691716071151,
+    "absolute_error": 3.903127820947816e-18
+  },
+  {
+    "nu": 0.05,
+    "lambda": 0.01,
+    "prediction_coefficient": 0.9213759213759213,
+    "closed_form_mse": 0.006181745739485312,
+    "observed_mse": 0.006181745739485311,
+    "absolute_error": 8.673617379884035e-19
+  },
+  {
+    "nu": 0.05,
+    "lambda": 0.1,
+    "prediction_coefficient": 0.7281553398058251,
+    "closed_form_mse": 0.0738995192760864,
+    "observed_mse": 0.07389951927608635,
+    "absolute_error": 5.551115123125783e-17
+  },
+  {
+    "nu": 0.1,
+    "lambda": 0.0,
+    "prediction_coefficient": 0.8974358974358975,
+    "closed_form_mse": 0.010519395134779744,
+    "observed_mse": 0.0105193951347798,
+    "absolute_error": 5.551115123125783e-17
+  },
+  {
+    "nu": 0.1,
+    "lambda": 0.01,
+    "prediction_coefficient": 0.8706467661691544,
+    "closed_form_mse": 0.016732259102497427,
+    "observed_mse": 0.016732259102497524,
+    "absolute_error": 9.71445146547012e-17
+  },
+  {
+    "nu": 0.1,
+    "lambda": 0.1,
+    "prediction_coefficient": 0.6862745098039216,
+    "closed_form_mse": 0.09842368319876971,
+    "observed_mse": 0.09842368319876986,
+    "absolute_error": 1.5265566588595902e-16
+  },
+  {
+    "nu": 0.3,
+    "lambda": 0.0,
+    "prediction_coefficient": 0.6756756756756757,
+    "closed_form_mse": 0.10518626734842952,
+    "observed_mse": 0.10518626734842941,
+    "absolute_error": 1.1102230246251565e-16
+  },
+  {
+    "nu": 0.3,
+    "lambda": 0.01,
+    "prediction_coefficient": 0.6544502617801047,
+    "closed_form_mse": 0.11940462158383819,
+    "observed_mse": 0.11940462158383808,
+    "absolute_error": 1.1102230246251565e-16
+  },
+  {
+    "nu": 0.3,
+    "lambda": 0.1,
+    "prediction_coefficient": 0.5102040816326531,
+    "closed_form_mse": 0.23990004164931278,
+    "observed_mse": 0.2399000416493127,
+    "absolute_error": 8.326672684688674e-17
+  },
+  {
+    "nu": 0.6,
+    "lambda": 0.0,
+    "prediction_coefficient": 0.29411764705882354,
+    "closed_form_mse": 0.49826989619377154,
+    "observed_mse": 0.498269896193772,
+    "absolute_error": 4.440892098500626e-16
+  },
+  {
+    "nu": 0.6,
+    "lambda": 0.01,
+    "prediction_coefficient": 0.2840909090909091,
+    "closed_form_mse": 0.5125258264462809,
+    "observed_mse": 0.5125258264462813,
+    "absolute_error": 4.440892098500626e-16
+  },
+  {
+    "nu": 0.6,
+    "lambda": 0.1,
+    "prediction_coefficient": 0.2173913043478261,
+    "closed_form_mse": 0.6124763705103968,
+    "observed_mse": 0.6124763705103974,
+    "absolute_error": 5.551115123125783e-16
+  },
+  {
+    "nu": 0.9,
+    "lambda": 0.0,
+    "prediction_coefficient": -0.16129032258064516,
+    "closed_form_mse": 1.348595213319459,
+    "observed_mse": 1.3485952133194594,
+    "absolute_error": 4.440892098500626e-16
+  },
+  {
+    "nu": 0.9,
+    "lambda": 0.01,
+    "prediction_coefficient": -0.15527950310559005,
+    "closed_form_mse": 1.3346707302958989,
+    "observed_mse": 1.3346707302958993,
+    "absolute_error": 4.440892098500626e-16
+  },
+  {
+    "nu": 0.9,
+    "lambda": 0.1,
+    "prediction_coefficient": -0.11627906976744184,
+    "closed_form_mse": 1.2460789616008654,
+    "observed_mse": 1.2460789616008654,
+    "absolute_error": 0.0
+  }
+]

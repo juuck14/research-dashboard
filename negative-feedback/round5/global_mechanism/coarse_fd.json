@@ -1,0 +1,62 @@
+[
+  {
+    "C": 4,
+    "K": 1,
+    "frozen": false,
+    "opposite_mass": 0.9545454545454544,
+    "max_eigenvalue_error": 5.146771897557301e-12,
+    "min_nonrotation_eigenvalue": 0.034165030961643646,
+    "predicted_min_nonrotation": 0.03416503096510145,
+    "antisymmetry": 0.0
+  },
+  {
+    "C": 4,
+    "K": 1,
+    "frozen": true,
+    "opposite_mass": 0.9545454545454544,
+    "max_eigenvalue_error": 2.9555941027936683e-12,
+    "min_nonrotation_eigenvalue": 0.03416503096419046,
+    "predicted_min_nonrotation": 0.03416503096510145,
+    "antisymmetry": 0.0
+  },
+  {
+    "C": 4,
+    "K": 8,
+    "frozen": false,
+    "opposite_mass": 0.9545454545454544,
+    "max_eigenvalue_error": 2.6915025763685207e-11,
+    "min_nonrotation_eigenvalue": 0.11141792447537092,
+    "predicted_min_nonrotation": 0.11141792448973953,
+    "antisymmetry": 2.7755575615628914e-17
+  },
+  {
+    "C": 4,
+    "K": 8,
+    "frozen": true,
+    "opposite_mass": 0.9545454545454544,
+    "max_eigenvalue_error": 1.601974108922377e-11,
+    "min_nonrotation_eigenvalue": 0.11141792448764154,
+    "predicted_min_nonrotation": 0.11141792448973953,
+    "antisymmetry": 1.3877787807814457e-17
+  },
+  {
+    "C": 4,
+    "K": 32,
+    "frozen": false,
+    "opposite_mass": 0.9545454545454544,
+    "max_eigenvalue_error": 4.2950976109068506e-11,
+    "min_nonrotation_eigenvalue": 0.12300766779322296,
+    "predicted_min_nonrotation": 0.12300766781125583,
+    "antisymmetry": 0.0
+  },
+  {
+    "C": 4,
+    "K": 32,
+    "frozen": true,
+    "opposite_mass": 0.9545454545454544,
+    "max_eigenvalue_error": 2.462374748546381e-11,
+    "min_nonrotation_eigenvalue": 0.1230076678131845,
+    "predicted_min_nonrotation": 0.12300766781125583,
+    "antisymmetry": 1.3877787807814457e-16
+  }
+]

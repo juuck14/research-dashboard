@@ -1,0 +1,26 @@
+{
+  "population_risk_rows": 70,
+  "max_risk_formula_error": 3.885780586188048e-16,
+  "count_rows": 360,
+  "independent_ordered_tuple_shape_fd_rows": 144,
+  "max_shape_fd_vector_residual": 4.0515204494932996e-11,
+  "filtered_shape_fd_rows": 54,
+  "filtered_max_vector_residual": 1.988421054898328e-11,
+  "coarse_bayes_formula_error": 0.0,
+  "filtered_full_spectrum_cases": 36,
+  "filtered_full_spectrum_error": 3.836536643930799e-11,
+  "filtered_full_spectrum_max_imaginary": 5.9118907753912764e-12,
+  "general_omega_tau_spectrum_cases": 24,
+  "general_omega_tau_spectrum_error": 1.7653156714203533e-11,
+  "natural_floor_by_C": {
+    "4": 0.32857466950428965,
+    "5": 0.316207142737579,
+    "6": 0.30873783526213494,
+    "7": 0.3037421941818824,
+    "8": 0.30016738194615583,
+    "9": 0.2974832656093666,
+    "16": 0.28870164860639913,
+    "64": 0.2810454744139664
+  },
+  "scope": "direct linear-estimation/ETF application plus analytic simplex response; publication novelty is assessed separately"
+}

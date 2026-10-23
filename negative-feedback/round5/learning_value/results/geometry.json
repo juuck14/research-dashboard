@@ -1,0 +1,486 @@
+[
+  {
+    "representation": "6101/4/frozen/base",
+    "group": "learned",
+    "within_class_variance": 0.6296678485257832,
+    "class_mean_gram_eigenvalues": [
+      9.127024058336463e-05,
+      0.38417324084321175,
+      0.5073126206684684,
+      0.589751474144604
+    ]
+  },
+  {
+    "representation": "6101/4/adaptive/base",
+    "group": "learned",
+    "within_class_variance": 1.4355814096987849e-31,
+    "class_mean_gram_eigenvalues": [
+      -4.86686480375662e-16,
+      4.677500522688568e-16,
+      1.8375724773500761,
+      2.162427522649924
+    ]
+  },
+  {
+    "representation": "6101/8/frozen/base",
+    "group": "learned",
+    "within_class_variance": 0.6505564376840289,
+    "class_mean_gram_eigenvalues": [
+      9.57557373827468e-05,
+      0.36266921190018675,
+      0.4773258412733062,
+      0.5576834403530087
+    ]
+  },
+  {
+    "representation": "6101/8/adaptive/base",
+    "group": "learned",
+    "within_class_variance": 3.2469733924351734e-10,
+    "class_mean_gram_eigenvalues": [
+      -1.0491970293797359e-16,
+      2.8142781661859976e-16,
+      1.9999999993396427,
+      1.999999999361568
+    ]
+  },
+  {
+    "representation": "6101/16/frozen/base",
+    "group": "learned",
+    "within_class_variance": 0.664132546277187,
+    "class_mean_gram_eigenvalues": [
+      0.00010007467890600222,
+      0.34926964192274906,
+      0.45764862835031417,
+      0.5364514699392833
+    ]
+  },
+  {
+    "representation": "6101/16/adaptive/base",
+    "group": "learned",
+    "within_class_variance": 0.05445065691604066,
+    "class_mean_gram_eigenvalues": [
+      8.250022208205726e-12,
+      3.636186187764258e-08,
+      1.890455827274608,
+      1.891741508691118
+    ]
+  },
+  {
+    "representation": "6201/4/frozen/base",
+    "group": "learned",
+    "within_class_variance": 0.6375802347792818,
+    "class_mean_gram_eigenvalues": [
+      0.0001482144877052935,
+      0.3336130800391748,
+      0.5132092080969354,
+      0.6027085582590577
+    ]
+  },
+  {
+    "representation": "6201/4/adaptive/base",
+    "group": "learned",
+    "within_class_variance": 1.499662191190076e-31,
+    "class_mean_gram_eigenvalues": [
+      5.530901361277719e-18,
+      4.3390143126062344e-16,
+      1.847436736775762,
+      2.1525632632242373
+    ]
+  },
+  {
+    "representation": "6201/8/frozen/base",
+    "group": "learned",
+    "within_class_variance": 0.658807151588439,
+    "class_mean_gram_eigenvalues": [
+      0.0001572822151881606,
+      0.3138516685035886,
+      0.4832956406600469,
+      0.5674668022674197
+    ]
+  },
+  {
+    "representation": "6201/8/adaptive/base",
+    "group": "learned",
+    "within_class_variance": 3.4504983806317627e-10,
+    "class_mean_gram_eigenvalues": [
+      -1.6653345369377348e-16,
+      4.4133306839115117e-16,
+      1.9999999992680382,
+      1.9999999993517619
+    ]
+  },
+  {
+    "representation": "6201/16/frozen/base",
+    "group": "learned",
+    "within_class_variance": 0.672075111963023,
+    "class_mean_gram_eigenvalues": [
+      0.00016462762088751814,
+      0.30152438875920595,
+      0.4649790976016456,
+      0.5450314381661691
+    ]
+  },
+  {
+    "representation": "6201/16/adaptive/base",
+    "group": "learned",
+    "within_class_variance": 0.054183968189135664,
+    "class_mean_gram_eigenvalues": [
+      3.341810920842386e-11,
+      4.152503872637178e-08,
+      1.8907722920708645,
+      1.8924917936141359
+    ]
+  },
+  {
+    "representation": "positive_graph_components_simplex",
+    "group": "same_information_baseline",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      -2.7755575615628944e-17,
+      1.3333333333333337,
+      1.3333333333333337,
+      1.3333333333333337
+    ]
+  },
+  {
+    "representation": "exact_square",
+    "group": "canonical",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      0.0,
+      0.0,
+      1.9999999999999996,
+      1.9999999999999996
+    ]
+  },
+  {
+    "representation": "canonical_simplex_nuisance_0",
+    "group": "canonical_nuisance",
+    "within_class_variance": 4.8035858623005036e-17,
+    "class_mean_gram_eigenvalues": [
+      4.770489557334461e-18,
+      1.3333333333333321,
+      1.3333333333333324,
+      1.3333333333333341
+    ]
+  },
+  {
+    "representation": "canonical_simplex_nuisance_0.05",
+    "group": "canonical_nuisance",
+    "within_class_variance": 0.0500000000000001,
+    "class_mean_gram_eigenvalues": [
+      6.487865800153259e-16,
+      1.2666666666666657,
+      1.2666666666666668,
+      1.2666666666666686
+    ]
+  },
+  {
+    "representation": "canonical_simplex_nuisance_0.1",
+    "group": "canonical_nuisance",
+    "within_class_variance": 0.1000000000000002,
+    "class_mean_gram_eigenvalues": [
+      1.0547118733938961e-15,
+      1.1999999999999993,
+      1.1999999999999997,
+      1.1999999999999997
+    ]
+  },
+  {
+    "representation": "canonical_simplex_nuisance_0.3",
+    "group": "canonical_nuisance",
+    "within_class_variance": 0.29999999999999993,
+    "class_mean_gram_eigenvalues": [
+      -1.1102230246256138e-16,
+      0.9333333333333332,
+      0.9333333333333332,
+      0.9333333333333342
+    ]
+  },
+  {
+    "representation": "canonical_simplex_nuisance_0.6",
+    "group": "canonical_nuisance",
+    "within_class_variance": 0.6000000000000002,
+    "class_mean_gram_eigenvalues": [
+      5.551115123125783e-17,
+      0.5333333333333332,
+      0.5333333333333333,
+      0.5333333333333335
+    ]
+  },
+  {
+    "representation": "canonical_simplex_nuisance_0.9",
+    "group": "canonical_nuisance",
+    "within_class_variance": 0.8999999999999998,
+    "class_mean_gram_eigenvalues": [
+      -2.42861286636753e-17,
+      0.1333333333333332,
+      0.13333333333333322,
+      0.13333333333333328
+    ]
+  },
+  {
+    "representation": "6101/4/frozen/base/mean_only_raw",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      9.127024058336463e-05,
+      0.38417324084321175,
+      0.5073126206684684,
+      0.589751474144604
+    ]
+  },
+  {
+    "representation": "6101/4/frozen/base/mean_only_unit",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      0.000246511467010799,
+      1.1930755594884686,
+      1.3413691579393925,
+      1.4653087711051285
+    ]
+  },
+  {
+    "representation": "6101/4/adaptive/base/mean_only_raw",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      -4.86686480375662e-16,
+      4.677500522688568e-16,
+      1.8375724773500761,
+      2.162427522649924
+    ]
+  },
+  {
+    "representation": "6101/4/adaptive/base/mean_only_unit",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      -6.363406917719035e-16,
+      7.534772010942382e-17,
+      1.8375724773500757,
+      2.1624275226499234
+    ]
+  },
+  {
+    "representation": "6101/8/frozen/base/mean_only_raw",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      9.57557373827468e-05,
+      0.36266921190018675,
+      0.4773258412733062,
+      0.5576834403530087
+    ]
+  },
+  {
+    "representation": "6101/8/frozen/base/mean_only_unit",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      0.00027404652539271703,
+      1.193514966181515,
+      1.3407548647065233,
+      1.4654561225865688
+    ]
+  },
+  {
+    "representation": "6101/8/adaptive/base/mean_only_raw",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      -1.0491970293797359e-16,
+      2.8142781661859976e-16,
+      1.9999999993396427,
+      1.999999999361568
+    ]
+  },
+  {
+    "representation": "6101/8/adaptive/base/mean_only_unit",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      -1.8744684854132548e-17,
+      6.0594858147228175e-16,
+      1.9999999999999942,
+      2.0000000000000058
+    ]
+  },
+  {
+    "representation": "6101/16/frozen/base/mean_only_raw",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      0.00010007467890600222,
+      0.34926964192274906,
+      0.45764862835031417,
+      0.5364514699392833
+    ]
+  },
+  {
+    "representation": "6101/16/frozen/base/mean_only_unit",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      0.0002979454369114003,
+      1.1942271352236347,
+      1.3403460253111603,
+      1.4651288940282945
+    ]
+  },
+  {
+    "representation": "6101/16/adaptive/base/mean_only_raw",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      8.250022208205726e-12,
+      3.636186187764258e-08,
+      1.890455827274608,
+      1.891741508691118
+    ]
+  },
+  {
+    "representation": "6101/16/adaptive/base/mean_only_unit",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      8.724885414748042e-12,
+      3.845693514832905e-08,
+      1.9999972521934033,
+      2.0000027093409387
+    ]
+  },
+  {
+    "representation": "6201/4/frozen/base/mean_only_raw",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      0.0001482144877052935,
+      0.3336130800391748,
+      0.5132092080969354,
+      0.6027085582590577
+    ]
+  },
+  {
+    "representation": "6201/4/frozen/base/mean_only_unit",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      0.00040927322598911044,
+      1.0241267907783298,
+      1.46000607182073,
+      1.5154578641749512
+    ]
+  },
+  {
+    "representation": "6201/4/adaptive/base/mean_only_raw",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      5.530901361277719e-18,
+      4.3390143126062344e-16,
+      1.847436736775762,
+      2.1525632632242373
+    ]
+  },
+  {
+    "representation": "6201/4/adaptive/base/mean_only_unit",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      5.530901361277719e-18,
+      4.3390143126062344e-16,
+      1.847436736775762,
+      2.1525632632242373
+    ]
+  },
+  {
+    "representation": "6201/8/frozen/base/mean_only_raw",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      0.0001572822151881606,
+      0.3138516685035886,
+      0.4832956406600469,
+      0.5674668022674197
+    ]
+  },
+  {
+    "representation": "6201/8/frozen/base/mean_only_unit",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      0.0004613277143387368,
+      1.0248965365483844,
+      1.4590022211558085,
+      1.5156399145814679
+    ]
+  },
+  {
+    "representation": "6201/8/adaptive/base/mean_only_raw",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      -1.6653345369377348e-16,
+      4.4133306839115117e-16,
+      1.9999999992680382,
+      1.9999999993517619
+    ]
+  },
+  {
+    "representation": "6201/8/adaptive/base/mean_only_unit",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      -1.6744825223125595e-16,
+      2.280687062003517e-16,
+      1.999999999999996,
+      2.000000000000003
+    ]
+  },
+  {
+    "representation": "6201/16/frozen/base/mean_only_raw",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      0.00016462762088751814,
+      0.30152438875920595,
+      0.4649790976016456,
+      0.5450314381661691
+    ]
+  },
+  {
+    "representation": "6201/16/frozen/base/mean_only_unit",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      0.0005023954922061008,
+      1.0252053425131569,
+      1.4586925762147005,
+      1.5155996857799359
+    ]
+  },
+  {
+    "representation": "6201/16/adaptive/base/mean_only_raw",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      3.341810920842386e-11,
+      4.152503872637178e-08,
+      1.8907722920708645,
+      1.8924917936141359
+    ]
+  },
+  {
+    "representation": "6201/16/adaptive/base/mean_only_unit",
+    "group": "geometry_control",
+    "within_class_variance": 0.0,
+    "class_mean_gram_eigenvalues": [
+      3.533125816997989e-11,
+      4.390541259181261e-08,
+      1.999995734087516,
+      2.0000042219717398
+    ]
+  }
+]

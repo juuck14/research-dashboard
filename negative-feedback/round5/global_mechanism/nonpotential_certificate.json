@@ -1,0 +1,19 @@
+{
+  "C": 3,
+  "K": 1,
+  "epsilon": "1/20",
+  "sampler_t": 3,
+  "Gram_off_diagonals": [
+    "log(6/5)",
+    "log(4/5)",
+    "log(7/5)"
+  ],
+  "realizability": "unit diagonal and strict diagonal dominance; each absolute off-diagonal is below .4 and every row sum below .65",
+  "rational_S_numerator": -112610544188193,
+  "rational_S_denominator": 1132297363071875,
+  "S_nonzero_exact": true,
+  "frobenius_formula": "exp(1)*S/[9 product_i(exp(1)+r_i)]",
+  "frobenius_numeric_illustration": -0.0005290883206677783,
+  "conclusion": "No smooth positive scalar integrating factor turns this K1 Gram update one-form into an exact differential locally.",
+  "scope": "constructed exact counterexample after exploratory FD; not a new harm result or top-journal importance proof"
+}

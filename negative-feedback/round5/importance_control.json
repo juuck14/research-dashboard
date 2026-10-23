@@ -1,0 +1,193 @@
+{
+  "rows": [
+    {
+      "state": "etf",
+      "K": 1,
+      "uniform_loss": 0.23396252507754822,
+      "adaptive_composed_loss": 0.23396252507754822,
+      "corrected_expected_loss": 0.23396252507754822,
+      "corrected_field_error": 0.0,
+      "corrected_loss_error": 0.0,
+      "adaptive_vs_uniform_field": 0.0
+    },
+    {
+      "state": "etf",
+      "K": 2,
+      "uniform_loss": 0.4234322455383109,
+      "adaptive_composed_loss": 0.4234322455383109,
+      "corrected_expected_loss": 0.4234322455383109,
+      "corrected_field_error": 0.0,
+      "corrected_loss_error": 0.0,
+      "adaptive_vs_uniform_field": 0.0
+    },
+    {
+      "state": "etf",
+      "K": 3,
+      "uniform_loss": 0.5826576530618004,
+      "adaptive_composed_loss": 0.5826576530618004,
+      "corrected_expected_loss": 0.5826576530618004,
+      "corrected_field_error": 0.0,
+      "corrected_loss_error": 0.0,
+      "adaptive_vs_uniform_field": 0.0
+    },
+    {
+      "state": "perturbed_etf",
+      "K": 1,
+      "uniform_loss": 0.23405690457792974,
+      "adaptive_composed_loss": 0.23394785168572796,
+      "corrected_expected_loss": 0.23405690457792974,
+      "corrected_field_error": 0.0,
+      "corrected_loss_error": 0.0,
+      "adaptive_vs_uniform_field": 0.003038630548935352
+    },
+    {
+      "state": "perturbed_etf",
+      "K": 2,
+      "uniform_loss": 0.4235885091741988,
+      "adaptive_composed_loss": 0.42340793003444027,
+      "corrected_expected_loss": 0.4235885091741988,
+      "corrected_field_error": 0.0,
+      "corrected_loss_error": 0.0,
+      "adaptive_vs_uniform_field": 0.005032714419831081
+    },
+    {
+      "state": "perturbed_etf",
+      "K": 3,
+      "uniform_loss": 0.5828576288221345,
+      "adaptive_composed_loss": 0.5826265243103254,
+      "corrected_expected_loss": 0.5828576288221343,
+      "corrected_field_error": 2.7755575615628914e-17,
+      "corrected_loss_error": 2.220446049250313e-16,
+      "adaptive_vs_uniform_field": 0.00644179305081729
+    },
+    {
+      "state": "coarse",
+      "K": 1,
+      "uniform_loss": 0.3156677342152968,
+      "adaptive_composed_loss": 0.1526652460210168,
+      "corrected_expected_loss": 0.3156677342152968,
+      "corrected_field_error": 0.0,
+      "corrected_loss_error": 0.0,
+      "adaptive_vs_uniform_field": 0.0
+    },
+    {
+      "state": "coarse",
+      "K": 2,
+      "uniform_loss": 0.565698450697078,
+      "adaptive_composed_loss": 0.28636373671706356,
+      "corrected_expected_loss": 0.565698450697078,
+      "corrected_field_error": 0.0,
+      "corrected_loss_error": 0.0,
+      "adaptive_vs_uniform_field": 0.0
+    },
+    {
+      "state": "coarse",
+      "K": 3,
+      "uniform_loss": 0.7707272960097341,
+      "adaptive_composed_loss": 0.40515131990961845,
+      "corrected_expected_loss": 0.770727296009734,
+      "corrected_field_error": 0.0,
+      "corrected_loss_error": 1.1102230246251565e-16,
+      "adaptive_vs_uniform_field": 0.0
+    },
+    {
+      "state": "perturbed_coarse",
+      "K": 1,
+      "uniform_loss": 0.3156352105892653,
+      "adaptive_composed_loss": 0.15269335191650363,
+      "corrected_expected_loss": 0.3156352105892653,
+      "corrected_field_error": 0.0,
+      "corrected_loss_error": 0.0,
+      "adaptive_vs_uniform_field": 0.003928596699260829
+    },
+    {
+      "state": "perturbed_coarse",
+      "K": 2,
+      "uniform_loss": 0.5656409311551153,
+      "adaptive_composed_loss": 0.28641296165275076,
+      "corrected_expected_loss": 0.5656409311551152,
+      "corrected_field_error": 5.421010862427522e-19,
+      "corrected_loss_error": 1.1102230246251565e-16,
+      "adaptive_vs_uniform_field": 0.006814735451672247
+    },
+    {
+      "state": "perturbed_coarse",
+      "K": 3,
+      "uniform_loss": 0.7706505805144717,
+      "adaptive_composed_loss": 0.40521687124145644,
+      "corrected_expected_loss": 0.7706505805144714,
+      "corrected_field_error": 1.3010426069826053e-18,
+      "corrected_loss_error": 2.220446049250313e-16,
+      "adaptive_vs_uniform_field": 0.008973288296274374
+    }
+  ],
+  "shape_checks": [
+    {
+      "K": 1,
+      "mode": "adaptive",
+      "observed_shape_eigenvalue": -0.04872985519839029,
+      "predicted": -0.04872985520223821,
+      "abs_error": 3.847915042154426e-12
+    },
+    {
+      "K": 1,
+      "mode": "uniform",
+      "observed_shape_eigenvalue": 0.07337378206599167,
+      "predicted": 0.0733737820679572,
+      "abs_error": 1.9655249650085693e-12
+    },
+    {
+      "K": 1,
+      "mode": "corrected",
+      "observed_shape_eigenvalue": 0.07337378206599167,
+      "predicted": 0.0733737820679572,
+      "abs_error": 1.9655249650085693e-12
+    },
+    {
+      "K": 2,
+      "mode": "adaptive",
+      "observed_shape_eigenvalue": -0.07511370953304516,
+      "predicted": -0.07511370953746693,
+      "abs_error": 4.421768506901458e-12
+    },
+    {
+      "K": 2,
+      "mode": "uniform",
+      "observed_shape_eigenvalue": 0.12694284477011678,
+      "predicted": 0.1269428447718767,
+      "abs_error": 1.7599255386357981e-12
+    },
+    {
+      "K": 2,
+      "mode": "corrected",
+      "observed_shape_eigenvalue": 0.1269428447694491,
+      "predicted": 0.1269428447718767,
+      "abs_error": 2.4276136656453673e-12
+    },
+    {
+      "K": 3,
+      "mode": "adaptive",
+      "observed_shape_eigenvalue": -0.09109964187906411,
+      "predicted": -0.09109964188598407,
+      "abs_error": 6.9199646013373695e-12
+    },
+    {
+      "K": 3,
+      "mode": "uniform",
+      "observed_shape_eigenvalue": 0.16737234771064305,
+      "predicted": 0.1673723477137398,
+      "abs_error": 3.096745082586949e-12
+    },
+    {
+      "K": 3,
+      "mode": "corrected",
+      "observed_shape_eigenvalue": 0.16737234770697074,
+      "predicted": 0.1673723477137398,
+      "abs_error": 6.769057536715195e-12
+    }
+  ],
+  "max_corrected_field_error": 2.7755575615628914e-17,
+  "max_shape_error": 6.9199646013373695e-12,
+  "composed_risk_caveat": "ETF is the global optimum of the fixed uniform law. The composed adaptive risk can prefer coarse collapse; no unchanged-objective optimizer-failure claim is made.",
+  "scope": "known product importance identity and independent exact gradient intervention; not a novel method"
+}

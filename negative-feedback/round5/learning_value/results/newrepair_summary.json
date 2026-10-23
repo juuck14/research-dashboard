@@ -1,0 +1,8 @@
+{
+  "audited_paired_endpoints": 16,
+  "max_adaptive_radius": 5.697113426929755e-08,
+  "min_uniform_to_optimal_ratio": 0.9999998750879118,
+  "finite_time_information_claim": "none; exact erasure refers only to proved limiting coarse representation",
+  "data_source": "parent-completed fixed configurations; no newly trained models",
+  "scope": "independent metric computation and task-meaning audit, not a new mathematical or publication novelty result"
+}
