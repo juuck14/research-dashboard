@@ -1,0 +1,95 @@
+{
+  "provenance": "New recovery artifacts, not original147-file manifest",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5315,
+      "sha256": "f62605027a0875ea356879cd36700d5c42e4721c04f9182762c96bde956f49bc"
+    },
+    {
+      "path": "negative-feedback/README.md",
+      "bytes": 5737,
+      "sha256": "25babaa9ae0e5a07880639f001a06250231dc9c2ad75c2d74333cc41a87e33f6"
+    },
+    {
+      "path": "negative-feedback/round5/README.md",
+      "bytes": 3450,
+      "sha256": "fd4bbda604415652b6b11fde5d6a452807e6450ffb0075c6899bcbb2f4e157ee"
+    },
+    {
+      "path": "negative-feedback/round5/manuscript.md",
+      "bytes": 11368,
+      "sha256": "33b65870b680754721f6dd67720aa9ea077528fc64360ceb7b6179760cab4e7e"
+    },
+    {
+      "path": "negative-feedback/round5/recovery/STATUS.md",
+      "bytes": 2134,
+      "sha256": "b27518ae907ed2bb212314cf72377792a077d7044b4a93a865f3182730b04692"
+    },
+    {
+      "path": "negative-feedback/round5/recovery/independent_cases.csv",
+      "bytes": 62229,
+      "sha256": "f82b345c115a75984dfea364378947bf0a0f24379870485584b83a895c637079"
+    },
+    {
+      "path": "negative-feedback/round5/recovery/independent_check.json",
+      "bytes": 193030,
+      "sha256": "b362c5a0d7e65325ecec7f56cfd71cfed8383c636e58a3d2ff424d3526d02b1a"
+    },
+    {
+      "path": "negative-feedback/round5/recovery/independent_check.py",
+      "bytes": 9409,
+      "sha256": "354106ae2f7d58c9402d94bd58ca1cf02752f7c39a238a5acf67afbe40ea272c"
+    },
+    {
+      "path": "negative-feedback/round5/recovery/independent_protocol.md",
+      "bytes": 2811,
+      "sha256": "0edd0143b2e0db9d49b254a09701cfb86d6c7caa7dfb0b3b02d8762df41270c1"
+    },
+    {
+      "path": "negative-feedback/round5/recovery/independent_results.md",
+      "bytes": 2803,
+      "sha256": "aab58fd84fd4296071cbdca542ece333e212688d3360546d5d0dee66b1ae59c4"
+    },
+    {
+      "path": "negative-feedback/round5/recovery/population_rerun.json",
+      "bytes": 34082,
+      "sha256": "cac296a9b70679df403d718efc1678faaa149e767af0dd2ccca04eb945d975fe"
+    },
+    {
+      "path": "negative-feedback/round5/recovery/population_rerun.log",
+      "bytes": 8169,
+      "sha256": "d2d6e900b3667cf07eebfe4059c2c65d4c7bf85173c371a869dc7aa98c83daa4"
+    },
+    {
+      "path": "negative-feedback/round5/recovery/population_rerun.py",
+      "bytes": 4507,
+      "sha256": "7b0b1e889ac90f036aa0bfa1c35072abbd354b6ba2d4c8da4af77f2c73495214"
+    },
+    {
+      "path": "negative-feedback/round5/recovery/proof_review.md",
+      "bytes": 7806,
+      "sha256": "f6a111ba0ecb824dccfa7d84f7c374b193f261597f316628eefe31bfb5c2fc6c"
+    },
+    {
+      "path": "negative-feedback/round5/recovery/protocol.md",
+      "bytes": 1712,
+      "sha256": "f02c456ed4a534adc6b70c261fec6368e4790a16fd3fef774143ef1e155cd438"
+    },
+    {
+      "path": "negative-feedback/round5/report_ko.md",
+      "bytes": 8348,
+      "sha256": "f6ec940093546dfd1ebbdef16213186e2018639a04998c05fd961c913ee7916d"
+    },
+    {
+      "path": "negative-feedback/round5/reproduction.md",
+      "bytes": 1819,
+      "sha256": "3050b2e9ccdd3f2766b0999ba94c2a40c7762f8a75bb7ba20a36d38f3957851e"
+    },
+    {
+      "path": "negative-feedback/round5/theory_value/global_count_recovery.md",
+      "bytes": 12859,
+      "sha256": "f72e1f0072dbb71ea40496db9a714c03101541d2b7fc94d97fe8713c8f99ae2a"
+    }
+  ]
+}

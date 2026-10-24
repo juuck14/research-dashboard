@@ -1,5 +1,9 @@
 # Negative 관계와 학습 피드백
 
+**현재(2026-10-25): 새 전역 안정 평형 회복 정리로 진행.** [최종보고](round5/report_ko.md), [원고](round5/manuscript.md), [전체 증명](round5/theory_value/global_count_recovery.md), [복구·재현 상태](round5/recovery/STATUS.md). 이전 local-only 성공 판단은 복원하지 않으며, 새 global 정리와 새 실행을 근거로 한다.
+
+## 보존된 이전 상태 기록
+
 **현재 판정(2026-10-23): 추가 핵심 연구 필요. 이전 ‘최상위 학술지 핵심50% 확보’ 판정을 철회했다.** [정정 이유](ASSESSMENT_CORRECTION.md), [현재 검증](round4/README.md), [추가 검증 최종보고](round4/report_ko.md). 기존 국소 이론의 정확성과 학술적 중요성을 별도로 평가한다. 아래 문장은 당시 판정의 보존 기록이며 현재 상태가 아니다.
 
 ## 보존된 round3 판정
@@ -49,3 +53,4 @@ Python3.12.14, NumPy2.3.5, SciPy1.17.0, Matplotlib; solver rtol1e-8,atol1e-11(ba
 - [paper_draft.md](paper_draft.md): 실제 결과를 중심으로 한 논문 뼈대
 - [results/multi_negative_summary.json](results/multi_negative_summary.json): K1–16 exact control
 - [results/importance_control.json](results/importance_control.json): 동일 목적함수 보정 통제
+

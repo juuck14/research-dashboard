@@ -2,7 +2,11 @@
 
 각 연구주제별로 디렉토리를 만들고 안에 README.md파일 만들어서 거기에 현황을 보고하라.
 
-## 최신: 중요성 판정 정정과 재검증
+## 최신 negative-feedback 결과와 복구
+
+2026-10-25 [새 전역 회복 정리와 최종보고](negative-feedback/round5/report_ko.md) · [논문 원고](negative-feedback/round5/manuscript.md) · [재현](negative-feedback/round5/reproduction.md). 全 score easy-response budget 아래 **모든 안정 평형**의 Gram오차 M/K와 유한 무병합 count를 증명했다. 이전 국소 이론만의 성공 판정과 구별한다. 업로드 중단 중 미푸시 파일 일부가 사라져 핵심 증명을 복원·재검토하고 대표 실험을 재실행했다. [정확한 보존·손실 범위](negative-feedback/round5/recovery/STATUS.md).
+
+## 보존된 round4 판정 정정
 
 2026-10-23 **‘최상위 학술지 논문의 핵심50% 확보’ 판정을 철회했다. 현재는 추가 핵심 연구 필요.** [정정 근거](negative-feedback/ASSESSMENT_CORRECTION.md) · [현재 검증](negative-feedback/round4/README.md) · [추가 검증 최종보고](negative-feedback/round4/report_ko.md). 기존의 정확한 국소 정리·계산은 유지하지만, 그것과 중요한 학습 문제 사이의 설명 공백은 아직 해결되지 않았다. 아래 round3의 통과 판정은 당시의 보존된 기록이며 현재 판정이 아니다.
 
@@ -43,3 +47,4 @@ Negative의 [실제 결과 기반 논문 초안](negative-feedback/paper_draft.m
 | pairwise 확률적 SSL의 불확실성 | sharp prediction set·표본/예산 실험·vMF 식별·singular KL | 고전 원리를 넘는 실제 SSL 기여 미확보 |
 
 [최종 종합보고](prevalidation-20261022/final_report.md) · [증거·역할](prevalidation-20261022/evidence.md) · [재현 안내](prevalidation-20261022/reproduction.md) · [진행 이력](prevalidation-20261022/progress.md). 아래 기존 연구 결과는 별도 회차로 보존한다.
+
